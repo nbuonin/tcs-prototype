@@ -1,0 +1,36 @@
+// Global Colors
+$primary-color: #5E4636;
+
+$secondary-color: rgba(170, 158, 149, 1);
+$tertiary-color: transparentize($secondary-color,0.5);
+$link-color: #45916A;
+
+// Media Queries
+$break-small: 500px;
+$break-large: 1000px;
+$break-xlarge: 1240px;
+
+@mixin respond-to($media) {
+  @if $media == small {
+    @media screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium {
+    @media screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == medium-plus {
+    @media screen and (min-width: $break-small + 1) { @content; }
+  }
+  @else if $media == wide {
+    @media screen and (min-width: $break-large) and (max-width: $break-xlarge - 1) { @content; }
+  }
+  @else if $media == wide-plus {
+    @media screen and (min-width: $break-large + 1) { @content; }
+  }
+  @else if $media == super-wide {
+    @media screen and (min-width: $break-xlarge + 1) { @content; }
+  }
+}
+
+// Layout
+$max-container-width: 1200px;
+$container-margin: 35px;

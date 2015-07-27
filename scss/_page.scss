@@ -1,0 +1,11 @@
+.container {
+  max-width: $max-container-width;
+  margin: 0 $container-margin;
+  display: flex;
+  flex-flow: row wrap;
+
+  @include respond-to(super-wide){
+    max-width: $max-container-width;
+    margin: auto;
+  }
+}

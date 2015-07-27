@@ -1,0 +1,12 @@
+// Baseline setup
+@import 'var';
+@import 'reset';
+
+// Styles
+@import 'page';
+@import 'nav';
+
+// Debugging
+div {
+  border: solid black 1px;
+}
