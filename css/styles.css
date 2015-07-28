@@ -34,6 +34,9 @@ table {
 button {
   background-color: transparent; }
 
+div {
+  color: green; }
+
 .container {
   max-width: 1200px;
   margin: 0 35px;
@@ -44,15 +47,17 @@ button {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
-  @media screen and (min-width: 1241px) {
-    .container {
-      max-width: 1200px;
-      margin: auto; } }
+
+@media screen and (min-width: 1241px) {
+  .container {
+    max-width: 1200px;
+    margin: auto; } }
 
 nav > ul > li {
   display: inline; }
-  nav > ul > li > ul {
-    display: block; }
+
+nav > ul > li > ul {
+  display: block; }
 
 div {
   border: solid black 1px; }

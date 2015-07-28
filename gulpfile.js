@@ -21,9 +21,12 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
     return gulp.src("./scss/*.scss")
         .pipe(sass())
+        .pipe(sass({
+              errLogToConsole: true
+              }))
         .pipe(autoprefixer())
         .pipe(gulp.dest("./css"))
-        .pipe(reload({stream: true}));
+        .pipe(browserSync.stream());
 });
 
 gulp.task('default', ['serve']);
