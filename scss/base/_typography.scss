@@ -1,0 +1,28 @@
+body {
+  font-family: "utopia-std", "adobe-caslon-pro", serif;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-family: "azo-sans", "Helvetica Neue", sans-serif;
+  font-size: 1.375em; // orig 22/66
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "kepler-std-semicondensed-display", serif;
+  font-size: 1.5em; // orig 24/16
+  line-height: 1.3em;
+  // check weight
+}
+
+
+h3 {
+  font-family: "azo-sans", "Helvetica Neue", sans-serif;
+  font-size: 0.7em; // orig 11/16
+  text-transform: uppercase; // more specific?
+  letter-spacing: 1px;
+  // check weight
+}
