@@ -34,9 +34,6 @@ table {
 button {
   background-color: transparent; }
 
-div {
-  color: green; }
-
 .container {
   max-width: 1200px;
   margin: 0 35px;
@@ -53,11 +50,20 @@ div {
     max-width: 1200px;
     margin: auto; } }
 
-nav > ul > li {
-  display: inline; }
+.navigation > .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
 
-nav > ul > li > ul {
-  display: block; }
+@media screen and (min-width: 1001px) {
+  nav > ul > li {
+    display: inline-block; }
+  nav > ul > li > ul {
+    position: absolute; } }
 
 div {
   border: solid black 1px; }

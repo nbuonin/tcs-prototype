@@ -1,9 +1,16 @@
-nav {
-  > ul > li {
-    display: inline;
+.navigation > .container {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
-    > ul {
-      display: block;
+nav {
+  @include respond-to(wide-plus) {
+    > ul > li {
+      display: inline-block;
+
+      > ul {
+        position: absolute;
+      }
     }
   }
 }
