@@ -56,21 +56,22 @@ img {
 body {
   font-family: "utopia-std";
   font-size: 16px;
-  line-height: 1.3em; }
+  line-height: 1.3em;
+  font-weight: 400; }
 
 h1 {
-  font-family: "azo-sans";
+  font-family: "azo-sans-web";
   font-size: 1.375em;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
 h2 {
-  font-family: "kepler-std-semicondensed-display";
+  font-family: "kepler-std-semicondensed-dis";
   font-size: 1.5em;
   line-height: 1.3em; }
 
 h3 {
-  font-family: "azo-sans";
+  font-family: "azo-sans-web";
   font-size: 0.7em;
   text-transform: uppercase;
   letter-spacing: 1px; }
