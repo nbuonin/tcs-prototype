@@ -12,13 +12,8 @@
   }
 }
 
-nav .title {
-  display: flex;
-  flex-flow: column nowrap;
-
-  h1 {
-    align-self: center;
-  }
+.navigation .title > h1 {
+  text-align: center;
 }
 
 .nav-toggle {
