@@ -54,24 +54,24 @@ img {
   width: 100%; }
 
 body {
-  font-family: "utopia-std";
+  font-family: "utopia-std", "adobe-caslon-pro", serif;
   font-size: 16px;
   line-height: 1.3em;
   font-weight: 400; }
 
 h1 {
-  font-family: "azo-sans-web";
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-size: 1.375em;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
 h2 {
-  font-family: "kepler-std-semicondensed-dis";
+  font-family: "kepler-std-semicondensed-dis", serif;
   font-size: 1.5em;
   line-height: 1.3em; }
 
 h3 {
-  font-family: "azo-sans-web";
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-size: 0.7em;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -162,6 +162,12 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+#featured-concert > article.concert div.concert-info p.concert-tag {
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
+
+#featured-concert > article.concert div.concert-info p.concert-date {
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
 
 #featured-concert > article.concert div.concert-info p.concert-copy {
   margin: 0 1em; }
@@ -298,6 +304,3 @@ h3 {
             flex: 1; }
   #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
     text-align: center; } }
-
-div {
-  border: solid black 1px; }
