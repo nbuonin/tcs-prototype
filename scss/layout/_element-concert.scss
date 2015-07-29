@@ -1,3 +1,23 @@
+// base extensions - not media query specific
+%hp-section-tag {
+  @extend .subhead;
+  font-family: $sans; // see base/typography for these values
+  color: $tag-color;
+}
+
+%hp-section-name {
+
+}
+
+%hp-section-date {
+  @extend .subhead;
+  font-family: $sans;
+}
+
+%hp-section-copy {
+  margin: 0 1em;
+}
+
 //////////////////////////////////
 // Featured concert on homepage //
 //////////////////////////////////
@@ -16,16 +36,19 @@
     align-items: center;
 
     p.concert-tag {
-      font-family: $sans;
+      @extend %hp-section-tag;
     }
+
     h2.concert-name {
 
     }
+
     p.concert-date {
-      font-family: $sans;
+      @extend %hp-section-date;
     }
+
     p.concert-copy {
-      margin: 0 1em;
+      @extend %hp-section-copy;
     }
   } // end of div.concert-info
 
@@ -39,16 +62,16 @@
       flex: 1;
 
       p.concert-tag {
-
+        @extend %hp-section-tag;
       }
       h2.concert-name {
 
       }
       p.concert-date {
-
+        @extend %hp-section-date;
       }
       p.concert-copy {
-
+        @extend %hp-section-copy;
       }
     } // end of div.concert-info
 
@@ -83,16 +106,16 @@
     align-items: center;
 
     p.concert-tag {
-
+      @extend %hp-section-tag;
     }
     h2.concert-name {
 
     }
     p.concert-date {
-
+      @extend %hp-section-date;
     }
     p.concert-copy {
-      margin: 0 1em;
+      @extend %hp-section-copy;
     }
   } // end of div.concert-info
 
@@ -106,16 +129,16 @@
       flex: 1;
 
       p.concert-tag {
-
+        @extend %hp-section-tag;
       }
       h2.concert-name {
 
       }
       p.concert-date {
-
+        @extend %hp-section-date;
       }
       p.concert-copy {
-
+        @extend %hp-section-copy;
       }
     } // end of div.concert-info
 
@@ -150,16 +173,16 @@
     align-items: center;
 
     p.blog-tag {
-
+      @extend %hp-section-tag;
     }
     h2.blog-name {
 
     }
     p.blog-date {
-
+      @extend %hp-section-date;
     }
     p.blog-copy {
-      margin: 0 1em;
+      @extend %hp-section-copy;
     }
   } // end of div.blog-info
 
@@ -173,16 +196,16 @@
       flex: 1;
 
       p.blog-tag {
-
+        @extend %hp-section-tag;
       }
       h2.blog-name {
         text-align: center;
       }
       p.blog-date {
-
+        @extend %hp-section-date;
       }
       p.blog-copy {
-
+        @extend %hp-section-copy;
       }
     } // end of div.blog-info
 

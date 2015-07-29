@@ -76,6 +76,9 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+.subhead, #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date {
+  font-size: 0.75em; }
+
 .navigation > .container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -140,6 +143,16 @@ h3 {
   nav > ul > li:hover > ul {
     display: block; } }
 
+#featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag {
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
+  color: #f21d59; }
+
+#featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date {
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
+
+#featured-concert > article.concert div.concert-info p.concert-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy {
+  margin: 0 1em; }
+
 #featured-concert > article.concert {
   display: -webkit-box;
   display: -webkit-flex;
@@ -162,15 +175,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-#featured-concert > article.concert div.concert-info p.concert-tag {
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
-
-#featured-concert > article.concert div.concert-info p.concert-date {
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
-
-#featured-concert > article.concert div.concert-info p.concert-copy {
-  margin: 0 1em; }
 
 @media screen and (min-width: 1001px) {
   #featured-concert > article.concert {
@@ -229,9 +233,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center; }
 
-#next-concerts > article.concert div.concert-info p.concert-copy {
-  margin: 0 1em; }
-
 @media screen and (min-width: 1001px) {
   #next-concerts > article.concert {
     -webkit-flex-flow: row nowrap;
@@ -288,9 +289,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-#recent-blog-posts > article.blog-post div.blog-info p.blog-copy {
-  margin: 0 1em; }
 
 @media screen and (min-width: 1001px) {
   #recent-blog-posts > article.blog-post {
