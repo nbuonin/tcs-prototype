@@ -1,22 +1,31 @@
+//////////////////////////////////
+// Featured concert on homepage //
+//////////////////////////////////
 #featured-concert > article.concert {
   display: flex;
   flex-flow: column nowrap;
+
+  max-height: 350px;
 
   div.concert-image {
 
   }
   div.concert-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
     p.concert-tag {
 
     }
-    p.concert-name {
+    h2.concert-name {
 
     }
     p.concert-date {
 
     }
     p.concert-copy {
-
+      margin: 0 1em;
     }
   } // end of div.concert-info
 
@@ -27,16 +36,12 @@
       flex: 2;
     }
     div.concert-info {
-      flex: 1 ;
-
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
+      flex: 1;
 
       p.concert-tag {
 
       }
-      p.concert-name {
+      h2.concert-name {
 
       }
       p.concert-date {
@@ -50,47 +55,137 @@
   } // end of 'wide-plus'
 }
 
-// #next-concerts {
-//     display: flex;
-//     flex-flow: column-nowrap;
+////////////////////////////////////
+// Row of three upcoming concerts //
+////////////////////////////////////
+#next-concerts {
+  display: flex;
+  flex-flow: column nowrap;
 
-//     div.concert-image {
+  @include respond-to(wide-plus) {
+    flex-flow: row nowrap;
+  }
 
-//     }
-//     div.concert-info {
-//       p.concert-tag {
+}
 
-//       }
-//       p.concert-name {
+#next-concerts > article.concert {
+  display: flex;
+  flex-flow: column nowrap;
 
-//       }
-//       p.concert-date {
+  flex: 1;
 
-//       }
-//       p.concert-copy {
+  div.concert-image {
 
-//       }
-//     } // end of div.concert-info
+  }
+  div.concert-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 
-//     @include respond-to(wide-plus) {
-//       div.concert-image {
+    p.concert-tag {
 
-//       }
-//       div.concert-info {
-//         p.concert-tag {
+    }
+    h2.concert-name {
 
-//         }
-//         p.concert-name {
+    }
+    p.concert-date {
 
-//         }
-//         p.concert-date {
+    }
+    p.concert-copy {
+      margin: 0 1em;
+    }
+  } // end of div.concert-info
 
-//         }
-//         p.concert-copy {
+  @include respond-to(wide-plus) {
+    flex-flow: row nowrap;
 
-//         }
-//       } // end of div.concert-info
+    div.concert-image {
+      flex: 2;
+    }
+    div.concert-info {
+      flex: 1;
 
-//     } // end of 'wide-plus'
-//   }
-// }
+      p.concert-tag {
+
+      }
+      h2.concert-name {
+
+      }
+      p.concert-date {
+
+      }
+      p.concert-copy {
+
+      }
+    } // end of div.concert-info
+
+  } // end of 'wide-plus'
+}
+
+///////////////////////////
+// Row of two blog posts //
+///////////////////////////
+#recent-blog-posts {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include respond-to(wide-plus) {
+    flex-flow: row nowrap;
+  }
+
+}
+
+#recent-blog-posts > article.blog-post {
+  display: flex;
+  flex-flow: column nowrap;
+
+  flex: 1;
+
+  div.blog-image {
+
+  }
+  div.blog-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    p.blog-tag {
+
+    }
+    h2.blog-name {
+
+    }
+    p.blog-date {
+
+    }
+    p.blog-copy {
+      margin: 0 1em;
+    }
+  } // end of div.blog-info
+
+  @include respond-to(wide-plus) {
+    flex-flow: row nowrap;
+
+    div.blog-image {
+      //flex: 2;
+    }
+    div.blog-info {
+      flex: 1;
+
+      p.blog-tag {
+
+      }
+      h2.blog-name {
+        text-align: center;
+      }
+      p.blog-date {
+
+      }
+      p.blog-copy {
+
+      }
+    } // end of div.blog-info
+
+  } // end of 'wide-plus'
+}
+
