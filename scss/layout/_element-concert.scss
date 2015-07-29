@@ -1,0 +1,96 @@
+#featured-concert > article.concert {
+  display: flex;
+  flex-flow: column nowrap;
+
+  div.concert-image {
+
+  }
+  div.concert-info {
+    p.concert-tag {
+
+    }
+    p.concert-name {
+
+    }
+    p.concert-date {
+
+    }
+    p.concert-copy {
+
+    }
+  } // end of div.concert-info
+
+  @include respond-to(wide-plus) {
+    flex-flow: row nowrap;
+
+    div.concert-image {
+      flex: 2;
+    }
+    div.concert-info {
+      flex: 1 ;
+
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      p.concert-tag {
+
+      }
+      p.concert-name {
+
+      }
+      p.concert-date {
+
+      }
+      p.concert-copy {
+
+      }
+    } // end of div.concert-info
+
+  } // end of 'wide-plus'
+}
+
+// #next-concerts {
+//     display: flex;
+//     flex-flow: column-nowrap;
+
+//     div.concert-image {
+
+//     }
+//     div.concert-info {
+//       p.concert-tag {
+
+//       }
+//       p.concert-name {
+
+//       }
+//       p.concert-date {
+
+//       }
+//       p.concert-copy {
+
+//       }
+//     } // end of div.concert-info
+
+//     @include respond-to(wide-plus) {
+//       div.concert-image {
+
+//       }
+//       div.concert-info {
+//         p.concert-tag {
+
+//         }
+//         p.concert-name {
+
+//         }
+//         p.concert-date {
+
+//         }
+//         p.concert-copy {
+
+//         }
+//       } // end of div.concert-info
+
+//     } // end of 'wide-plus'
+//   }
+// }
