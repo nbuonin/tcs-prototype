@@ -18,6 +18,12 @@
   margin: 0 1em;
 }
 
+%hp-bottom-border {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: $border;
+}
+
 //////////////////////////////////
 // Featured concert on homepage //
 //////////////////////////////////
@@ -26,6 +32,8 @@
   flex-flow: column nowrap;
 
   max-height: 350px;
+
+  @extend %hp-bottom-border;
 
   div.concert-image {
 
@@ -57,6 +65,8 @@
 
     div.concert-image {
       flex: 2;
+      margin-right: 1em;
+      border-right: $border;
     }
     div.concert-info {
       flex: 1;
@@ -84,6 +94,8 @@
 #next-concerts {
   display: flex;
   flex-flow: column nowrap;
+
+  @extend %hp-bottom-border;
 
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
@@ -121,6 +133,7 @@
 
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
+    //border-right: $border;
 
     div.concert-image {
       flex: 2;
@@ -145,12 +158,26 @@
   } // end of 'wide-plus'
 }
 
+#next-concerts > article.concert {
+  > div.concert-info {
+    border-right: $border;
+  }
+}
+
+#next-concerts > article.concert:last-of-type {
+  > div.concert-info {
+    border-right: none;
+  }
+}
+
 ///////////////////////////
 // Row of two blog posts //
 ///////////////////////////
 #recent-blog-posts {
   display: flex;
   flex-flow: column nowrap;
+
+  @extend %hp-bottom-border;
 
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
@@ -212,3 +239,14 @@
   } // end of 'wide-plus'
 }
 
+#recent-blog-posts > article.blog-post {
+  > div.blog-info {
+    border-right: $border;
+  }
+}
+
+#recent-blog-posts > article.blog-post:last-of-type {
+  > div.blog-info {
+    border-right: none;
+  }
+}
