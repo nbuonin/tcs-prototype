@@ -1,17 +1,19 @@
 .navigation > .container {
   display: flex;
   flex-flow: column nowrap;
+  padding-top: 22px;
+
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
 
 .logo {
   max-width: 75px;
+  align-self: center;
   margin-bottom: 1em;
 
   @include respond-to(wide-plus) {
-    max-width: 100px;
-    align-self: center;
+    max-width: 80px;
   }
 }
 
