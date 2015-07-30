@@ -48,7 +48,7 @@
     }
 
     h2.concert-name {
-
+      @extend %hp-section-name
     }
 
     p.concert-date {
@@ -72,16 +72,16 @@
       flex: 1;
 
       p.concert-tag {
-        @extend %hp-section-tag;
+        
       }
       h2.concert-name {
 
       }
       p.concert-date {
-        @extend %hp-section-date;
+        
       }
       p.concert-copy {
-        @extend %hp-section-copy;
+        
       }
     } // end of div.concert-info
 
@@ -121,7 +121,7 @@
       @extend %hp-section-tag;
     }
     h2.concert-name {
-
+      @extend %hp-section-name;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -142,16 +142,16 @@
       flex: 1;
 
       p.concert-tag {
-        @extend %hp-section-tag;
+        
       }
       h2.concert-name {
 
       }
       p.concert-date {
-        @extend %hp-section-date;
+        
       }
       p.concert-copy {
-        @extend %hp-section-copy;
+        
       }
     } // end of div.concert-info
 
@@ -203,7 +203,7 @@
       @extend %hp-section-tag;
     }
     h2.blog-name {
-
+      @extend %hp-section-name;
     }
     p.blog-date {
       @extend %hp-section-date;
@@ -223,16 +223,16 @@
       flex: 1;
 
       p.blog-tag {
-        @extend %hp-section-tag;
+        
       }
       h2.blog-name {
         text-align: center;
       }
       p.blog-date {
-        @extend %hp-section-date;
+        
       }
       p.blog-copy {
-        @extend %hp-section-copy;
+        
       }
     } // end of div.blog-info
 
