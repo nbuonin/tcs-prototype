@@ -214,6 +214,7 @@ nav a {
     -webkit-flex: 2;
         -ms-flex: 2;
             flex: 2;
+    padding-right: 1em;
     margin-right: 1em;
     border-right: 1px solid grey; }
   #featured-concert > article.concert div.concert-info {
