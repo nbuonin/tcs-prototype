@@ -166,10 +166,14 @@ nav a {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   color: #f21d59; }
 
+#featured-concert > article.concert div.concert-info h2.concert-name, #next-concerts > article.concert div.concert-info h2.concert-name, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
+  text-transform: uppercase; }
+
 #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
 
 #featured-concert > article.concert div.concert-info p.concert-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy {
+  font-size: 1.125em;
   margin: 0 1em; }
 
 #featured-concert > article.concert, #next-concerts, #recent-blog-posts {

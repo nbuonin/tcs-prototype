@@ -6,7 +6,7 @@
 }
 
 %hp-section-name {
-
+  text-transform: uppercase;
 }
 
 %hp-section-date {
@@ -15,6 +15,7 @@
 }
 
 %hp-section-copy {
+  font-size: 1.125em; // 18/16
   margin: 0 1em;
 }
 
