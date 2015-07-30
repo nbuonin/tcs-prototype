@@ -53,7 +53,7 @@ button {
 img {
   width: 100%; }
 
-body {
+html {
   font-family: "utopia-std", "adobe-caslon-pro", serif;
   font-size: 16px;
   line-height: 1.3em;
@@ -104,7 +104,10 @@ h3 {
     max-width: 80px; } }
 
 .navigation .title > h1 {
-  text-align: center; }
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+  letter-spacing: 4px; }
 
 .nav-toggle {
   -webkit-box-flex: 1;
