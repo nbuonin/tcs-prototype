@@ -10,7 +10,7 @@
 .logo {
   max-width: 75px;
   align-self: center;
-  margin-bottom: 1em;
+  margin-bottom: 2px;
 
   @include respond-to(wide-plus) {
     max-width: 80px;
@@ -20,7 +20,7 @@
 .navigation .title > h1 {
   text-align: center;
   font-size: 1.25rem; // 20/16
-  margin-bottom: 1em;
+  margin-bottom: 10px;
   letter-spacing: 4px;
 }
 

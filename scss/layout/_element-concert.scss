@@ -73,6 +73,10 @@
     div.concert-info {
       flex: 1;
 
+      div.concert-image {
+        max-width: 100px;
+      }
+
       p.concert-tag {
         
       }
