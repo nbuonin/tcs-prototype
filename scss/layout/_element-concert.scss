@@ -68,7 +68,7 @@
       flex: 2;
       border-right: $border;
 
-      .concert-image-container {
+      .concert-image-container { // flexbox doesn't 'count' padding or margins, need container to add spacing to img
         margin-right: 1em;
       }
     }
