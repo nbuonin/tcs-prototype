@@ -66,9 +66,11 @@
 
     div.concert-image {
       flex: 2;
-      padding-right: 1em;
-      margin-right: 1em;
       border-right: $border;
+
+      .concert-image-container {
+        margin-right: 1em;
+      }
     }
     div.concert-info {
       flex: 1;
@@ -78,13 +80,13 @@
       }
 
       p.concert-tag {
-        
+
       }
       h2.concert-name {
 
       }
       p.concert-date {
-        
+
       }
       p.concert-copy {
         font-size: 1.125em;
@@ -148,16 +150,16 @@
       flex: 1;
 
       p.concert-tag {
-        
+
       }
       h2.concert-name {
 
       }
       p.concert-date {
-        
+
       }
       p.concert-copy {
-        
+
       }
     } // end of div.concert-info
 
@@ -229,16 +231,16 @@
       flex: 1;
 
       p.blog-tag {
-        
+
       }
       h2.blog-name {
         text-align: center;
       }
       p.blog-date {
-        
+
       }
       p.blog-copy {
-        
+
       }
     } // end of div.blog-info
 
