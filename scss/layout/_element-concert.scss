@@ -12,16 +12,20 @@
 %hp-section-date {
   @extend .subhead;
   font-family: $sans;
+  font-weight: 600;    
+  text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 %hp-section-copy {
   //font-size: 1em; 18/16
   margin: 0 1em;
+  text-align: center;
 }
 
 %hp-bottom-border {
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+  padding-bottom: 1.75em;
+  margin-bottom: 1.75em;
   border-bottom: $border;
 }
 
@@ -43,13 +47,15 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    vertical-align: center;
 
     p.concert-tag {
       @extend %hp-section-tag;
     }
 
     h2.concert-name {
-      @extend %hp-section-name
+      @extend %hp-section-name;
+      font-size: 3em;
     }
 
     p.concert-date {
@@ -66,11 +72,17 @@
 
     div.concert-image {
       flex: 2;
+<<<<<<< HEAD
       border-right: $border;
 
       .concert-image-container { // flexbox doesn't 'count' padding or margins, need container to add spacing to img
         margin-right: 1em;
       }
+=======
+      padding-right: 1em;
+      margin-right: 1em;
+      border-right: none;
+>>>>>>> good-lookin
     }
     div.concert-info {
       flex: 1;
@@ -145,6 +157,7 @@
 
     div.concert-image {
       flex: 2;
+      margin-bottom: 15px;
     }
     div.concert-info {
       flex: 1;
