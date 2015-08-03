@@ -175,7 +175,7 @@
 
 #next-concerts > article.concert {
   > div.concert-info {
-    border-right: $border;
+    border-right: $lesser-border;
   }
 }
 
@@ -256,7 +256,7 @@
 
 #recent-blog-posts > article.blog-post {
   > div.blog-info {
-    border-right: $border;
+    border-right: $lesser-border;
   }
 }
 
