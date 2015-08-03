@@ -12,14 +12,15 @@ html {
 h1 {
   font-family: $sans;
   font-size: 1.375em; // orig 22/66
+  font-weight: 200;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 1.25em;
 }
 
 h2 {
   font-family: $serif-display;
-  font-size: 3em; // 32/16
+  font-size: 2em; // 32/16
   line-height: 1.3em;
   // check weight
 }
@@ -34,7 +35,9 @@ h3 {
 }
 
 .subhead {
-  font-size: 0.75em;
+  font-size: 0.625em;
+  letter-spacing: 1px;
+  line-height: 1em;
 }
 
 $tag-color: #f21d59;
