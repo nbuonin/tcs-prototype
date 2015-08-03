@@ -72,20 +72,11 @@
 
     div.concert-image {
       flex: 2;
-<<<<<<< HEAD
-      border-right: $border;
-
       .concert-image-container { // flexbox doesn't 'count' padding or margins, need container to add spacing to img
-        margin-right: 1em;
-      }
-=======
-      padding-right: 1em;
       margin-right: 1em;
+      }
+      padding-right: 1em;
       border-right: none;
-<<<<<<< HEAD
->>>>>>> good-lookin
-=======
->>>>>>> good-lookin
     }
     div.concert-info {
       flex: 1;
