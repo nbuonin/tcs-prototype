@@ -171,9 +171,11 @@
   } // end of 'wide-plus'
 }
 
-#next-concerts > article.concert {
-  > div.concert-info {
-    border-right: $lesser-border;
+@include respond-to(wide-plus) {
+  #next-concerts > article.concert { // wrapped this in a MQ to remove the line on mobile
+    > div.concert-info {
+      border-right: $lesser-border;
+    }
   }
 }
 
@@ -252,9 +254,11 @@
   } // end of 'wide-plus'
 }
 
-#recent-blog-posts > article.blog-post {
-  > div.blog-info {
-    border-right: $lesser-border;
+@include respond-to(wide-plus) {
+  #recent-blog-posts > article.blog-post {
+    > div.blog-info {
+      border-right: $lesser-border;
+    }
   }
 }
 
