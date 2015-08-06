@@ -122,6 +122,8 @@
 
   flex: 1;
 
+  margin-bottom: 1.75em;
+
   div.concert-image {
 
   }
@@ -147,6 +149,7 @@
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
     //border-right: $border;
+    margin-bottom: 0;
 
     div.concert-image {
       flex: 2;
@@ -207,6 +210,8 @@
 
   flex: 1;
 
+  margin-bottom: 1.75em;
+
   div.blog-image {
 
   }
@@ -231,6 +236,8 @@
 
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
+
+    margin-bottom: 0;
 
     div.blog-image {
       //flex: 2;

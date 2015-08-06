@@ -290,7 +290,8 @@ nav.active {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  margin-bottom: 1.75em; }
 
 #next-concerts > article.concert div.concert-info {
   display: -webkit-box;
@@ -309,7 +310,8 @@ nav.active {
   #next-concerts > article.concert {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
+            flex-flow: row nowrap;
+    margin-bottom: 0; }
   #next-concerts > article.concert div.concert-image {
     -webkit-box-flex: 2;
     -webkit-flex: 2;
@@ -355,7 +357,8 @@ nav.active {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  margin-bottom: 1.75em; }
 
 #recent-blog-posts > article.blog-post div.blog-info {
   display: -webkit-box;
@@ -374,7 +377,8 @@ nav.active {
   #recent-blog-posts > article.blog-post {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
+            flex-flow: row nowrap;
+    margin-bottom: 0; }
   #recent-blog-posts > article.blog-post div.blog-info {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
