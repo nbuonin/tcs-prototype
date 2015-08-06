@@ -12,7 +12,7 @@
 %hp-section-date {
   @extend .subhead;
   font-family: $sans;
-  font-weight: 600;    
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -35,8 +35,6 @@
 #featured-concert > article.concert {
   display: flex;
   flex-flow: column nowrap;
-
-  max-height: 350px;
 
   @extend %hp-bottom-border;
 
