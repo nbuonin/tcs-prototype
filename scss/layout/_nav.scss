@@ -37,7 +37,7 @@
 
   button {
     width: 30px;
-    height: 30px;
+    // height: 30px;
     align-self: center;
   }
   .nav-toggle-bar {
@@ -46,6 +46,10 @@
     height: 3px;
     margin-bottom: 6px;
     background-color: #000000;
+  }
+
+  .nav-toggle-bar:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -61,7 +65,14 @@ nav {
   }
   border-bottom: $border;
   padding-bottom: 1em;
-    margin-bottom: 0;
+  margin-bottom: 0;
+
+  display: none;
+
+  @include respond-to(medium-plus) {
+      display: block;
+  }
+
   @include respond-to(wide-plus) {
     > ul > li {
       display: inline-block;
@@ -77,3 +88,7 @@ nav {
     }
   } // End of @include
 } // end of nav
+
+nav.active {
+  display: block;
+}
