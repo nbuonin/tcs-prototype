@@ -6,7 +6,7 @@
 }
 
 %hp-section-name {
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
 }
 
@@ -55,6 +55,7 @@
     h2.concert-name {
       @extend %hp-section-name;
       font-size: 3em;
+        text-transform: uppercase;
     }
 
     p.concert-date {
@@ -138,6 +139,7 @@
     }
     h2.concert-name {
       @extend %hp-section-name;
+      text-transform: uppercase;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -226,6 +228,7 @@
     }
     h2.blog-name {
       @extend %hp-section-name;
+        font-size: 1.7em;
     }
     p.blog-date {
       @extend %hp-section-date;
