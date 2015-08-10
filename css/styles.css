@@ -121,9 +121,14 @@ h3 {
     max-width: 100px; } }
 
 .navigation .title > h1 {
-  text-align: center;
-  font-size: 1.25rem;
-  letter-spacing: 4px; }
+  display: none; }
+
+@media screen and (min-width: 551px) {
+  .navigation .title > h1 {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 4px; } }
 
 .nav-toggle {
   -webkit-box-flex: 1;
@@ -137,7 +142,8 @@ h3 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  margin-top: -20px; }
 
 @media screen and (min-width: 851px) {
   .nav-toggle {

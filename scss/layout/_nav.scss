@@ -18,10 +18,15 @@
 }
 
 .navigation .title > h1 {
-  text-align: center;
-  font-size: 1.25rem; // 20/16
-  //margin-bottom: 10px;
-  letter-spacing: 4px;
+  display: none;
+
+  @include respond-to(medium-plus) {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem; // 20/16
+    //margin-bottom: 10px;
+    letter-spacing: 4px;
+  }
 }
 
 .nav-toggle {
@@ -30,6 +35,7 @@
   flex: auto;
   display: flex;
   justify-content: flex-end;
+  margin-top: -20px;
 
   @include respond-to(wide-plus) {
     display: none;
