@@ -385,7 +385,7 @@ nav.active {
   #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
     padding: 0 1em; } }
 
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 551px) {
   #recent-blog-posts > article.blog-post > div.blog-info {
     border-right: 1px solid #cacaca; } }
 
