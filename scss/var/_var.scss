@@ -7,8 +7,8 @@ $link-color: #45916A;
 
 // Media Queries
 $break-small: 500px;
-$break-large: 1000px;
-$break-xlarge: 1240px;
+$break-large: 850px;
+$break-xlarge: 1040px;
 
 @mixin respond-to($media) {
   @if $media == small {
