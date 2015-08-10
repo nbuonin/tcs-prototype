@@ -182,7 +182,7 @@ nav.active {
   color: #f21d59; }
 
 #featured-concert > article.concert div.concert-info h2.concert-name, #next-concerts > article.concert div.concert-info h2.concert-name, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center; }
 
 #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date {
@@ -223,7 +223,8 @@ nav.active {
           align-items: center; }
 
 #featured-concert > article.concert div.concert-info h2.concert-name {
-  font-size: 3em; }
+  font-size: 3em;
+  text-transform: uppercase; }
 
 @media screen and (min-width: 851px) {
   #featured-concert > article.concert {
@@ -295,6 +296,9 @@ nav.active {
       -ms-flex-align: center;
           align-items: center; }
 
+#next-concerts > article.concert div.concert-info h2.concert-name {
+  text-transform: uppercase; }
+
 @media screen and (min-width: 851px) {
   #next-concerts > article.concert {
     -webkit-flex-flow: row nowrap;
@@ -361,6 +365,9 @@ nav.active {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+#recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
+  font-size: 1.7em; }
 
 @media screen and (min-width: 551px) {
   #recent-blog-posts > article.blog-post {
