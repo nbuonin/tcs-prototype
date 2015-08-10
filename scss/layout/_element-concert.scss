@@ -199,7 +199,7 @@
 
   @extend %hp-bottom-border;
 
-  @include respond-to(wide-plus) {
+  @include respond-to(medium-plus) {
     flex-flow: row nowrap;
   }
 
@@ -235,13 +235,15 @@
     }
   } // end of div.blog-info
 
-  @include respond-to(wide-plus) {
+  @include respond-to(medium-plus) {
     flex-flow: row nowrap;
 
     margin-bottom: 0;
 
     div.blog-image {
-      //flex: 2;
+      .blog-image-container {
+        padding: 0 1em;
+      }
     }
     div.blog-info {
       flex: 1;
@@ -250,7 +252,7 @@
 
       }
       h2.blog-name {
-
+        padding: 0 1em;
       }
       p.blog-date {
 

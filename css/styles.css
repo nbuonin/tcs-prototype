@@ -125,7 +125,7 @@ h3 {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 551px) {
   .nav-toggle {
     display: none; } }
 
@@ -160,7 +160,7 @@ nav a {
   color: inherit;
   text-decoration: none; }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 551px) {
   nav {
     display: block; } }
 
@@ -329,7 +329,7 @@ nav.active {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 551px) {
   #recent-blog-posts {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -362,17 +362,21 @@ nav.active {
       -ms-flex-align: center;
           align-items: center; }
 
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 551px) {
   #recent-blog-posts > article.blog-post {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     margin-bottom: 0; }
+  #recent-blog-posts > article.blog-post div.blog-image .blog-image-container {
+    padding: 0 1em; }
   #recent-blog-posts > article.blog-post div.blog-info {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; } }
+            flex: 1; }
+  #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
+    padding: 0 1em; } }
 
 @media screen and (min-width: 851px) {
   #recent-blog-posts > article.blog-post > div.blog-info {
