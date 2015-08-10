@@ -268,7 +268,7 @@
   } // end of 'wide-plus'
 }
 
-@include respond-to(wide-plus) {
+@include respond-to(medium-plus) {
   #recent-blog-posts > article.blog-post {
     > div.blog-info {
       border-right: $lesser-border;
