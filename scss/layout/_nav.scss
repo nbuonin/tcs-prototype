@@ -1,22 +1,21 @@
 .navigation > .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   padding-top: 22px;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
 
   @include respond-to(wide-plus) {
-    flex-flow: column nowrap;
+   padding-bottom: 1em;
+   margin-bottom: 1em;
   }
 }
 
 .logo {
   max-width: 75px;
   align-self: center;
-  margin-bottom: 8px;
 
   @include respond-to(wide-plus) {
     max-width: 100px;
+    margin-bottom: 8px;
   }
 }
 
@@ -38,7 +37,8 @@
   flex: auto;
   display: flex;
   justify-content: flex-end;
-  margin-top: -20px;
+  margin-top: -50px;
+  margin-bottom: 50px;
 
   @include respond-to(wide-plus) {
     display: none;
