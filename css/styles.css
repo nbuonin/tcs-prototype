@@ -196,15 +196,16 @@ nav a {
   color: inherit;
   text-decoration: none; }
 
+nav > ul > li a.nolink:before {
+  content: "\f078"; }
+
 nav > ul > li > ul {
   padding-left: 2em; }
 
 @media screen and (min-width: 851px) {
   nav {
     border-bottom: 1px solid #4d4d4d;
-    display: block; } }
-
-@media screen and (min-width: 851px) {
+    display: block; }
   nav > ul > li {
     display: inline-block;
     padding-right: 5em; }
