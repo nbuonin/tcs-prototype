@@ -85,7 +85,11 @@ nav {
   margin-bottom: 0;
   flex-basis: 100%;
 
-  display: none;
+  display: none; // toggled with .nav-toggle-bar
+
+  > ul > li > ul {
+    padding-left: 2em;
+  }
 
   @include respond-to(wide-plus) {
       border-bottom: $border;
@@ -98,8 +102,10 @@ nav {
       padding-right: 5em;
 
       > ul {
+        padding-left: 0;
         position: absolute;
         display: none;
+        background-color: #FFFFFF;
       }
     }
     > ul > li:hover > ul {

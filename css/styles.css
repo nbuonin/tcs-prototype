@@ -196,6 +196,9 @@ nav a {
   color: inherit;
   text-decoration: none; }
 
+nav > ul > li > ul {
+  padding-left: 2em; }
+
 @media screen and (min-width: 851px) {
   nav {
     border-bottom: 1px solid #4d4d4d;
@@ -206,8 +209,10 @@ nav a {
     display: inline-block;
     padding-right: 5em; }
   nav > ul > li > ul {
+    padding-left: 0;
     position: absolute;
-    display: none; }
+    display: none;
+    background-color: #FFFFFF; }
   nav > ul > li:hover > ul {
     display: block; } }
 
