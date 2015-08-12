@@ -13,8 +13,52 @@
   padding-top: 22px;
 
   @include respond-to(wide-plus) {
-   padding-bottom: 1em;
-   margin-bottom: 1em;
+    margin-top: -54px;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.members-social {
+  display: none;
+
+  @include respond-to(wide-plus) {
+    align-self: flex-end;
+    display: flex;
+    flex-flow: column wrap;
+    transform: translateY(54px);
+  }
+
+  .members-login {
+    flex: auto;
+    display: flex;
+    justify-content: flex-end;
+    // copied from nav \/ \/ \/
+    font-size: 0.625rem;
+    font-family: $sans;
+    font-weight: 600; // Bold
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    // copied from nav /\ /\ /\
+  }
+
+  .social {
+    flex: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+    * {
+      font-size: 1.5em;
+      margin-left: 0.625em; // 10/16
+    }
   }
 }
 
@@ -88,8 +132,9 @@ nav {
   display: none; // toggled with .nav-toggle-bar
 
   > ul > li a.nolink:before {
-    content: "\f078";
+    // content: "\f101";
   }
+
   > ul > li > ul {
     padding-left: 2em;
   }
@@ -98,9 +143,18 @@ nav {
     border-bottom: $border;
     display: block;
 
+    > ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
     > ul > li {
       display: inline-block;
       padding-right: 5em;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
 
       > ul {
         padding-left: 0;
