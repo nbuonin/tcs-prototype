@@ -1,13 +1,23 @@
 footer > .container {
 	display: flex;
 	flex-flow: column nowrap;
+	font-family: $sans;
 
-	@include respond-to(medium-plus) {
+	@include respond-to(wide-plus) {
 		flex-flow: row nowrap;
 	}
-		
+
 	nav.footer-nav {
 		flex: 2;
+		columns: 1;
+
+		@include respond-to(wide-plus) {
+			columns: 2;
+		}
+
+		ul > li > a.nolink {
+			color: $tag-color;
+		}
 	}
 
 	div.contact {

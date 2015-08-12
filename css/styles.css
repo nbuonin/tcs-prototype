@@ -2,7 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,7 +23,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, button {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, button {
   display: block; }
 
 body {
@@ -23,7 +36,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -52,6 +66,13 @@ button {
 
 img {
   width: 100%; }
+
+a {
+  color: #000000;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
 
 html {
   font-family: "utopia-std", "adobe-caslon-pro", serif;
@@ -287,9 +308,10 @@ footer > .container {
   display: flex;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+          flex-flow: column nowrap;
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 851px) {
   footer > .container {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -299,7 +321,19 @@ footer > .container nav.footer-nav {
   -webkit-box-flex: 2;
   -webkit-flex: 2;
       -ms-flex: 2;
-          flex: 2; }
+          flex: 2;
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1; }
+
+@media screen and (min-width: 851px) {
+  footer > .container nav.footer-nav {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2; } }
+
+footer > .container nav.footer-nav ul > li > a.nolink {
+  color: #f21d59; }
 
 footer > .container div.contact {
   -webkit-box-flex: 1;
