@@ -301,7 +301,7 @@ h3 {
   .navigation > .container > nav > ul > li:hover > ul {
     display: block; } }
 
-nav.active {
+.navigation > .container > nav.active {
   display: block; }
 
 footer > .container {
@@ -363,6 +363,12 @@ footer > .container div.subscribe {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+
+footer > .container .button {
+  padding: 1.5em;
+  background-color: #080808;
+  color: #ffffff;
+  border: none; }
 
 #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
