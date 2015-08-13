@@ -100,6 +100,11 @@
     width: 30px;
     // height: 30px;
     align-self: center;
+    // resets from base.scss
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
   }
   .nav-toggle-bar {
     display: block;
