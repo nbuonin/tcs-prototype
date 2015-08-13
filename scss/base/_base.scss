@@ -24,4 +24,8 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  &.nolink, &.nolink:hover {
+    text-decoration: none;
+  }
 }

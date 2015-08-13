@@ -2,6 +2,9 @@ footer > .container {
 	display: flex;
 	flex-flow: column nowrap;
 	font-family: $sans;
+	padding-bottom: 3em;
+	border-bottom: $border;
+	margin-bottom: 1em;
 
 	@include respond-to(wide-plus) {
 		flex-flow: row nowrap;
@@ -15,6 +18,10 @@ footer > .container {
 			columns: 2;
 		}
 
+		> ul > li {
+			margin-bottom: 1em;
+		}
+
 		ul > li > a.nolink {
 			color: $tag-color;
 		}
@@ -22,6 +29,16 @@ footer > .container {
 
 	div.contact {
 		flex: 1;
+
+		div.icon {
+			display: inline-block;
+			width: 1.5em;
+			margin-right: 2px;
+
+			i {
+				float: right;
+			}
+		}
 	}
 
 	div.subscribe {
