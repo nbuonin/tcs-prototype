@@ -1,7 +1,7 @@
 footer > .container {
 	display: flex;
 	flex-flow: column nowrap;
-	font-family: $sans;
+	@extend %sans;
 	padding-bottom: 3em;
 	border-bottom: $border;
 	margin-bottom: 1em;

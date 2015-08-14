@@ -1,25 +1,36 @@
 $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
+%sans {
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
 $serif-display: "kepler-std-semicondensed-dis", serif;
+%serif-display {
+  font-family: "kepler-std-semicondensed-dis", serif;
+}
+
 $serif: "utopia-std", "adobe-caslon-pro", serif;
+%serif {
+  font-family: "utopia-std", "adobe-caslon-pro", serif;
+}
 
 html {
-  font-family: $serif;
+  @extend %serif;
   font-size: 16px;
   line-height: 1.3em;
   font-weight: 400;
 }
 
 h1 {
-  font-family: $sans;
+  @extend %sans;
   font-size: 1.375em; // orig 22/66
   font-weight: 200;
-  letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1.25em;
 }
 
 h2 {
-  font-family: $serif-display;
+  @extend %serif-display;
   font-size: 2em; // 32/16
   line-height: 1.3em;
   // check weight
@@ -27,16 +38,15 @@ h2 {
 
 
 h3 {
-  font-family: $sans;
+  @extend %sans;
   font-size: 0.7em; // orig 11/16
   text-transform: uppercase; // more specific?
-  letter-spacing: 1px;
   // check weight
 }
 
 .subhead {
+  @extend %sans;
   font-size: 0.625em;
-  letter-spacing: 1px;
   line-height: 1em;
 }
 

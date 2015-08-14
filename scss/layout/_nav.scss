@@ -35,9 +35,8 @@
     justify-content: flex-end;
     // copied from nav \/ \/ \/
     font-size: 0.625rem;
-    font-family: $sans;
+    @extend %sans;
     font-weight: 600; // Bold
-    letter-spacing: 1px;
     text-transform: uppercase;
     a {
       color: inherit;
@@ -122,9 +121,8 @@
 
 .navigation > .container > nav {
   font-size: 0.625rem;
-  font-family: $sans;
+  @extend %sans;
   font-weight: 600; // Bold
-  letter-spacing: 1px;
   text-transform: uppercase;
   a {
     color: inherit;

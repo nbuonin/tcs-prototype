@@ -70,34 +70,37 @@ button, .button {
   color: #ffffff;
   border: none; }
 
+h1, h3, .subhead, #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, .members-social .members-login, .navigation > .container > nav, footer > .container {
+  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
+  letter-spacing: 1px; }
+
+h2 {
+  font-family: "kepler-std-semicondensed-dis", serif; }
+
 html {
-  font-family: "utopia-std", "adobe-caslon-pro", serif;
+  font-family: "utopia-std", "adobe-caslon-pro", serif; }
+
+html {
   font-size: 16px;
   line-height: 1.3em;
   font-weight: 400; }
 
 h1 {
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-size: 1.375em;
   font-weight: 200;
-  letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1.25em; }
 
 h2 {
-  font-family: "kepler-std-semicondensed-dis", serif;
   font-size: 2em;
   line-height: 1.3em; }
 
 h3 {
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-size: 0.7em;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
+  text-transform: uppercase; }
 
 .subhead, #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date {
   font-size: 0.625em;
-  letter-spacing: 1px;
   line-height: 1em; }
 
 .navigation {
@@ -157,9 +160,7 @@ h3 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-size: 0.625rem;
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-weight: 600;
-  letter-spacing: 1px;
   text-transform: uppercase;
   padding-bottom: 1em;
   margin-bottom: 0; }
@@ -254,9 +255,7 @@ h3 {
 
 .navigation > .container > nav {
   font-size: 0.625rem;
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-weight: 600;
-  letter-spacing: 1px;
   text-transform: uppercase;
   padding-bottom: 1em;
   margin-bottom: 0;
@@ -309,7 +308,6 @@ footer > .container {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   padding-bottom: 3em;
   border-bottom: 1px solid #4d4d4d;
   margin-bottom: 1em; }
@@ -368,7 +366,6 @@ footer > .container .button {
   border: none; }
 
 #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag {
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   color: #f21d59; }
 
 #featured-concert > article.concert div.concert-info h2.concert-name, #next-concerts > article.concert div.concert-info h2.concert-name, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
@@ -376,7 +373,6 @@ footer > .container .button {
   text-align: center; }
 
 #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date {
-  font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1em; }
