@@ -33,26 +33,29 @@
 
 #concert-listings article.concert .concert-info-b {
   flex: 1;
+  display: flex;
+  flex-flow: row wrap;
 
   @include respond-to(medium-plus) {
-    flex: 3;
+    flex: 2;
   }
 
   .concert-image {
     flex: 1;
     @include respond-to(medium-plus) {
-      flex: 2;
+      flex: 2 2 100%;
     }
   }
-  .concert-program-container {
-    display: flex;
-  }
+  // .concert-program-container {
+  //   display: flex;
+  // }
 
   .concert-program {
-    flex: 1;
+    flex: 1 auto;
     border: $lesser-border;
+    max-width: 50%;
 
-    &:nth-of-type(2n+1) {
+    &:nth-of-type(2n+0) {
       margin-right: 1em;
     }
     //max-width: 50%;
