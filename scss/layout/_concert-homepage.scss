@@ -1,7 +1,6 @@
 // base extensions - not media query specific
 %hp-section-tag {
-  @extend .subhead;
-  @extend %sans; // see base/typography for these values
+  @extend .subhead; // see base/typography for these values
   color: $tag-color;
 }
 
@@ -12,7 +11,6 @@
 
 %hp-section-date {
   @extend .subhead;
-  @extend %sans;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1em;

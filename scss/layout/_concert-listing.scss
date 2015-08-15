@@ -1,0 +1,82 @@
+#concert-listings article.concert {
+  display: flex;
+  flex-flow: column nowrap;
+  @extend %hp-bottom-border;
+
+  @include respond-to(medium-plus) {
+    flex-flow: row nowrap;
+  }
+}
+
+#concert-listings article.concert .concert-info-a {
+  flex: 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  .concert-tag {
+    @extend %hp-section-tag;
+  }
+
+  h2.concert-name {
+    @extend %hp-section-name;
+    text-align: left;
+  }
+  .concert-location {
+    @extend %hp-section-date; // maybe rename this extension?
+  }
+  .concert-copy {
+    //@extend %hp-section-copy;
+    //text-align: left;
+  }
+}
+
+#concert-listings article.concert .concert-info-b {
+  flex: 1;
+
+  @include respond-to(medium-plus) {
+    flex: 3;
+  }
+
+  .concert-image {
+    flex: 1;
+    @include respond-to(medium-plus) {
+      flex: 2;
+    }
+  }
+  .concert-program-container {
+    display: flex;
+  }
+
+  .concert-program {
+    flex: 1;
+    border: $lesser-border;
+
+    &:nth-of-type(2n+1) {
+      margin-right: 1em;
+    }
+    //max-width: 50%;
+
+
+    .concert-program-date{
+      @extend %hp-section-date;
+    }
+    .concert-program-listing {
+      .concert-program-piece {
+
+      }
+      .concert-program-piece-composer {
+        font-weight: 600;
+      }
+      .concert-program-piece-soloist {
+        padding-left: 3em;
+        a {
+          color: $tag-color; // set this as a default in base.scss
+        }
+      }
+      .instrument {
+        font-style: italic;
+      }
+    }// end of .concert-program-listing
+  } // end of .concert-program
+} // end of .concert-info-b
