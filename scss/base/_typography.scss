@@ -14,9 +14,10 @@ $serif: "utopia-std", "adobe-caslon-pro", serif;
   font-family: "utopia-std", "adobe-caslon-pro", serif;
 }
 
+$base-font-size: 16px;
 html {
   @extend %serif;
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.3em;
   font-weight: 400;
 }

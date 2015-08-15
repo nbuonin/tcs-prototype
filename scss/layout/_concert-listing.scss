@@ -55,14 +55,7 @@
   .concert-program {
     flex: none;
     border: $lesser-border;
-    max-width: 318px; // creates in effect a 1em
-    //max-width: 50% - 18px;
-
-    &:nth-of-type(2n+0) {
-      //margin-right: 1em;
-    }
-    //max-width: 50%;
-
+    width: ((($max-container-width * 0.66) - $base-font-size) / 2) / 653px * 100%;
 
     .concert-program-date{
       @extend %hp-section-date;

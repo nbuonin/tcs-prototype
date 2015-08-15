@@ -663,7 +663,7 @@ footer > .container .button {
       -ms-flex: none;
           flex: none;
   border: 1px solid #cacaca;
-  max-width: 318px; }
+  width: 48.30015%; }
 
 #concert-listings article.concert .concert-info-b .concert-program .concert-program-listing .concert-program-piece-composer {
   font-weight: 600; }
