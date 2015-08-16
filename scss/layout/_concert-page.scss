@@ -36,6 +36,18 @@
     }
   }
 
+
+}
+
+#concert .concert-copy-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1em;
+
+  @include respond-to(medium-plus) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
   .concert-date-location {
     font-style: italic;
     white-space: nowrap;
@@ -43,13 +55,9 @@
       font-weight: 600;
     }
     @include respond-to(medium-plus) {
-      //align-self: flex-end;
+      margin-right: $default-gutter; // 16px
     }
   }
-}
-
-#concert .concert-copy-container {
-  margin-bottom: 1em;
   .concert-conductors {
     font-style: italic;
   }
