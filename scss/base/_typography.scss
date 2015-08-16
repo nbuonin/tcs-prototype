@@ -1,7 +1,6 @@
 $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
 %sans {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
-  letter-spacing: 1px;
 }
 
 $serif-display: "kepler-std-semicondensed-dis", serif;
@@ -22,8 +21,14 @@ html {
   font-weight: 400;
 }
 
+%all-caps {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 h1 {
   @extend %sans;
+  @extend %all-caps;
   font-size: 1.375em; // orig 22/66
   font-weight: 200;
   text-transform: uppercase;
@@ -40,8 +45,8 @@ h2 {
 
 h3 {
   @extend %sans;
+  @extend %all-caps;
   font-size: 0.7em; // orig 11/16
-  text-transform: uppercase; // more specific?
   // check weight
 }
 
