@@ -19,7 +19,7 @@
   }
 }
 
-.members-social {
+.email-social {
   display: none;
 
   @include respond-to(wide-plus) {
@@ -29,7 +29,7 @@
     transform: translateY(54px);
   }
 
-  .members-login {
+  .email-subscribe {
     flex: auto;
     display: flex;
     justify-content: flex-start;
@@ -47,12 +47,24 @@
     // copied from nav /\ /\ /\
   }
 
+  .subscribe {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  // .subscribe.active {
+  //   display: block;
+  // }
+
   .social {
     flex: auto;
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     * {
       font-size: 1.5em;
