@@ -1,12 +1,22 @@
+%concert-page-h2 {
+  @extend %sans;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
 #concert {
   .concert-tag {
     @extend %hp-section-tag;
+  }
+  .concert-image {
+    margin-bottom: 1em;
   }
 }
 
 #concert .concert-title-info {
   display: flex;
   flex-flow: column nowrap;
+  margin-bottom: 1em;
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
@@ -39,15 +49,38 @@
 }
 
 #concert .concert-copy-container {
+  margin-bottom: 1em;
   .concert-conductors {
     font-style: italic;
   }
 }
 
 #concert .concert-program {
+  margin-bottom: 1em;
+
+  h2 {
+    @extend %concert-page-h2;
+  }
+
 
 }
 
-#concert .concert-soloits {
+#concert .concert-soloists {
+  margin-bottom: 1em;
 
+  h2 {
+    @extend %concert-page-h2;
+  }
+}
+
+#concert .concert-soloists .concert-soloist {
+  @include respond-to(medium-plus) {
+    .concert-soloist-image {
+      @include col(1,3);
+    }
+
+    .concert-soloist-bio {
+      @include col(2,3);
+    }
+  }
 }
