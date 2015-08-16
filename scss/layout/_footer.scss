@@ -3,10 +3,10 @@ footer > .container {
 	flex-flow: column nowrap;
 	@extend %sans;
 	padding-bottom: 3em;
-	border-bottom: $border;
+	border-bottom: none;
 	margin-bottom: 1em;
 
-	@include respond-to(wide-plus) {
+	@include respond-to(medium-plus) {
 		flex-flow: row nowrap;
 	}
 
@@ -14,7 +14,7 @@ footer > .container {
 		flex: 2;
 		columns: 1;
 
-		@include respond-to(wide-plus) {
+		@include respond-to(medium-plus) {
 			columns: 2;
 		}
 
@@ -23,8 +23,11 @@ footer > .container {
 		}
 
 		ul > li > a.nolink {
+            @extend %all-caps;
 			color: $tag-color;
+            font-weight: 500;
 		}
+        
 	}
 
 	div.contact {
@@ -33,7 +36,7 @@ footer > .container {
 		div.icon {
 			display: inline-block;
 			width: 1.5em;
-			margin-right: 2px;
+			margin-right: 7px;
 
 			i {
 				float: right;
@@ -51,4 +54,8 @@ footer > .container {
 		color: #ffffff;
 		border: none;
 	}
+    p, li, a {
+            font-size:12px;
+            letter-spacing: 0;
+        }
 }
