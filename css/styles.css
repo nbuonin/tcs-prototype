@@ -834,9 +834,6 @@ footer > .container p, footer > .container li, footer > .container a {
 #concert .concert-soloists .concert-soloist:last-of-type {
   border-bottom: none; }
 
-#concert .concert-soloists .concert-soloist .concert-program-listing {
-  width: 100%; }
-
 #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
   padding-left: 0; }
 
@@ -860,7 +857,7 @@ footer > .container p, footer > .container li, footer > .container a {
     -webkit-flex: none;
         -ms-flex: none;
             flex: none; }
-  #concert .concert-soloists .concert-soloist .concert-soloist-bio {
+  #concert .concert-soloists .concert-soloist .soloist-program-listing-container {
     width: 65.57823%;
     -webkit-box-flex: 0;
     -webkit-flex: none;

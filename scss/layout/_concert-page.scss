@@ -93,7 +93,7 @@
   }
 
   .concert-program-listing {
-    width: 100%;
+    //width: 100%;
 
     .concert-program-piece-soloist {
       padding-left: 0;
@@ -114,7 +114,7 @@
       @include col(1,3);
     }
 
-    .concert-soloist-bio {
+    .soloist-program-listing-container {
       @include col(2,3);
     }
   }
