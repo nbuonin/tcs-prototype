@@ -32,3 +32,13 @@ $break-xlarge: 1040px;
 //$max-container-width: 1200px;
 $max-container-width: 980px;
 $container-margin: 35px;
+$default-gutter: 16px;
+
+@mixin col($no-of-cols, $total-cols, $container-width: $max-container-width, $gutter: $default-gutter) {
+  //note that parent element needs justify-content: space-between;
+  $total-gutter: ($total-cols - $no-of-cols) * $gutter;
+  $calculated-width: ($container-width - $total-gutter) * ($no-of-cols / $total-cols);
+  $percentage-width: ($calculated-width / $container-width) * 100%;
+  width: $percentage-width;
+  flex: none;
+}

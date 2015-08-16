@@ -5,11 +5,14 @@
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
+    justify-content: space-between;
   }
 }
 
 #concert-listings article.concert .concert-info-a {
-  flex: 1;
+  //flex: 1;
+  flex: none;
+  @include col(1,3);
 
   display: flex;
   flex-flow: column nowrap;
@@ -38,7 +41,9 @@
   justify-content: space-between;
 
   @include respond-to(medium-plus) {
-    flex: 2;
+    //flex: 2;
+    flex: none;
+    @include col(2,3);
   }
 
   .concert-image {
@@ -55,7 +60,8 @@
   .concert-program {
     flex: none;
     border: $lesser-border;
-    width: ((($max-container-width * 0.66) - $base-font-size) / 2) / 653px * 100%;
+    // width: ((($max-container-width * 0.66) - $base-font-size) / 2) / ($max-container-width * 0.66) * 100%;
+    @include col(1, 2, $container-width: 642.656px);
 
     .concert-program-date{
       @extend %hp-section-date;
