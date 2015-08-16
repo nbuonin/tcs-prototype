@@ -1,0 +1,53 @@
+#concert {
+  .concert-tag {
+    @extend %hp-section-tag;
+  }
+}
+
+#concert .concert-title-info {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include respond-to(medium-plus) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .concert-name {
+    @extend %serif-display;
+    //@extend %hp-section-name;
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1em;
+    padding-right: 1em;
+
+    @include respond-to(medium-plus) {
+      margin-bottom: 0;
+    }
+  }
+
+  .concert-date-location {
+    font-style: italic;
+    white-space: nowrap;
+    .concert-date {
+      font-weight: 600;
+    }
+    @include respond-to(medium-plus) {
+      //align-self: flex-end;
+    }
+  }
+}
+
+#concert .concert-copy-container {
+  .concert-conductors {
+    font-style: italic;
+  }
+}
+
+#concert .concert-program {
+
+}
+
+#concert .concert-soloits {
+
+}
