@@ -597,7 +597,7 @@ footer > .container .button {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 851px) {
   #concert-listings article.concert {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -608,15 +608,10 @@ footer > .container .button {
             justify-content: space-between; } }
 
 #concert-listings article.concert .concert-info-a {
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-      -ms-flex: none;
-          flex: none;
-  width: 32.2449%;
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-      -ms-flex: none;
-          flex: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -624,6 +619,18 @@ footer > .container .button {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
+
+@media screen and (min-width: 851px) {
+  #concert-listings article.concert .concert-info-a {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 32.2449%;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none; } }
 
 #concert-listings article.concert .concert-info-a h2.concert-name {
   text-align: left; }
@@ -637,15 +644,21 @@ footer > .container .button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
 
 @media screen and (min-width: 551px) {
+  #concert-listings article.concert .concert-info-b {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media screen and (min-width: 851px) {
   #concert-listings article.concert .concert-info-b {
     -webkit-box-flex: 0;
     -webkit-flex: none;
@@ -677,11 +690,15 @@ footer > .container .button {
       -ms-flex: none;
           flex: none;
   border: 1px solid #cacaca;
-  width: 48.75517%;
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-      -ms-flex: none;
-          flex: none; }
+  width: 100%; }
+
+@media screen and (min-width: 551px) {
+  #concert-listings article.concert .concert-info-b .concert-program {
+    width: 48.75517%;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none; } }
 
 #concert-listings article.concert .concert-info-b .concert-program .concert-program-listing .concert-program-piece-composer {
   font-weight: 600; }
