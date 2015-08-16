@@ -95,3 +95,7 @@
     }// end of .concert-program-listing
   } // end of .concert-program
 } // end of .concert-info-b
+
+.concert-program-date{
+  @extend %hp-section-date;
+}

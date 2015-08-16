@@ -9,6 +9,7 @@
 // Layout
 @import 'layout/nav';
 @import 'layout/footer';
+@import 'layout/concert-program-listing'; // this is a partial used anywhere a concert program is listed
 @import 'layout/concert-homepage';
 @import 'layout/concert-listing';
 @import 'layout/concert-page';
