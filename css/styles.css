@@ -817,7 +817,27 @@ footer > .container p, footer > .container li, footer > .container a {
 
 #concert .concert-soloists {
   border-bottom: 1px solid #4d4d4d;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+
+@media screen and (min-width: 551px) {
+  #concert .concert-soloists {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+#concert .concert-soloists h2 {
+  width: 100%; }
 
 #concert .concert-soloists .concert-soloist {
   display: -webkit-box;
@@ -827,12 +847,9 @@ footer > .container p, footer > .container li, footer > .container a {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #cacaca;
-  margin-bottom: 1em; }
-
-#concert .concert-soloists .concert-soloist:last-of-type {
-  border-bottom: none; }
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
   padding-left: 0; }
@@ -842,23 +859,15 @@ footer > .container p, footer > .container li, footer > .container a {
   font-style: italic;
   text-transform: none; }
 
+#concert .concert-soloists .concert-soloist .concert-soloist-image {
+  width: 100%; }
+
 @media screen and (min-width: 551px) {
   #concert .concert-soloists .concert-soloist {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  #concert .concert-soloists .concert-soloist .concert-soloist-image {
     width: 32.2449%;
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none; }
-  #concert .concert-soloists .concert-soloist .soloist-program-listing-container {
-    width: 65.57823%;
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;

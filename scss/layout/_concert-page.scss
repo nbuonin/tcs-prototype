@@ -76,21 +76,24 @@
 #concert .concert-soloists {
   border-bottom: $border;
   margin-bottom: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include respond-to(medium-plus) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 
   h2 {
     @extend %concert-page-h2;
+    width: 100%;
   }
 }
 
 #concert .concert-soloists .concert-soloist {
   display: flex;
   flex-flow: column nowrap;
-  padding-bottom: 1em;
-  border-bottom: $lesser-border;
-  margin-bottom: 1em;
-  &:last-of-type {
-    border-bottom: none;
-  }
+  align-content: flex-start;
 
   .concert-program-listing {
     //width: 100%;
@@ -107,15 +110,19 @@
     }
   }
 
+  .concert-soloist-image {
+    width: 100%;
+  }
   @include respond-to(medium-plus) {
     flex-flow: row wrap;
-    justify-content: space-between;
+    @include col(1,3);
+
     .concert-soloist-image {
-      @include col(1,3);
+      //@include col(1,3);
     }
 
     .soloist-program-listing-container {
-      @include col(2,3);
+      //@include col(2,3);
     }
   }
 }
