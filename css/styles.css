@@ -857,4 +857,7 @@ footer > .container p, footer > .container li, footer > .container a {
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
-            flex: none; } }
+            flex: none; }
+  #concert .concert-soloists .concert-soloist:nth-last-child(3n+1) {
+    margin-left: 16px;
+    margin-right: auto; } }
