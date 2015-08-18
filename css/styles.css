@@ -848,7 +848,7 @@ footer > .container p, footer > .container li, footer > .container a {
         -ms-flex: none;
             flex: none; }
   #concert .concert-soloists .concert-soloist:nth-last-child(3n+1) {
-    margin-left: 16px;
+    margin-left: 1.63265%;
     margin-right: auto; } }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
