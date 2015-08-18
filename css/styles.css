@@ -837,17 +837,6 @@ footer > .container p, footer > .container li, footer > .container a {
       -ms-flex-line-pack: start;
           align-content: flex-start; }
 
-#concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
-  padding-left: 0; }
-
-#concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date {
-  font-size: 1rem;
-  font-style: italic;
-  text-transform: none; }
-
-#concert .concert-soloists .concert-soloist .concert-soloist-image {
-  width: 100%; }
-
 @media screen and (min-width: 551px) {
   #concert .concert-soloists .concert-soloist {
     -webkit-flex-flow: row wrap;
@@ -861,3 +850,14 @@ footer > .container p, footer > .container li, footer > .container a {
   #concert .concert-soloists .concert-soloist:nth-last-child(3n+1) {
     margin-left: 16px;
     margin-right: auto; } }
+
+#concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
+  padding-left: 0; }
+
+#concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date {
+  font-size: 1rem;
+  font-style: italic;
+  text-transform: none; }
+
+#concert .concert-soloists .concert-soloist .concert-soloist-image {
+  width: 100%; }
