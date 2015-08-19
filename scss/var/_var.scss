@@ -41,4 +41,5 @@ $default-gutter: 16px;
   $percentage-width: ($calculated-width / $container-width) * 100%;
   width: $percentage-width;
   flex: none;
+  margin-bottom: $gutter;
 }
