@@ -13,7 +13,8 @@ $(document).ready(function() {
         collapsible: true
     });
   });
-  // $(document).on("click",function(e) {
+
+  $(document).on("click",function(e) {
 
   //   if (!$( ".subscribe" ).is(e.target) && !$(".mc-field-group .email").is(":focus")) {
   //     $('.email-subscribe').accordion("option", "active", false);
@@ -24,7 +25,11 @@ $(document).ready(function() {
   // $(" div .subscribe").hide();
   // $(".email-subscribe").on("click", function () {
   //   $(".email-subscribe .subscribe").toggle("blind");
-  // });
+
+    if (!$( ".email-subscribe" ).is(e.target) && !$( ".email-subscribe" ).has(e.target).length) {
+        $(".email-subscribe").accordion("option", "active", false);
+    }
+  });
 });
 
 
