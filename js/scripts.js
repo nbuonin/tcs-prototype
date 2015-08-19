@@ -13,14 +13,18 @@ $(document).ready(function() {
         collapsible: true
     });
   });
-  $(document).on("click",function(e) {
-    $('.email-subscribe').accordion('activate', -1);
+  // $(document).on("click",function(e) {
 
-    if ($( ".email-subscribe" ).is(e.target) && !$("input[type=email]:focus")) {
-      window.alert("sometext");
+  //   if (!$( ".subscribe" ).is(e.target) && !$(".mc-field-group .email").is(":focus")) {
+  //     $('.email-subscribe').accordion("option", "active", false);
+  //     //window.alert("sometext");
 
-    }
-  });
+  //   }
+  // });
+  // $(" div .subscribe").hide();
+  // $(".email-subscribe").on("click", function () {
+  //   $(".email-subscribe .subscribe").toggle("blind");
+  // });
 });
 
 
