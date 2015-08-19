@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('.nav-toggle button').click(
-      function() { $('nav').toggleClass('active')}
-    )
+  $('.nav-toggle button').on("click", function () {
+    $('nav').toggleClass('active');
+  });
 
   // $('.email-subscribe').click(
   //     function() { $('.subscribe').toggleClass('active')}
@@ -13,9 +13,12 @@ $(document).ready(function() {
         collapsible: true
     });
   });
-  $(document).click(function(e) {
-    if (!$( ".email-subscribe" ).is(e.target) && !$(input[type=email] ).has(e.target).length) {
-        $('.email-subscribe').accordion('activate', -1);
+  $(document).on("click",function(e) {
+    $('.email-subscribe').accordion('activate', -1);
+
+    if ($( ".email-subscribe" ).is(e.target) && !$("input[type=email]:focus")) {
+      window.alert("sometext");
+
     }
   });
 });
