@@ -3,6 +3,8 @@
 
   }
   .concert-program-piece-composer {
+      //@extend %sans;
+      //@extend %all-caps;
     font-weight: 600;
   }
   .concert-program-piece-soloist {
@@ -13,5 +15,6 @@
   }
   .instrument {
     font-style: italic;
+      text-transform: lowercase;
   }
 }// end of .concert-program-listing
