@@ -23,7 +23,11 @@ html {
 
 %all-caps {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: .1em;
+}
+
+.smalls {
+  font-feature-settings: "c2sc", "smcp";
 }
 
 h1 {
