@@ -2,19 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, button {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,8 +11,7 @@ time, mark, audio, video, button {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, button {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, button {
   display: block; }
 
 body {
@@ -36,8 +23,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -655,12 +641,12 @@ footer > .container p, footer > .container li, footer > .container a {
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    width: 32.2449%;
+    width: 32.10884%;
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    margin-bottom: 16px; } }
+    margin-bottom: 18px; } }
 
 #concert-listings article.concert .concert-info-a h2.concert-name {
   text-align: left; }
@@ -694,12 +680,12 @@ footer > .container p, footer > .container li, footer > .container a {
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    width: 65.57823%;
+    width: 65.44218%;
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    margin-bottom: 16px; } }
+    margin-bottom: 18px; } }
 
 #concert-listings article.concert .concert-info-b .concert-image {
   -webkit-box-flex: 1;
@@ -725,12 +711,12 @@ footer > .container p, footer > .container li, footer > .container a {
 
 @media screen and (min-width: 551px) {
   #concert-listings article.concert .concert-info-b .concert-program {
-    width: 48.75517%;
+    width: 48.59956%;
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    margin-bottom: 16px; } }
+    margin-bottom: 18px; } }
 
 #concert-listings article.concert .concert-info-b .concert-program .concert-program-listing .concert-program-piece-composer {
   font-weight: 600; }
@@ -814,7 +800,7 @@ footer > .container p, footer > .container li, footer > .container a {
 
 @media screen and (min-width: 551px) {
   #concert .concert-copy-container .concert-date-location {
-    margin-right: 16px; } }
+    margin-right: 18px; } }
 
 #concert .concert-copy-container .concert-conductors {
   font-style: italic; }
@@ -863,14 +849,14 @@ footer > .container p, footer > .container li, footer > .container a {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    width: 32.2449%;
+    width: 30.88435%;
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    margin-bottom: 16px; }
+    margin-bottom: 36px; }
   #concert .concert-soloists .concert-soloist:nth-of-type(3n+2):last-of-type {
-    margin-left: 1.63265%;
+    margin-left: 3.67347%;
     margin-right: auto; } }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
