@@ -850,7 +850,8 @@ footer > .container p, footer > .container li, footer > .container a {
           flex-flow: column nowrap;
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
-          align-content: flex-start; }
+          align-content: flex-start;
+  margin-bottom: 2em; }
 
 @media screen and (min-width: 551px) {
   #concert .concert-soloists .concert-soloist {
