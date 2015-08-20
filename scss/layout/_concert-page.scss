@@ -1,6 +1,5 @@
-%concert-page-h2 {
-  @extend %sans;
-  @extend %all-caps;
+h2 {
+  @extend %caps-sans;
   font-size: 1.25rem;
 }
 
@@ -24,10 +23,8 @@
     align-items: center;
   }
   .concert-name {
-    @extend %serif-display;
-    //@extend %hp-section-name;
+    @extend %caps-serif-display;
     font-size: 3em;
-    text-transform: uppercase;
     line-height: 1em;
     padding-right: 1em;
 
@@ -66,7 +63,8 @@
 #concert .concert-program {
   margin-bottom: 1em;
   h2 {
-    @extend %concert-page-h2;
+    @extend %caps-sans;
+      font-size: 1.5em;
   }
   .concert-program-listing {
       margin-bottom: .5em;
@@ -85,7 +83,8 @@
   }
 
   h2 {
-    @extend %concert-page-h2;
+    @extend %caps-sans;
+    font-size: 1.5em;
     width: 100%;
   }
 }
@@ -112,23 +111,19 @@
     //width: 100%;
         margin-bottom: 1rem;
     .concert-program-piece-soloist {
-      padding-left: 0;
-        //font-weight: 600;
-        @extend %sans;
-        @extend %all-caps;
+        padding-left: 0;
+        @extend %caps-sans;
         margin-bottom: .3em;
     }
     p.concert-program-piece, p.concert-program-date {
         display: inline;
         @extend %sans;
         font-size: .9rem;
-        //font-style: italic;
         font-weight:300;
         text-transform: none;
     }
     p.concert-program-date::after {
         content: "  |  ";
-        
     }
   }
 

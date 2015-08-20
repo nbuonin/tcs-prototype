@@ -44,16 +44,12 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    //vertical-align: center;
-
     p.concert-tag {
       @extend %hp-section-tag;
     }
 
     h2.concert-name {
-      @extend %hp-section-name;
-      font-size: 3em;
-        text-transform: uppercase;
+      @extend %caps-serif-display;
     }
 
     p.concert-date {
@@ -136,8 +132,8 @@
       @extend %hp-section-tag;
     }
     h2.concert-name {
-      @extend %hp-section-name;
-      text-transform: uppercase;
+      @extend %caps-serif-display;
+        font-size: 2em;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -223,8 +219,8 @@
       @extend %hp-section-tag;
     }
     h2.blog-name {
-      @extend %hp-section-name;
-        font-size: 1.7em;
+      @extend %serif-display;
+      font-size: 2em;
     }
     p.blog-date {
       @extend %hp-section-date;
