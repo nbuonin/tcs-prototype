@@ -94,6 +94,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-content: flex-start;
+  margin-bottom: 2em; //adds margin for small width
 
   @include respond-to(medium-plus) {
     flex-flow: row wrap;
