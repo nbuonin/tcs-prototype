@@ -13,7 +13,6 @@
   padding-top: 22px;
 
   @include respond-to(wide-plus) {
-    margin-top: -54px;
     padding-bottom: 1em;
     margin-bottom: 1em;
   }
@@ -23,10 +22,10 @@
   display: none;
 
   @include respond-to(wide-plus) {
+    position: absolute;
     align-self: flex-start;
     display: flex;
     flex-flow: column wrap;
-    transform: translateY(54px);
   }
 
   .email-subscribe {
