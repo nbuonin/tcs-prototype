@@ -518,24 +518,45 @@ footer > .container p, footer > .container li, footer > .container a {
   margin-bottom: 1.75em;
   padding-bottom: 17px; }
 
+#next-concerts > article.concert div.concert-image {
+  -webkit-column-break-after: always;
+  -webkit-break-after: column;
+     -moz-break-after: column;
+          break-after: column; }
+
 #next-concerts > article.concert div.concert-info {
-  -webkit-columns: 200px 2;
-     -moz-columns: 200px 2;
-          columns: 200px 2; }
+  -webkit-columns: 150px 2;
+     -moz-columns: 150px 2;
+          columns: 150px 2; }
 
 #next-concerts > article.concert div.concert-info h2.concert-name {
   font-size: 2em; }
 
+#next-concerts > article.concert div.concert-info p.concert-copy {
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  text-align: left;
+  margin: 0; }
+
 @media screen and (min-width: 551px) {
-  #next-concerts > article.concert {
+  #next-concerts > article.concert div.concert-info {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center;
+    -webkit-columns: none;
+       -moz-columns: none;
+            columns: none; }
+  #next-concerts > article.concert div.concert-info p.concert-copy {
+    text-align: center; } }
 
 @media screen and (min-width: 851px) {
   #next-concerts > article.concert {

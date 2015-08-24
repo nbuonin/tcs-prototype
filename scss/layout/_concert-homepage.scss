@@ -118,7 +118,8 @@
   margin-bottom: 1.75em;
 
   div.concert-image {
-
+    -webkit-column-break-after: always;
+    break-after: column;
   }
     padding-bottom: 17px;
  
@@ -126,7 +127,7 @@
     // display: flex;
     // flex-flow: column nowrap;
     // align-items: center;
-    columns: 200px 2;
+    columns: 150px 2;
 
 
     p.concert-tag {
@@ -140,16 +141,26 @@
       @extend %hp-section-date;
     }
     p.concert-copy {
-      @extend %hp-section-copy;
+      //@extend %hp-section-copy;
+      break-inside: avoid;
+      text-align: left;
+      margin: 0;
+    }
+
+    @include respond-to(medium-plus) {
+      // added this below
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      columns: none;
+
+      p.concert-copy {
+        @extend %hp-section-copy;
+        text-align: center;
+      }
+      // end
     }
   } // end of div.concert-info
-  
-  @include respond-to(medium-plus) {
-    // added this below
-    display: flex;
-    align-items: center;
-    // end
-  }
 
   @include respond-to(wide-plus) {    
     flex-flow: row nowrap;
