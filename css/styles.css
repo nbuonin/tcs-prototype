@@ -134,6 +134,9 @@ h3 {
 .navigation .title h1 {
   margin-bottom: 1.25em; }
 
+#style-guide {
+  padding: 22px; }
+
 .navigation {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #fff;
   margin-bottom: 1em; }
