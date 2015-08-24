@@ -28,10 +28,7 @@
     font-size: $big3;
     line-height: 1em;
     padding-right: 1em;
-
-    @include respond-to(medium-plus) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
 }
 
@@ -53,7 +50,7 @@
       font-style: italic;
     }
     @include respond-to(medium-plus) {
-      margin-right: $default-gutter;
+      margin-right: $big3;
     }
   }
   .concert-conductors {
@@ -69,6 +66,11 @@
   }
   .concert-program-listing {
       margin-bottom: .5em;
+  }
+  > div {
+    @include respond-to(medium-plus) {
+      padding-left: $big3; 
+    }
   }
 }
 
@@ -130,6 +132,8 @@
   }
 
   .concert-soloist-image {
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
