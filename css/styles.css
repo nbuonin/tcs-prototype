@@ -519,20 +519,23 @@ footer > .container p, footer > .container li, footer > .container a {
   padding-bottom: 17px; }
 
 #next-concerts > article.concert div.concert-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-columns: 200px 2;
+     -moz-columns: 200px 2;
+          columns: 200px 2; }
 
 #next-concerts > article.concert div.concert-info h2.concert-name {
   font-size: 2em; }
+
+@media screen and (min-width: 551px) {
+  #next-concerts > article.concert {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media screen and (min-width: 851px) {
   #next-concerts > article.concert {

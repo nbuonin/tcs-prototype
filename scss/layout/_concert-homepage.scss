@@ -123,9 +123,10 @@
     padding-bottom: 17px;
  
   div.concert-info {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    // display: flex;
+    // flex-flow: column nowrap;
+    // align-items: center;
+    columns: 200px 2;
 
 
     p.concert-tag {
@@ -142,8 +143,15 @@
       @extend %hp-section-copy;
     }
   } // end of div.concert-info
+  
+  @include respond-to(medium-plus) {
+    // added this below
+    display: flex;
+    align-items: center;
+    // end
+  }
 
-  @include respond-to(wide-plus) {
+  @include respond-to(wide-plus) {    
     flex-flow: row nowrap;
     margin-bottom: 0;
     border-bottom: none;
