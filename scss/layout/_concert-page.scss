@@ -64,15 +64,42 @@
     @extend %subtle-header-caps;
     font-size: $big1;
   }
+  .concert-program-piece-composer::after {
+	 content: ":  ";
+  }
+  .concert-program-piece-soloist {
+	 padding-left: 1em;
+  }
+  
   .concert-program-listing {
       margin-bottom: .5em;
   }
-  > div {
-    @include respond-to(medium-plus) {
-      padding-left: $big3; 
-    }
+  @include respond-to(medium-plus) {
+	  .concert-program-listing {
+		  width: 100%;
+		  .concert-program-piece {
+			 .concert-program-piece-composer {
+				display: inline-block;
+				text-align: right;
+				width: 30%;
+				padding-right: $big2;
+			 }
+			 	.concert-program-piece-composer::after { 
+				  content: "";
+				}
+			 .concert-program-piece-title { 
+				display: inline-block;
+				text-align: left;
+				width: 50%;
+			 }
+		  }
+		  .concert-program-piece-soloist {
+				width: 100%;
+				padding-left: 36%;
+		  }
+		}
+	 }
   }
-}
 
 #concert .concert-soloists {
   border-bottom: $border;
