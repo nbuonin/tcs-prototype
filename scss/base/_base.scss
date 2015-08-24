@@ -16,7 +16,11 @@ img {
 
 $border: 1px solid #4d4d4d;
 $lesser-border: 1px solid #cacaca;
-
+%border-bottom {
+	padding-bottom: 1em;
+	border-bottom: $lesser-border;
+	margin-bottom: 1em;
+}
 a {
   color: #000000;
   text-decoration: none;

@@ -44,6 +44,9 @@ html {
 p {
   line-height: 1.3em;
 }
+%copy {
+  padding-bottom: 1.3em;
+}
 
 %caps-sans {
     @extend %sans;
