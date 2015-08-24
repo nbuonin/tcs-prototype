@@ -35,8 +35,9 @@ a {
 }
 
 button, .button {
-  font-size: 1em;
-  padding: 1.5em;
+	@extend %caps-sans;
+  font-size: $small1;
+  padding: $base-size;
   background-color: #080808;
   color: #ffffff;
   border: none;
