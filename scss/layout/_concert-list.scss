@@ -21,7 +21,7 @@
   flex-flow: column nowrap;
 
   .concert-tag {
-    @extend %hp-section-tag;
+    @extend %section-tag;
   }
 
   h2.concert-name {
@@ -29,11 +29,10 @@
     text-align: left;
   }
   .concert-location {
-    @extend %caps-sans; // maybe rename this extension?
+    @extend %caps-sans;
   }
   .concert-copy {
-    //@extend %hp-section-copy;
-    //text-align: left;
+
   }
 }
 
@@ -68,7 +67,7 @@
     flex: none;
     border: $lesser-border;
     width: 100%;
-    margin-top: 17px;
+    margin-top: $container-margin;
     @include respond-to(medium-plus) {
       // width: ((($max-container-width * 0.66) - $base-font-size) / 2) / ($max-container-width * 0.66) * 100%;
       @include col(1, 2, $container-width: 642.656px);
@@ -82,7 +81,7 @@
 
       }
       .concert-program-piece-composer {
-        font-weight: 600;
+        @extend %smcaps;
       }
       .concert-program-piece-soloist {
         padding-left: 3em;
@@ -112,5 +111,5 @@
 }
 h1 {
     @extend %subtle-header;
-    font-size: 14px;
+    font-size: $base-size;
 }

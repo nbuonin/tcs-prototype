@@ -1,3 +1,44 @@
 #style-guide {
   padding: 22px;
+  p, h1, h2, h3 {
+      margin-bottom: 1rem;  
+  }
+}
+
+.subtle-header {
+  @extend %subtle-header
+    }
+.subtle-header-caps {
+  @extend %subtle-header-caps
+    }
+.caps-sans {
+  @extend %caps-sans
+    }
+
+.base-font-size {
+  font-size: $base-size;
+}
+.base-line-height {
+  line-height: base-line-height;
+}
+.small1 {
+  font-size: $small1;
+}
+.small2 {
+  font-size: $small2;
+}
+.small3 {
+  font-size: $small3;
+}
+.big1 {
+  font-size: $big1;
+}
+.big2 {
+  font-size: $big2;
+}
+.big3 {
+  font-size: $big3;
+}
+.big4 {
+  font-size: $big4;
 }
