@@ -1,14 +1,3 @@
-$base-size: 16px;
-$base-line-height: 1.236em;
-$tscale: .68;
-$small1: $base-size * $tscale;
-$small2: $small1 * $tscale;
-$small3: $small2 * $tscale;
-$big1: $base-size / $tscale;
-$big2: $big1 / $tscale;
-$big3: $big2 / $tscale;
-$big4: $big3 / $tscale;
-
 $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
 %sans {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
@@ -53,6 +42,7 @@ p {
     @extend %caps;
     font-weight: 600;
     font-size: $small1;
+ 	 margin-bottom: $small1;
 }
 
 %subtle-header {

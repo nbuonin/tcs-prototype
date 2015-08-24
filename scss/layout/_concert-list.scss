@@ -33,6 +33,10 @@
   }
   .concert-copy {
 	  	@extend %copy;
+	   display: none;
+	  @include respond-to(medium-plus) {
+	  	display:block;
+	  }
 
   }
 }
@@ -54,11 +58,12 @@
   }
 
   .concert-image {
+	 margin-bottom: $default-gutter;
     flex: 1;
     @include respond-to(medium-plus) {
-      flex: none;
-      width: 100%;
-    }
+    flex: none;
+    width: 100%;
+   }
   }
   // .concert-program-container {
   //   display: flex;
@@ -68,21 +73,26 @@
     flex: none;
     border: $lesser-border;
     width: 100%;
-    margin-top: $container-margin;
+	 margin-bottom: $default-gutter;
+
     @include respond-to(medium-plus) {
       // width: ((($max-container-width * 0.66) - $base-font-size) / 2) / ($max-container-width * 0.66) * 100%;
       @include col(1, 2, $container-width: 642.656px);
     }
 
-    .concert-program-date{
+    .concert-program-date {
       @extend %caps-sans;
     }
     .concert-program-listing {
+		 font-size: $small;
       .concert-program-piece {
+			font-style: italic;
 
       }
       .concert-program-piece-composer {
-        @extend %smcaps;
+			font-style: normal;
+			
+        
       }
       .concert-program-piece-soloist {
         padding-left: 3em;
