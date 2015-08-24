@@ -2,6 +2,7 @@
 %hp-section-tag {
   @extend .subhead; // see base/typography for these values
   color: $tag-color;
+    margin-bottom: 1px;
 }
 
 %hp-section-name {
@@ -10,9 +11,7 @@
 }
 
 %hp-section-date {
-  @extend .subhead;
-  font-weight: 600;
-  text-transform: uppercase;
+  @extend %caps-sans;
   margin-bottom: 1em;
 }
 
@@ -109,24 +108,25 @@
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
   }
-
 }
 
 #next-concerts > article.concert {
   display: flex;
   flex-flow: column nowrap;
-
   flex: 1;
-
+  border-bottom: $lesser-border;   
   margin-bottom: 1.75em;
 
   div.concert-image {
 
   }
+    padding-bottom: 17px;
+ 
   div.concert-info {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+
 
     p.concert-tag {
       @extend %hp-section-tag;
@@ -146,6 +146,7 @@
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
     margin-bottom: 0;
+    border-bottom: none;
 
     div.concert-image {
       margin-bottom: 15px;
@@ -179,6 +180,7 @@
 }
 
 #next-concerts > article.concert:last-of-type {
+    border-bottom: none;
   > div.concert-info {
     border-right: none;
   }
@@ -221,6 +223,7 @@
     h2.blog-name {
       @extend %serif-display;
       font-size: 2em;
+        text-align: center;
     }
     p.blog-date {
       @extend %hp-section-date;

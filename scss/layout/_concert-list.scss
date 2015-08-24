@@ -29,7 +29,7 @@
     text-align: left;
   }
   .concert-location {
-    @extend %hp-section-date; // maybe rename this extension?
+    @extend %caps-sans; // maybe rename this extension?
   }
   .concert-copy {
     //@extend %hp-section-copy;
@@ -68,13 +68,14 @@
     flex: none;
     border: $lesser-border;
     width: 100%;
+    margin-top: 17px;
     @include respond-to(medium-plus) {
       // width: ((($max-container-width * 0.66) - $base-font-size) / 2) / ($max-container-width * 0.66) * 100%;
       @include col(1, 2, $container-width: 642.656px);
     }
 
     .concert-program-date{
-      @extend %hp-section-date;
+      @extend %caps-sans;
     }
     .concert-program-listing {
       .concert-program-piece {
@@ -95,7 +96,21 @@
     }// end of .concert-program-listing
   } // end of .concert-program
 } // end of .concert-info-b
-
+.concert-info-b .concert-program div {
+    padding: 0 12px;
+}
+.concert-info-b .concert-program {
+    div:first-child {
+        padding-top: 12px;
+    }
+    div:last-child {
+        padding-bottom: 12px;
+    }
+}
 .concert-program-date{
   @extend %hp-section-date;
+}
+h1 {
+    @extend %subtle-header;
+    font-size: 14px;
 }
