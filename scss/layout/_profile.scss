@@ -1,0 +1,63 @@
+#profile {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  > * {
+    margin-bottom: 1em;
+  }
+
+  @include respond-to(medium-plus) {
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+}
+
+#profile .profile-headshot {
+  @include respond-to(medium-plus) {
+    //flex: 1 1 33%;
+
+    @include col(1,3);
+  }
+}
+
+#profile .profile-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  @include respond-to(medium-plus) {
+    //flex: 2 2 66%;
+    @include col(2,3);
+    align-items: flex-start;
+
+    > * {
+      margin-left: 1rem;
+    }
+
+    > .profile-info-container {
+
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+    }
+  }
+
+  @include respond-to(wide-plus) {
+    > .profile-info-container {
+      justify-content: flex-start;
+    }
+  }
+}
+
+// #profile .contact {
+//   @include respond-to(medium) {
+//     //flex: 2 2 66%;
+//   }
+// }
+
+#profile .profile-bio {
+
+}

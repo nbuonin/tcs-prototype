@@ -30,6 +30,17 @@ $(document).ready(function() {
         $(".email-subscribe").accordion("option", "active", false);
     }
   });
+
+  function profilePage () {
+    if ($(window).width() > 850) {
+      $(".profile-info-container").append($(".profile-bio"));
+      $(".profile-headshot-container").append($(".profile-info > .contact"));
+    };
+  }
+
+  $(document).ready(profilePage);
+  $(window).resize(profilePage);
+
 });
 
 
