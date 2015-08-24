@@ -1,10 +1,4 @@
 // base extensions - not media query specific
-%hp-section-tag {
-  @extend .subhead; // see base/typography for these values
-  color: $tag-color;
-    margin-bottom: 1px;
-}
-
 %hp-section-name {
   text-transform: capitalize;
   text-align: center;
@@ -12,18 +6,17 @@
 
 %hp-section-date {
   @extend %caps-sans;
-  margin-bottom: 1em;
+  margin-bottom: $small1;
 }
 
 %hp-section-copy {
-  //font-size: 1em; 18/16
-  margin: 0 1em;
+  margin: 0 $small1;
   text-align: center;
 }
 
 %hp-bottom-border {
-  padding-bottom: 1.75em;
-  margin-bottom: 1.75em;
+  padding-bottom: $container-margin;
+  margin-bottom: $container-margin;
   border-bottom: $border;
 }
 
@@ -44,11 +37,12 @@
     flex-flow: column nowrap;
     align-items: center;
     p.concert-tag {
-      @extend %hp-section-tag;
+      @extend %section-tag;
     }
 
     h2.concert-name {
       @extend %caps-serif-display;
+      font-size: $big3;
     }
 
     p.concert-date {
@@ -66,9 +60,9 @@
     div.concert-image {
       flex: 2;
       .concert-image-container { // flexbox doesn't 'count' padding or margins, need container to add spacing to img
-      margin-right: 1em;
+      margin-right: $container-margin;
       }
-      padding-right: 1em;
+      padding-right: $container-margin;
       border-right: none;
     }
     div.concert-info {
@@ -89,7 +83,7 @@
 
       }
       p.concert-copy {
-        font-size: 1.125em;
+        font-size: $big1;
       }
     } // end of div.concert-info
 
@@ -115,25 +109,23 @@
   flex-flow: column nowrap;
   flex: 1;
   border-bottom: $lesser-border;   
-  margin-bottom: 1.75em;
+  margin-bottom: $container-margin;
+  padding-bottom: $container-margin;
 
   div.concert-image {
 
   }
-    padding-bottom: 17px;
  
   div.concert-info {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 
-
     p.concert-tag {
-      @extend %hp-section-tag;
+      @extend %section-tag;
     }
     h2.concert-name {
       @extend %caps-serif-display;
-        font-size: 2em;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -149,7 +141,7 @@
     border-bottom: none;
 
     div.concert-image {
-      margin-bottom: 15px;
+      margin-bottom: $small3;
     }
     div.concert-info {
       flex: 1;
@@ -204,11 +196,8 @@
 #recent-blog-posts > article.blog-post {
   display: flex;
   flex-flow: column nowrap;
-
   flex: 1;
-
-  margin-bottom: 1.75em;
-
+  margin-bottom: $container-margin;
   div.blog-image {
 
   }
@@ -218,11 +207,11 @@
     align-items: center;
 
     p.blog-tag {
-      @extend %hp-section-tag;
+      @extend %section-tag;
     }
     h2.blog-name {
       @extend %serif-display;
-      font-size: 2em;
+      font-size: $big2;
         text-align: center;
     }
     p.blog-date {
@@ -235,7 +224,6 @@
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
-
     margin-bottom: 0;
 
     div.blog-image {

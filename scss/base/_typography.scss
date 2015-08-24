@@ -1,3 +1,14 @@
+$base-size: 16px;
+$base-line-height: 1.236em;
+$tscale: .68;
+$small1: $base-size * $tscale;
+$small2: $small1 * $tscale;
+$small3: $small2 * $tscale;
+$big1: $base-size / $tscale;
+$big2: $big1 / $tscale;
+$big3: $big2 / $tscale;
+$big4: $big3 / $tscale;
+
 $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
 %sans {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
@@ -6,7 +17,7 @@ $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
 $serif-display: "kepler-std-semicondensed-dis", serif;
 %serif-display {
   font-family: "kepler-std-semicondensed-dis", serif;
-  font-size: 2em;
+  font-size: $big2;
   letter-spacing: 0;
   text-transform: capitalize;
 }
@@ -16,72 +27,85 @@ $serif: "utopia-std", "adobe-caslon-pro", serif;
   font-family: "utopia-std", "adobe-caslon-pro", serif;
 }
 
-$base-font-size: 16px;
+%caps {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+%smcaps {
+    font-feature-settings: "c2sc", "smcp";
+}
+
 html {
   @extend %serif;
-  font-size: $base-font-size;
-  line-height: 1.3em;
+  font-size: $base-size;
   font-weight: 400;
+}
+p {
+  line-height: 1.3em;
 }
 
 %caps-sans {
     @extend %sans;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+    @extend %caps;
     font-weight: 600;
-    font-size: 10px;
+    font-size: $small1;
 }
+
 %subtle-header {
     @extend %sans;
     font-weight: 100;
-    font-size: 12px;
 }
+
 %subtle-header-caps {
     @extend %subtle-header;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+    @extend %caps;
 }
 
 %caps-serif-display {
     @extend %serif-display;
-    font-size: 3em;
+    font-size: $big2;
     text-transform: uppercase;
     letter-spacing: 0;
 }
 
-.smalls {
-  font-feature-settings: "c2sc", "smcp";
+%section-tag {
+  @extend %caps-sans;
+  color: $tag-color;
+  margin-bottom: 1px;
+  font-weight: 100;
+}
+
+.smcaps {
+    @extend %smcaps;
 }
 
 h1 {
   @extend %caps-sans;
-  font-size: 1.375em; // orig 22/66
+  font-size: $big1;
   font-weight: 200;
-  text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 h2 {
   @extend %serif-display;
-  font-size: 2em; // 32/16
+  font-size: $big2;
   line-height: 1.3em;
   font-weight: 300;
 }
 
-
 h3 {
-  @extend %sans;
-  @extend %all-caps;
-  font-size: 0.7em; // orig 11/16
-  // check weight
+  @extend %caps-sans;
+  font-size: $small1;
 }
 
 .subhead {
   @extend %sans;
-  font-size: 0.625em;
+  font-size: $small1;
   line-height: 1em;
 }
 
-.navigation .title h1{
+.navigation .title h1 {
     margin-bottom: 1.25em;
 }
 // button, .button {
