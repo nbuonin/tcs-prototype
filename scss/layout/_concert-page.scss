@@ -1,6 +1,7 @@
-h2 {
-  @extend %caps-sans;
+#concert h2 {
+  @extend %subtle-header;
   font-size: 1.25rem;
+  margin-bottom: 1em;
 }
 
 #concert {
@@ -32,14 +33,12 @@ h2 {
       margin-bottom: 0;
     }
   }
-
-
 }
 
 #concert .concert-copy-container {
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
@@ -61,9 +60,9 @@ h2 {
 }
 
 #concert .concert-program {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   h2 {
-    @extend %caps-sans;
+    @extend %subtle-header-caps;
       font-size: 1.5em;
   }
   .concert-program-listing {
@@ -83,7 +82,7 @@ h2 {
   }
 
   h2 {
-    @extend %caps-sans;
+    @extend %subtle-header-caps;
     font-size: 1.5em;
     width: 100%;
   }
@@ -109,18 +108,20 @@ h2 {
 
   .concert-program-listing {
     //width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
     .concert-program-piece-soloist {
         padding-left: 0;
-        @extend %caps-sans;
-        margin-bottom: .3em;
+        @extend %subtle-header-caps;
+        margin-bottom: .5em;
+        font-size: 1em;
     }
     p.concert-program-piece, p.concert-program-date {
         display: inline;
         @extend %sans;
         font-size: .9rem;
-        font-weight:300;
+        font-weight: 300;
         text-transform: none;
+        letter-spacing: 0;
     }
     p.concert-program-date::after {
         content: "  |  ";

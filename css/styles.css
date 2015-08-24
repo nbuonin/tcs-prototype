@@ -73,7 +73,7 @@ button, .button {
 main div {
   padding-bottom: 5px; }
 
-h1, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, .concert-program-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, h2, #concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, h3, .subhead, #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, .email-social .email-subscribe, .navigation > .container > nav, footer > .container, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date {
+h1, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, .concert-program-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, #concert h2, h3, .subhead, #featured-concert > article.concert div.concert-info p.concert-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, .email-social .email-subscribe, .navigation > .container > nav, footer > .container, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
 
 #featured-concert > article.concert div.concert-info h2.concert-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
@@ -90,15 +90,19 @@ html {
   line-height: 1.3em;
   font-weight: 400; }
 
-h1, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, .concert-program-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, h2, #concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
+h1, #featured-concert > article.concert div.concert-info p.concert-date, #next-concerts > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, .concert-program-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date {
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: 600;
   font-size: 10px; }
 
-h1 {
+#concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, h1, #concert h2 {
   font-weight: 100;
   font-size: 12px; }
+
+#concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
+  text-transform: uppercase;
+  letter-spacing: .1em; }
 
 #featured-concert > article.concert div.concert-info h2.concert-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name {
   font-size: 3em;
@@ -764,8 +768,9 @@ footer > .container p, footer > .container li, footer > .container a {
 h1 {
   font-size: 14px; }
 
-h2 {
-  font-size: 1.25rem; }
+#concert h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1em; }
 
 #concert .concert-image {
   margin-bottom: 1em; }
@@ -811,7 +816,7 @@ h2 {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  margin-bottom: 1em; }
+  margin-bottom: 2em; }
 
 @media screen and (min-width: 551px) {
   #concert .concert-copy-container {
@@ -838,7 +843,7 @@ h2 {
   font-style: italic; }
 
 #concert .concert-program {
-  margin-bottom: 1em; }
+  margin-bottom: 2em; }
 
 #concert .concert-program h2 {
   font-size: 1.5em; }
@@ -900,17 +905,19 @@ h2 {
     margin-right: auto; } }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing {
-  margin-bottom: 1rem; }
+  margin-bottom: 1em; }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
   padding-left: 0;
-  margin-bottom: .3em; }
+  margin-bottom: .5em;
+  font-size: 1em; }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date {
   display: inline;
   font-size: .9rem;
   font-weight: 300;
-  text-transform: none; }
+  text-transform: none;
+  letter-spacing: 0; }
 
 #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date::after {
   content: "  |  "; }

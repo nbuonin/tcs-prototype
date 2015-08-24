@@ -32,9 +32,14 @@ html {
     font-size: 10px;
 }
 %subtle-header {
-    @extend %caps-sans;
+    @extend %sans;
     font-weight: 100;
     font-size: 12px;
+}
+%subtle-header-caps {
+    @extend %subtle-header;
+    text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 %caps-serif-display {
