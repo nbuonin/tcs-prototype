@@ -1,3 +1,7 @@
+footer {
+	border-top: $border;
+	padding-top: $big2;
+}
 footer > .container {
 	display: flex;
 	flex-flow: column nowrap;
