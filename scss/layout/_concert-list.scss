@@ -1,7 +1,7 @@
 #concert-listings article.concert {
   display: flex;
   flex-flow: column nowrap;
-  @extend %hp-bottom-border;
+	margin-bottom: $big2;
 
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
@@ -32,6 +32,7 @@
     @extend %caps-sans;
   }
   .concert-copy {
+	  	@extend %copy;
 
   }
 }

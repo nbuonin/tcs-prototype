@@ -10,6 +10,7 @@
 }
 
 %hp-section-copy {
+	@extend %copy;
   margin: 0 $small1;
   text-align: center;
 }
