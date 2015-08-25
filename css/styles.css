@@ -53,10 +53,15 @@ button {
 img {
   width: 100%; }
 
-#featured-concert > article.concert, #next-concerts > article.concert, #recent-blog-posts > article.blog-post, #concert .concert-copy-container, #concert .concert-program {
+#next-concerts > article.concert, #recent-blog-posts > article.blog-post, #concert .concert-copy-container, #concert .concert-program {
   padding-bottom: 40.23669px;
   border-bottom: 1px solid #cacaca;
   margin-bottom: 40.23669px; }
+
+#featured-concert > article.concert, #recent-blog-posts > article.blog-post {
+  padding-bottom: 26.15385px;
+  border-bottom: 1px solid #4d4d4d;
+  margin-bottom: 26.15385px; }
 
 a {
   color: #000000;

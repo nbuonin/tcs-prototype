@@ -28,7 +28,7 @@
 #featured-concert > article.concert {
   display: flex;
   flex-flow: column nowrap;
-  @extend %border-bottom;
+  @extend %border-bottom-dark;
   div.concert-info {
     display: flex;
     flex-flow: column nowrap;
@@ -147,8 +147,6 @@
   flex-flow: column nowrap;
 
   @include respond-to(medium-plus) {
-    //margin-bottom: $container-margin;
-    //padding-bottom: $container-margin;
     flex-flow: row nowrap;
   }
 }
@@ -158,9 +156,6 @@
   flex-flow: column nowrap;
   flex: 1;
   @extend %border-bottom;
-  div.blog-image {
-
-  }
   div.blog-info {
     display: flex;
     flex-flow: column nowrap;
@@ -180,7 +175,7 @@
   } // end of div.blog-info
 
   @include respond-to(medium-plus) {
-    @extend %border-bottom;
+    @extend %border-bottom-dark;
     flex-flow: row nowrap;
     //margin-bottom: 0;
     
