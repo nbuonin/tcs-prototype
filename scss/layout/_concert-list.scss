@@ -40,6 +40,19 @@
 
   }
 }
+div.page-header {
+  width:100%;
+  h1 {
+    display: inline-block;
+    margin-bottom: $big2;
+  }
+  display: flex;
+  justify-content: space-between;
+  a {
+    font-size: $small1;
+    color: $tag-color;
+  }
+}
 
 #concert-listings article.concert .concert-info-b {
   flex: 1;

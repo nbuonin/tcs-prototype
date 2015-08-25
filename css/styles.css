@@ -690,6 +690,25 @@ footer > .container p, footer > .container li, footer > .container a {
   #concert-listings article.concert .concert-info-a .concert-copy {
     display: block; } }
 
+div.page-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+div.page-header h1 {
+  display: inline-block;
+  margin-bottom: 37.86982px; }
+
+div.page-header a {
+  font-size: 10.4px;
+  color: #f21d59; }
+
 #concert-listings article.concert .concert-info-b {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
