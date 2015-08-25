@@ -74,6 +74,7 @@
   // }
 
   .social {
+    color: $tag-color;
     flex: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -99,10 +100,11 @@
   display: none;
 
   @include respond-to(wide-plus) {
+    color: $tag-color;
     display: block;
     text-align: center;
-    font-size: 1.25rem; // 20/16
-    //margin-bottom: 10px;
+    font-size: $base-size; 
+    margin: $base-size 0;
     letter-spacing: 4px;
   }
 }
@@ -145,6 +147,9 @@
 
 .navigation > .container > nav {
   @extend %caps-sans;
+  //background: $tag-color;
+  //color: #fff;
+  //padding: 3px 6px 3px 6px;
   a {
     color: inherit;
     text-decoration: none;
@@ -163,7 +168,7 @@
   }
 
   @include respond-to(wide-plus) {
-    border-bottom: $border;
+    @extend %nav-border;
     display: block;
 
     > ul {
@@ -190,6 +195,7 @@
     > ul > li:hover > ul {
       display: block;
     }
+    
   } // End of @include
 } // end of nav
 
