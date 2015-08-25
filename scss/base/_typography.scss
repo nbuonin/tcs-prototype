@@ -99,9 +99,12 @@ h3 {
   line-height: 1em;
 }
 
-.navigation .title h1 {
-    margin-bottom: 1.25em;
-}
-
 button, .btn, .button {
  }
+
+%list-header {
+  background: $tag-color;
+  color: #fff;
+  padding: 3px 6px;
+  font-weight: 300;
+}

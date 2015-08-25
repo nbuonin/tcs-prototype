@@ -27,9 +27,8 @@ footer > .container {
 		}
 
 		ul > li > a.nolink {
-            @extend %all-caps;
-			color: $tag-color;
-            font-weight: 500;
+        @extend %list-header;
+        @extend %caps-sans;
 		}
         
 	}
@@ -39,7 +38,7 @@ footer > .container {
 
 		div.icon {
 			display: inline-block;
-			width: 1.5em;
+			width: $big1;
 			margin-right: 7px;
 
 			i {
@@ -59,7 +58,7 @@ footer > .container {
 		border: none;
 	}
     p, li, a {
-            font-size: $small;
+            font-size: $small1;
             letter-spacing: 0;
         }
 }
