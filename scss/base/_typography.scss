@@ -63,9 +63,10 @@ p {
 }
 
 %section-tag {
-  @extend %caps-sans;
+  @extend %sans;
   color: $tag-color;
-  margin-bottom: 1px;
+  font-size: $small1;
+  //margin-bottom: 1px;
   font-weight: 100;
 }
 

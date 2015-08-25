@@ -1,6 +1,7 @@
 // Global Colors
 
-$tag-color: #f21d59;
+$tag-color: rgba(159, 162, 167, 1);
+$link-color: #f21d59;
 
 // Media Queries
 $break-small: 550px;
@@ -46,7 +47,7 @@ $default-gutter: 18px;
 
 
 // Type scale
-$base-size: 16px;
+$base-size: 17px;
 $base-line-height: 1.236em;
 $tscale: .65;
 $small: $base-size * .9;

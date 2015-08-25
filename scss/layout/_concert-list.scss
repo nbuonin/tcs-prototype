@@ -50,7 +50,7 @@ div.page-header {
   justify-content: space-between;
   a {
     font-size: $small1;
-    color: $tag-color;
+    color: $link-color;
   }
 }
 
@@ -110,7 +110,7 @@ div.page-header {
       .concert-program-piece-soloist {
         padding-left: 3em;
         a {
-          color: $tag-color; // set this as a default in base.scss
+          color: $link-color; // set this as a default in base.scss
         }
       }
       .instrument {
