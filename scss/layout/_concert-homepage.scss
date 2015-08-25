@@ -1,5 +1,6 @@
 // base extensions - not media query specific
 %hp-section-name {
+  @extend %serif-display;
   text-transform: capitalize;
   text-align: center;
 }
@@ -10,7 +11,7 @@
 }
 
 %hp-section-copy {
-	@extend %copy;
+	//@extend %copy;
   margin: 0 $small1;
   text-align: center;
 }
@@ -27,12 +28,7 @@
 #featured-concert > article.concert {
   display: flex;
   flex-flow: column nowrap;
-
-  @extend %hp-bottom-border;
-
-  div.concert-image {
-
-  }
+  @extend %border-bottom;
   div.concert-info {
     display: flex;
     flex-flow: column nowrap;
@@ -40,16 +36,12 @@
     p.concert-tag {
       @extend %section-tag;
     }
-
     h2.concert-name {
-      @extend %caps-serif-display;
       font-size: $big3;
     }
-
     p.concert-date {
       @extend %hp-section-date;
     }
-
     p.concert-copy {
       @extend %hp-section-copy;
     }
@@ -73,16 +65,6 @@
       div.concert-image {
         max-width: 100px;
       }
-
-      p.concert-tag {
-
-      }
-      h2.concert-name {
-
-      }
-      p.concert-date {
-
-      }
       p.concert-copy {
         font-size: $big1;
       }
@@ -97,25 +79,16 @@
 #next-concerts {
   display: flex;
   flex-flow: column nowrap;
-
-  @extend %hp-bottom-border;
-
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
   }
 }
 
 #next-concerts > article.concert {
+  @extend %border-bottom;
   display: flex;
   flex-flow: column nowrap;
   flex: 1;
-  border-bottom: $lesser-border;   
-  margin-bottom: $container-margin;
-  padding-bottom: $container-margin;
-
-  div.concert-image {
-
-  }
  
   div.concert-info {
     display: flex;
@@ -126,7 +99,7 @@
       @extend %section-tag;
     }
     h2.concert-name {
-      @extend %caps-serif-display;
+      @extend %hp-section-name;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -138,7 +111,7 @@
 
   @include respond-to(wide-plus) {
     flex-flow: row nowrap;
-    margin-bottom: 0;
+    margin-bottom: $container-margin;
     border-bottom: none;
 
     div.concert-image {
@@ -146,19 +119,6 @@
     }
     div.concert-info {
       flex: 1;
-
-      p.concert-tag {
-
-      }
-      h2.concert-name {
-
-      }
-      p.concert-date {
-
-      }
-      p.concert-copy {
-
-      }
     } // end of div.concert-info
 
   } // end of 'wide-plus'
@@ -186,19 +146,18 @@
   display: flex;
   flex-flow: column nowrap;
 
-  @extend %hp-bottom-border;
-
   @include respond-to(medium-plus) {
+    //margin-bottom: $container-margin;
+    //padding-bottom: $container-margin;
     flex-flow: row nowrap;
   }
-
 }
 
 #recent-blog-posts > article.blog-post {
   display: flex;
   flex-flow: column nowrap;
   flex: 1;
-  margin-bottom: $container-margin;
+  @extend %border-bottom;
   div.blog-image {
 
   }
@@ -206,14 +165,11 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
     p.blog-tag {
       @extend %section-tag;
     }
     h2.blog-name {
-      @extend %serif-display;
-      font-size: $big2;
-        text-align: center;
+      @extend %hp-section-name;
     }
     p.blog-date {
       @extend %hp-section-date;
@@ -224,9 +180,10 @@
   } // end of div.blog-info
 
   @include respond-to(medium-plus) {
+    @extend %border-bottom;
     flex-flow: row nowrap;
-    margin-bottom: 0;
-
+    //margin-bottom: 0;
+    
     div.blog-image {
       .blog-image-container {
         padding: 0 1em;
@@ -234,18 +191,8 @@
     }
     div.blog-info {
       flex: 1;
-
-      p.blog-tag {
-
-      }
       h2.blog-name {
         padding: 0 1em;
-      }
-      p.blog-date {
-
-      }
-      p.blog-copy {
-
       }
     } // end of div.blog-info
 
