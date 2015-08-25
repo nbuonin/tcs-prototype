@@ -814,12 +814,12 @@ div.page-header a {
 
 @media screen and (min-width: 551px) {
   #concert-listings article.concert .concert-info-b .concert-program {
-    width: 48.59956%;
+    width: 48.13275%;
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
-    margin-bottom: 18px; } }
+    margin-bottom: 24px; } }
 
 #concert-listings article.concert .concert-info-b .concert-program .concert-program-listing {
   font-size: 15.3px; }
