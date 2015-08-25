@@ -86,6 +86,18 @@ button, .button {
   color: #ffffff;
   border: none; }
 
+#concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, html {
+  font-variant-numeric: oldstyle-nums;
+  -webkit-font-variant-ligatures: common-ligatures contextual;
+     -moz-font-variant-ligatures: common-ligatures contextual;
+          font-variant-ligatures: common-ligatures contextual;
+  -webkit-font-kerning: normal;
+     -moz-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-font-feature-settings: "onum", "kern", "liga", "clig", "calt";
+     -moz-font-feature-settings: "onum", "kern", "liga", "clig", "calt";
+          font-feature-settings: "onum", "kern", "liga", "clig", "calt"; }
+
 button, .button, h1, h3, .email-social .email-subscribe, .navigation > .container > nav, footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, .concert-program-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, #concert h2, #featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, .subhead, footer > .container, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
 
@@ -109,7 +121,7 @@ button, .button, h1, h3, .email-social .email-subscribe, .navigation > .containe
 
 html {
   font-size: 17px;
-  font-weight: 400; }
+  font-weight: 300; }
 
 p {
   line-height: 1.3em; }
