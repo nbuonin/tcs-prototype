@@ -90,7 +90,7 @@ div.page-header {
 
     @include respond-to(medium-plus) {
       // width: ((($max-container-width * 0.66) - $base-font-size) / 2) / ($max-container-width * 0.66) * 100%;
-      @include col(1, 2, $container-width: 642.656px);
+      @include col(1, 2, $container-width: 642.656px, $gutter: 24px);
     }
 
     .concert-program-date {
@@ -104,8 +104,8 @@ div.page-header {
       }
       .concert-program-piece-composer {
 			font-style: normal;
-			
-        
+
+
       }
       .concert-program-piece-soloist {
         padding-left: 3em;
