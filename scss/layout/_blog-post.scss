@@ -1,6 +1,9 @@
 .container.blog-post-page {
+  margin-bottom: 1em;
+
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
+    align-items: baseline; // this is what is aligning the h2"upcoming blog posts" to the baseline of the image
   }
 }
 
@@ -35,7 +38,7 @@
     font-size: $big3;
     text-align: center;
     line-height: 1em;
-    padding-right: 1em;
+    padding: 0 1em;
     margin-bottom: 0;
   }
 
@@ -54,9 +57,24 @@
 
 #blog-post-recent {
   flex: 1 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
   @include respond-to(medium-plus) {
     flex: 1 33%;
     padding-left: 1em;
+  }
+
+  h2 {
+    @extend %caps-sans;
+  }
+
+  > ul > li {
+    margin-bottom: 1em;
+
+    .blog-post-title {
+      font-weight: 600;
+    }
   }
 }
