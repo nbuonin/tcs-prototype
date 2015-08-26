@@ -7,9 +7,16 @@
 #blog-post-list > .blog-post {
   display: flex;
   flex-flow: column nowrap;
+  padding-bottom: 1em;
+  border-bottom: $border;
+  margin-bottom: 1em;
+  &:last-of-type {
+    border-bottom: none;
+  }
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
+
   }
 
   .blog-image {
@@ -27,6 +34,26 @@
     @include respond-to(medium-plus) {
       flex: 4 auto;
     }
+
+    .blog-post-dateline {
+      @extend %section-tag;
+    }
+
+    .blog-post-name {
+      @extend %caps-serif-display;
+      font-size: $big3;
+      line-height: 1em;
+      margin-bottom: 0;
+    }
+
+    .blog-post-author {
+      @extend %caps-sans;
+    }
+
+    .blog-copy {
+      font-size: $big1;
+    }
+
   }
 }
 
