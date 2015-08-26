@@ -54,10 +54,12 @@ img {
   width: 100%; }
 
 .navigation > .container > nav {
-  border-image-source: url(http://static1.squarespace.com/static/52a8c976e4b07c0cc2e8ddf7/t/52de090fe4b0089d67022425/1390283024427/watercolor-line2.png);
-  border-image-slice: 3;
-  border-image-width: auto;
-  border-image-repeat: round; }
+  border-bottom: black solid 2px;
+  border-image-outset: 0px;
+  border-image-repeat: fill;
+  border-image-slice: 0 0 11;
+  border-image-source: url(/images/border.png);
+  border-image-width: 2px; }
 
 #recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program {
   padding-bottom: 40.23669px;
@@ -465,6 +467,13 @@ footer > .container p, footer > .container li, footer > .container a {
 #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy {
   margin: 0 11.05px;
   text-align: center; }
+
+#season-banner .banner-image-container {
+  overflow: hidden;
+  margin-bottom: 14px; }
+
+#season-banner .banner-image-container img {
+  width: 120%; }
 
 #featured-concert > article.concert {
   display: -webkit-box;
