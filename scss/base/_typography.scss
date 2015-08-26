@@ -59,10 +59,12 @@ $serif-display: "kepler-std-semicondensed-dis", serif;
   @extend %open-type-on;
 }
 
-$serif: "utopia-std", "adobe-caslon-pro", serif;
+%serif-small {
+  font-family: "utopia-std-caption", "adobe-caslon-pro", serif; }
+
 %serif {
-  font-family: "utopia-std", "adobe-caslon-pro", serif;
-}
+      font-family: "utopia-std", "adobe-caslon-pro", serif; }
+
 
 %caps {
     text-transform: uppercase;

@@ -53,7 +53,7 @@ button {
 img {
   width: 100%; }
 
-.navigation > .container > nav {
+.navigation {
   border-bottom: black solid 2px;
   border-image-outset: 0px;
   border-image-repeat: fill;
@@ -61,7 +61,7 @@ img {
   border-image-source: url(/images/border.png);
   border-image-width: 2px; }
 
-#recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program {
+#season-banner, #recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program {
   padding-bottom: 40.23669px;
   border-bottom: 1px solid #cacaca;
   margin-bottom: 40.23669px; }
@@ -174,10 +174,11 @@ footer > .container nav.footer-nav ul > li > a.nolink {
 
 .navigation {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #fff;
-  margin-bottom: 1em; }
+  margin-bottom: 0; }
 
 @media screen and (min-width: 851px) {
   .navigation {
+    background: transparent;
     box-shadow: none; } }
 
 .navigation > .container {
@@ -189,11 +190,6 @@ footer > .container nav.footer-nav ul > li > a.nolink {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   padding-top: 22px; }
-
-@media screen and (min-width: 851px) {
-  .navigation > .container {
-    padding-bottom: 1em;
-    margin-bottom: 1em; } }
 
 .email-social {
   display: none; }
@@ -470,10 +466,8 @@ footer > .container p, footer > .container li, footer > .container a {
 
 #season-banner .banner-image-container {
   overflow: hidden;
-  margin-bottom: 14px; }
-
-#season-banner .banner-image-container img {
-  width: 120%; }
+  margin: 14px;
+  margin-bottom: 0; }
 
 #featured-concert > article.concert {
   display: -webkit-box;

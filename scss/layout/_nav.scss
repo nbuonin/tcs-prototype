@@ -1,9 +1,11 @@
 .navigation {
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),0 -5px 3px -10px #fff;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 
   @include respond-to(wide-plus) {
+    background: transparent;
     box-shadow: none;
+    @extend %nav-border;
   }
 }
 
@@ -13,8 +15,6 @@
   padding-top: 22px;
 
   @include respond-to(wide-plus) {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
   }
 }
 
@@ -168,7 +168,7 @@
   }
 
   @include respond-to(wide-plus) {
-    @extend %nav-border;
+   // @extend %nav-border;
     display: block;
 
     > ul {
