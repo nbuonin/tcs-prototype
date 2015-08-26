@@ -77,10 +77,13 @@ $serif-display: "kepler-std-semicondensed-dis", serif;
 
 
 html {
-  @extend %serif;
   @extend %open-type-on;
+  @extend %serif-small;
   font-size: $base-size;
-  font-weight: 300;
+  @include respond-to(medium-plus) {
+    @extend %serif;
+    font-weight: 300;
+  }
 }
 p {
   line-height: 1.3em;

@@ -53,7 +53,7 @@ button {
 img {
   width: 100%; }
 
-.navigation {
+.navigation > .container {
   border-bottom: black solid 2px;
   border-image-outset: 0px;
   border-image-repeat: fill;
@@ -110,6 +110,9 @@ button, .button, h1, h3, .email-social .email-subscribe, .navigation > .containe
   text-transform: capitalize; }
 
 html {
+  font-family: "utopia-std-caption", "adobe-caslon-pro", serif; }
+
+html {
   font-family: "utopia-std", "adobe-caslon-pro", serif; }
 
 button, .button, h1, h3, .email-social .email-subscribe, .navigation > .container > nav, footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, .concert-program-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #concert .concert-program h2, #concert .concert-soloists h2, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
@@ -122,8 +125,11 @@ button, .button, h1, h3, .email-social .email-subscribe, .navigation > .containe
           font-feature-settings: "c2sc", "smcp"; }
 
 html {
-  font-size: 17px;
-  font-weight: 300; }
+  font-size: 17px; }
+
+@media screen and (min-width: 601px) {
+  html {
+    font-weight: 300; } }
 
 p {
   line-height: 1.3em; }
@@ -386,7 +392,7 @@ footer > .container {
   border-bottom: none;
   margin-bottom: 1em; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   footer > .container {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -401,7 +407,7 @@ footer > .container nav.footer-nav {
      -moz-columns: 1;
           columns: 1; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   footer > .container nav.footer-nav {
     -webkit-columns: 2;
        -moz-columns: 2;
@@ -531,7 +537,7 @@ footer > .container p, footer > .container li, footer > .container a {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #recent-blog-posts {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -566,7 +572,7 @@ footer > .container p, footer > .container li, footer > .container a {
 #recent-blog-posts > article.blog-post div.blog-info p.blog-copy {
   padding: 0 22px; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #recent-blog-posts > article.blog-post {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -581,7 +587,7 @@ footer > .container p, footer > .container li, footer > .container a {
   #recent-blog-posts > article.blog-post div.blog-info h2.blog-name {
     padding: 0 1em; } }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #recent-blog-posts > article.blog-post > div.blog-info {
     border-right: 1px solid #cacaca; } }
 
@@ -709,7 +715,7 @@ footer > .container p, footer > .container li, footer > .container a {
 #concert-listings article.concert .concert-info-a .concert-copy {
   display: none; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert-listings article.concert .concert-info-a .concert-copy {
     display: block; } }
 
@@ -745,7 +751,7 @@ div.page-header a {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert-listings article.concert .concert-info-b {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -775,7 +781,7 @@ div.page-header a {
       -ms-flex: 1;
           flex: 1; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert-listings article.concert .concert-info-b .concert-image {
     -webkit-box-flex: 0;
     -webkit-flex: none;
@@ -792,7 +798,7 @@ div.page-header a {
   width: 100%;
   margin-bottom: 18px; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert-listings article.concert .concert-info-b .concert-program {
     width: 48.59956%;
     -webkit-box-flex: 0;
@@ -848,7 +854,7 @@ h1 {
           flex-flow: column nowrap;
   margin-bottom: 1em; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert .concert-title-info {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -877,7 +883,7 @@ h1 {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert .concert-copy-container {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -896,7 +902,7 @@ h1 {
 #concert .concert-copy-container .concert-date-location .concert-location {
   font-style: italic; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert .concert-copy-container .concert-date-location {
     margin-right: 61.90259px; } }
 
@@ -915,7 +921,7 @@ h1 {
 #concert .concert-program .concert-program-listing {
   margin-bottom: .5em; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert .concert-program .concert-program-listing {
     width: 100%; }
   #concert .concert-program .concert-program-listing .concert-program-piece .concert-program-piece-composer {
@@ -943,7 +949,7 @@ h1 {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert .concert-soloists {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -970,7 +976,7 @@ h1 {
           align-content: flex-start;
   margin-bottom: 2em; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #concert .concert-soloists .concert-soloist {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -1024,7 +1030,7 @@ h1 {
 #profile > * {
   margin-bottom: 1em; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #profile {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -1034,7 +1040,7 @@ h1 {
         -ms-flex-align: stretch;
             align-items: stretch; } }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #profile .profile-headshot {
     width: 32.10884%;
     -webkit-box-flex: 0;
@@ -1056,7 +1062,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #profile .profile-info {
     width: 65.44218%;
     -webkit-box-flex: 0;
