@@ -2,19 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, button {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,8 +11,7 @@ time, mark, audio, video, button {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, button {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, button {
   display: block; }
 
 body {
@@ -36,8 +23,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -209,7 +195,8 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding-top: 22px; }
+  padding-top: 22px;
+  border-bottom: none; }
 
 .email-social {
   display: none; }
@@ -1031,7 +1018,7 @@ h1 {
 .container.blog-post-page {
   margin-bottom: 1em; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   .container.blog-post-page {
     -webkit-flex-flow: row nowrap;
         -ms-flex-flow: row nowrap;
@@ -1047,7 +1034,7 @@ h1 {
       -ms-flex: 1 100%;
           flex: 1 100%; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #blog-post {
     -webkit-box-flex: 2;
     -webkit-flex: 2 66%;
@@ -1099,7 +1086,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center; }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 601px) {
   #blog-post-recent {
     -webkit-box-flex: 1;
     -webkit-flex: 1 33%;
