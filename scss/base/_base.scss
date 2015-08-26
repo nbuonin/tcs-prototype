@@ -17,10 +17,13 @@ img {
 $border: 1px solid grey;
 $lesser-border: 1px solid #cacaca;
 %nav-border {
- border-image-source: url(http://static1.squarespace.com/static/52a8c976e4b07c0cc2e8ddf7/t/52de090fe4b0089d67022425/1390283024427/watercolor-line2.png); 
-  border-image-slice: 3;
-  border-image-width: auto;
-  border-image-repeat: round;
+  border-bottom: rgb(0, 0, 0) solid 2px;
+  //border-image: url(/images/border.png) 0 0 11 2px 0px fill;
+  border-image-outset: 0px;
+  border-image-repeat: fill;
+  border-image-slice: 0 0 11;
+  border-image-source: url(/images/border.png);
+  border-image-width: 2px;
 }
 %border-bottom {
 	padding-bottom: $big2;

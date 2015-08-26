@@ -21,7 +21,17 @@
   margin-bottom: $container-margin;
   border-bottom: $border;
 }
-
+///////////////////////////////
+// season banner on homepage //
+///////////////////////////////
+#season-banner .banner-image-container {
+  overflow: hidden;
+  margin-bottom: $container-margin;
+  img {
+    width: 120%    
+    //max-height:500px;
+  }
+}
 //////////////////////////////////
 // Featured concert on homepage //
 //////////////////////////////////
