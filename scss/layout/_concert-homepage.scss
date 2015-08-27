@@ -25,7 +25,7 @@
 // season banner on homepage //
 ///////////////////////////////
 #season-banner {
-    @extend %border-bottom;
+  @extend %border-bottom;
   .banner-image-container {
     overflow: hidden;
     margin: $container-margin;
@@ -47,7 +47,8 @@
       @extend %section-tag;
     }
     h2.concert-name {
-      font-size: $big3;
+      @extend %big3;
+      //font-size: $big3;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -76,7 +77,8 @@
         max-width: 100px;
       }
       p.concert-copy {
-        font-size: $big1;
+        @extend %big1;
+      //  font-size: $big1;
       }
     } // end of div.concert-info
 

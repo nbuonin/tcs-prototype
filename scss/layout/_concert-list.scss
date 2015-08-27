@@ -49,7 +49,8 @@ div.page-header {
   display: flex;
   justify-content: space-between;
   a {
-    font-size: $small1;
+    @extend %small1;
+    //font-size: $small1;
     color: $link-color;
   }
 }
@@ -97,7 +98,8 @@ div.page-header {
       @extend %caps-sans;
     }
     .concert-program-listing {
-		 font-size: $small;
+      @extend %small;
+		 //font-size: $small;
       .concert-program-piece {
 			font-style: italic;
 
@@ -134,6 +136,7 @@ div.page-header {
   @extend %hp-section-date;
 }
 h1 {
-    @extend %subtle-header;
-    font-size: $base-size;
+    @extend %light-sans-caps;
+  @extend %base;
+    //font-size: $base-size;
 }

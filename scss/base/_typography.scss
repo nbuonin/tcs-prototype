@@ -52,19 +52,20 @@ $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
 
 $serif-display: "kepler-std-semicondensed-dis", serif;
 %serif-display {
+  @extend %big2;
   font-family: "kepler-std-semicondensed-dis", serif;
-  font-size: $big2;
+  //font-size: $big2;
   letter-spacing: 0;
-  text-transform: capitalize;
+  //text-transform: capitalize;
   @extend %open-type-on;
 }
 
-%serif-small {
-  font-family: "utopia-std-caption", "adobe-caslon-pro", serif; }
-
 %serif {
-      font-family: "utopia-std", "adobe-caslon-pro", serif; }
-
+  font-family: "utopia-std-caption", "adobe-caslon-pro", serif; 
+  @include respond-to(medium-plus) {
+    font-family: "utopia-std", "adobe-caslon-pro", serif;
+  }
+}
 
 %caps {
     text-transform: uppercase;
@@ -75,16 +76,12 @@ $serif-display: "kepler-std-semicondensed-dis", serif;
     font-feature-settings: "c2sc", "smcp";
 }
 
-
 html {
+  @extend %base;
   @extend %open-type-on;
-  @extend %serif-small;
-  font-size: $base-size;
-  @include respond-to(medium-plus) {
-    @extend %serif;
-    font-weight: 300;
-  }
+  @extend %serif;
 }
+
 p {
   line-height: 1.3em;
 }
@@ -93,35 +90,37 @@ p {
 }
 
 %caps-sans {
+    @extend %small1;
     @extend %sans;
     @extend %caps;
     font-weight: 600;
-    font-size: $small1;
  	 margin-bottom: $small1;
+    @include respond-to(medium-plus) {
+      margin-bottom: $xsmall1;
+    }
 }
 
-%subtle-header {
+%light-sans {
     @extend %sans;
     font-weight: 100;
 }
 
-%subtle-header-caps {
-    @extend %subtle-header;
+%light-sans-caps {
+    @extend %light-sans;
     @extend %caps;
 }
 
 %caps-serif-display {
+    @extend %big2;
     @extend %serif-display;
-    font-size: $big2;
     text-transform: uppercase;
     letter-spacing: 0;
 }
 
 %section-tag {
+  @extend %small1;
   @extend %sans;
   color: $tag-color;
-  font-size: $small1;
-  //margin-bottom: 1px;
   font-weight: 100;
 }
 
@@ -130,28 +129,41 @@ p {
 }
 
 h1 {
-  @extend %caps-sans;
-  font-size: $big1;
+  @extend %sans;
+  @extend %big1;
+ // font-size: $big1;
   font-weight: 200;
   margin-bottom: 1em;
 }
 
 h2 {
+  @extend %big2;
   @extend %serif-display;
-  font-size: $big2;
+ //font-size: $big2;
+  @include respond-to(medium-plus) {
+    //font-size: $xbig2;
+  }
   line-height: 1.3em;
   font-weight: 300;
 }
 
 h3 {
+  @extend %small1;
   @extend %caps-sans;
-  font-size: $small1;
+  //font-size: $small1;
+  //@include respond-to(medium-plus) {
+     // font-size: $xsmall1;
+  //}
 }
 
 .subhead {
+  @extend %small1;
   @extend %sans;
-  font-size: $small1;
+  //font-size: $small1;
   line-height: 1em;
+ // @include respond-to(medium-plus) {
+  //    font-size: $xsmall1;
+  //}
 }
 
 button, .btn, .button {

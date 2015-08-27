@@ -34,8 +34,8 @@
      margin-right: 5em;
   }
   .blog-post-name {
-    @extend %caps-serif-display;
-    font-size: $big3;
+    @extend %serif-display;     // Why is this all caps? I can't find where it's coming from.
+    @extend %big3;
     text-align: center;
     line-height: 1em;
     padding: 0 1em;
