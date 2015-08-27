@@ -44,7 +44,7 @@
    // white-space: nowrap; 
 	 min-width: 15em;
     .concert-date {
-      font-weight: 600;
+      font-weight: bold;
     }
     .concert-location{
       font-style: italic;
@@ -154,9 +154,8 @@
     }
     p.concert-program-piece, p.concert-program-date {
         display: inline;
-        @extend %sans;
+        @extend %sans-light;
         @extend %small;
-        font-weight: 100;
         text-transform: none;
         letter-spacing: 0;
     }

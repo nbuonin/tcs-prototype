@@ -3,7 +3,6 @@
   margin-bottom: $container-margin;
 
   @include respond-to(wide-plus) {
-    background: transparent;
     box-shadow: none;
   }
 }
@@ -35,8 +34,7 @@
     //justify-content: flex-start;
     // copied from nav \/ \/ \/
     font-size: $small1;
-    @extend %caps-sans;
-    font-weight: 100;
+    @extend %sans-light-caps;
 
     h3 {
       @extend %small1;
@@ -102,12 +100,11 @@
   display: none;
 
   @include respond-to(wide-plus) {
-    @extend %base;
+    @extend %big1;
     @extend %light-sans-caps;
-    color: $tag-color;
+    color: black;
     display: block;
     text-align: center;
-    //font-size: $base-size; 
     margin: $base-size 0;
     letter-spacing: 4px;
   }
@@ -151,14 +148,12 @@
 
 .navigation > .container > nav {
   @extend %caps-sans;
-  //background: $tag-color;
-  //color: #fff;
-  //padding: 3px 6px 3px 6px;
+
   a {
     color: inherit;
     text-decoration: none;
   }
-  padding-bottom: 1em;
+  //padding-bottom: 1em;
   margin-bottom: 0;
   flex-basis: 100%;
   display: none; // toggled with .nav-toggle-bar
@@ -182,10 +177,13 @@
 
     > ul > li {
       display: inline-block;
-      padding-right: 3em;
+      //padding-right: 3em;
+      background: black;
+      color: #fff;
+      padding: 3px 2em;
 
       &:last-of-type {
-        padding-right: 0;
+      //  padding-right: 0;
       }
 
       > ul {

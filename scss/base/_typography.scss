@@ -4,10 +4,25 @@
   font-kerning: normal;
   font-feature-settings: "onum", "kern", "liga", "clig", "calt";
 }
+  $light: 400;
+  $normal: 500;
+  $heavy: 800;
 
 $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
 %sans {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif;
+}
+%sans-light {
+  @extend %sans;
+  font-weight: 400;
+}
+%sans-reg {
+  @extend %sans;
+  font-weight: 500;
+}
+%sans-heavy {
+  @extend %sans;
+  font-weight: 900;
 }
 
 $serif-display: "kepler-std-semicondensed-dis", serif;
@@ -50,8 +65,8 @@ p {
   @extend %base;
   line-height: $big1;
   @include respond-to(medium-plus) {
-  line-height: $xbig1;
-  color: $text-color;
+    line-height: $xbig1;
+    color: $text-color;
     margin-bottom: 0;
   }
 }
@@ -59,31 +74,30 @@ p {
     @extend p;
  	 padding-bottom: $small1;
     @include respond-to(medium-plus) {
-    padding-bottom: $xsmall1;
-    color: $text-color;
+      padding-bottom: $xsmall1;
+      color: $text-color;
     }
 }
 
 %caps-sans {
     @extend %small1;
-    @extend %sans;
+    @extend %sans-heavy;
     @extend %caps;
-    font-weight: 600;
  	 margin-bottom: $small1;
     @include respond-to(medium-plus) {
       margin-bottom: $xsmall1;
     }
 }
 
-%light-sans {
-    @extend %sans;
-    font-weight: 100;
-}
-
 %light-sans-caps {
-    @extend %light-sans;
+    @extend %sans-light;
     @extend %caps;
 }
+%sans-light-caps {
+    @extend %sans-light;
+    @extend %caps;
+}
+
 
 %caps-serif-display {
     @extend %big2;
@@ -94,9 +108,8 @@ p {
 
 %section-tag {
   @extend %small1;
-  @extend %caps-sans;
+  @extend %light-sans-caps;
   color: $tag-color;
-  font-weight: 100;
   margin-bottom: 3px;
 }
 
@@ -105,9 +118,8 @@ p {
 }
 
 h1 {
-  @extend %sans;
+  @extend %sans-light;
   @extend %big1;
-  font-weight: 200;
   margin-bottom: 1em;
 }
 
@@ -115,7 +127,7 @@ h2 {
   @extend %big2;
   @extend %serif-display;
   line-height: 1.3em;
-  font-weight: 300;
+  font-weight: $normal;
 }
 
 h3 {
@@ -133,8 +145,8 @@ button, .btn, .button {
  }
 
 %list-header {
+  @extend %sans-light;
   background: $tag-color;
   color: #fff;
   padding: 3px 6px;
-  font-weight: 300;
 }
