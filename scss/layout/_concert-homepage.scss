@@ -11,7 +11,7 @@
 }
 
 %hp-section-copy {
-	//@extend %copy;
+  @extend %base;
   margin: 0 $small1;
   text-align: center;
 }
@@ -48,13 +48,16 @@
     }
     h2.concert-name {
       @extend %big3;
-      //font-size: $big3;
     }
     p.concert-date {
       @extend %hp-section-date;
     }
     p.concert-copy {
       @extend %hp-section-copy;
+      @include respond-to(medium) {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
     }
   } // end of div.concert-info
 
@@ -78,7 +81,8 @@
       }
       p.concert-copy {
         @extend %big1;
-      //  font-size: $big1;
+        @extend %serif-subhead;
+        line-height: 1.3em;
       }
     } // end of div.concert-info
 

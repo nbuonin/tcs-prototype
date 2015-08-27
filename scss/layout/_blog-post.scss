@@ -23,18 +23,15 @@
   display: flex;
   flex-flow: column nowrap;
   margin-bottom: 1em;
-
-  @include respond-to(medium-plus) {
-
-  }
-
+  text-align:center;
+  
   .blog-post-dateline {
      @extend %section-tag;
-     align-self: flex-end;
-     margin-right: 5em;
+     //align-self: center;
+     //margin-right: 5em;
   }
   .blog-post-name {
-    @extend %serif-display;     // Why is this all caps? I can't find where it's coming from.
+    @extend %serif-display;
     @extend %big3;
     text-align: center;
     line-height: 1em;
@@ -47,19 +44,18 @@
   }
 
   .social-buttons {
-
   }
 }
 
 #blog-post .blog-post-body {
-
+    @extend %copy;
 }
 
 #blog-post-recent {
   flex: 1 100%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: flex-start;
 
   @include respond-to(medium-plus) {
     flex: 1 33%;
@@ -74,7 +70,7 @@
     margin-bottom: 1em;
 
     .blog-post-title {
-      font-weight: 600;
+      font-weight: 500;
     }
   }
 }
