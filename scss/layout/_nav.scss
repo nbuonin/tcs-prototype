@@ -1,6 +1,6 @@
 .navigation {
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),0 -5px 3px -10px #fff;
-  margin-bottom: 0;
+  margin-bottom: $container-margin;
 
   @include respond-to(wide-plus) {
     background: transparent;

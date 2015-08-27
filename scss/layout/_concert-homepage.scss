@@ -28,8 +28,7 @@
   @extend %border-bottom;
   .banner-image-container {
     overflow: hidden;
-    margin: $container-margin;
-    margin-bottom: 0;
+    margin-left:  0 $container-margin;
   }
 }
 //////////////////////////////////
