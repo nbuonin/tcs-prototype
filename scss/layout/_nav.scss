@@ -14,10 +14,9 @@
   padding-top: 22px;
   border-bottom: none;
 
-  @include respond-to(wide-plus) {
-        @extend %nav-border;
-
-  }
+  //@include respond-to(wide-plus) {
+   //     @extend %nav-border;
+  //}
 }
 
 .email-social {
@@ -173,7 +172,7 @@
   }
 
   @include respond-to(wide-plus) {
-   // @extend %nav-border;
+    @extend %nav-border;
     display: block;
 
     > ul {

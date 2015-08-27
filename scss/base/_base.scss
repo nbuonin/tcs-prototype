@@ -18,11 +18,12 @@ $border: 1px solid grey;
 $lesser-border: 1px solid #cacaca;
 %nav-border {
   border-bottom: rgb(0, 0, 0) solid 2px;
-  border-image-outset: 0px;
+  border-image-outset: 0;
   border-image-repeat: fill;
   border-image-slice: 0 0 11;
   border-image-source: url(/images/border.png);
   border-image-width: 2px;
+  padding-bottom: $container-margin;
 }
 %border-bottom {
 	padding-bottom: $big2;
@@ -50,8 +51,7 @@ a {
 
 button, .button {
   @extend %small1;
-	@extend %caps-sans;
-  //font-size: $small1;
+  @extend %caps-sans;
   padding: $base-size;
   background-color: #080808;
   color: #ffffff;
