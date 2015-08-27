@@ -1,0 +1,76 @@
+// Type scale small screen
+
+$base-size: 15px;
+$base-line-height: 1.236em;
+$tscale: 1.4;
+$small: $base-size * .9;
+$small1: $base-size / $tscale;
+$small2: $small1 / $tscale;
+$small3: $small2 / $tscale;
+$big1: $base-size * $tscale;
+$big2: $big1 * $tscale;
+$big3: $big2 * $tscale;
+$big4: $big3 * $tscale;
+
+// Type scale big screen
+
+$xbase-size: 28px;
+$xbase-line-height: 1.236em;
+$xtscale: 1.6;
+$xsmall: $base-size * .9;
+$xsmall1: $base-size / $xtscale;
+$xsmall2: $small1 / $xtscale;
+$xsmall3: $small2 / $xtscale;
+$xbig1: $base-size * $xtscale;
+$xbig2: $big1 * $xtscale;
+$xbig3: $big2 * $xtscale;
+$xbig4: $big3 * $xtscale;
+
+%base {
+  font-size: $base-size;
+  @include respond-to(medium-plus) {
+    font-size: $xbase-size;
+  }
+}
+%small {
+  font-size: $small;
+  @include respond-to(medium-plus) {
+    font-size: $xsmall;
+  }
+}
+%small1 {
+  font-size: $small1;
+  @include respond-to(medium-plus) {
+    font-size: $xsmall1;
+  }
+}
+%small2 {
+  font-size: $small2;
+  @include respond-to(medium-plus) {
+    font-size: $xsmall2;
+  }
+}
+%small3 {
+  font-size: $small3;
+  @include respond-to(medium-plus) {
+    font-size: $xsmall3;
+  }
+}
+%big1 {
+  font-size: $big1;
+  @include respond-to(medium-plus) {
+    font-size: $xbig1;
+  }
+}
+%big2 {
+  font-size: $big2;
+  @include respond-to(medium-plus) {
+    font-size: $xbig2;
+  }
+}
+%big3 {
+  font-size: $big3;
+  @include respond-to(medium-plus) {
+    font-size: $xbig3;
+  }
+}

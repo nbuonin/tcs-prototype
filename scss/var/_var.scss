@@ -44,20 +44,3 @@ $default-gutter: 18px;
   flex: none;
   margin-bottom: $gutter;
 }
-
-
-// Type scale
-$base-size: 15px;
-@include respond-to(medium-plus) {
-  $base-size: 17px;
-}
-$base-line-height: 1.236em;
-$tscale: .65;
-$small: $base-size * .9;
-$small1: $base-size * $tscale;
-$small2: $small1 * $tscale;
-$small3: $small2 * $tscale;
-$big1: $base-size / $tscale;
-$big2: $big1 / $tscale;
-$big3: $big2 / $tscale;
-$big4: $big3 / $tscale;

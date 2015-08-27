@@ -40,8 +40,9 @@
     }
 
     .blog-post-name {
+      @extend %big3;
       @extend %caps-serif-display;
-      font-size: $big3;
+      //font-size: $big3;
       line-height: 1em;
       margin-bottom: 0;
     }
@@ -51,7 +52,8 @@
     }
 
     .blog-copy {
-      font-size: $big1;
+      @extend %big1;
+      //font-size: $big1;
     }
 
   }
