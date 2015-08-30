@@ -129,7 +129,7 @@
     @extend %border-bottom-dark;
     flex-flow: row nowrap;
     //margin-bottom: 0;
-    
+
     div.blog-image {
       .blog-image-container {
         padding: 0 1em;
@@ -173,9 +173,9 @@
 #next-concerts > article.concert {
   @extend %border-bottom;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   flex: 1;
- 
+
   div.concert-info {
     display: flex;
     flex-flow: column nowrap;
@@ -197,12 +197,14 @@
   } // end of div.concert-info
 
   @include respond-to(wide-plus) {
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     margin-bottom: $container-margin;
     border-bottom: none;
 
     div.concert-image {
       margin-bottom: $small3;
+      margin: 0 $small1;
+      padding: 0 22px;
     }
     div.concert-info {
       flex: 1;
@@ -213,15 +215,15 @@
 
 @include respond-to(wide-plus) {
   #next-concerts > article.concert { // wrapped this in a MQ to remove the line on mobile
-    > div.concert-info {
+    //> div.concert-info {
       border-right: $lesser-border;
-    }
+    //}
   }
 }
 
 #next-concerts > article.concert:last-of-type {
     border-bottom: none;
-  > div.concert-info {
+  //> div.concert-info {
     border-right: none;
-  }
+  //}
 }
