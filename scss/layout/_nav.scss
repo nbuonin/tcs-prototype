@@ -65,6 +65,16 @@
         label[for=mce-EMAIL] {
           display: none;
         }
+
+        input[type=email] {
+          width: 175px;
+          margin-right: 3em;
+        }
+
+        input[type=submit] {
+          margin-bottom: 0;
+          padding: 3px 2em;
+        }
       }
     // } &.activate
   }
@@ -197,7 +207,7 @@
     > ul > li:hover > ul {
       display: block;
     }
-    
+
   } // End of @include
 } // end of nav
 

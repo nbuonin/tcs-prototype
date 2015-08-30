@@ -305,6 +305,14 @@ footer > .container nav.footer-nav ul > li > a.nolink {
 .email-social .subscribe form label[for=mce-EMAIL] {
   display: none; }
 
+.email-social .subscribe form input[type=email] {
+  width: 175px;
+  margin-right: 3em; }
+
+.email-social .subscribe form input[type=submit] {
+  margin-bottom: 0;
+  padding: 3px 2em; }
+
 .email-social .social {
   color: #9fa2a7;
   -webkit-box-flex: 1;
