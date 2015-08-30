@@ -296,6 +296,9 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   z-index: 100;
   background: #fff; }
 
+.email-social .subscribe h3:hover {
+  cursor: pointer; }
+
 .email-social .subscribe form {
   display: -webkit-box;
   display: -webkit-flex;
