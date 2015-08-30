@@ -697,6 +697,13 @@ footer > .container p, footer > .container #concert-listings article.concert .co
       -ms-flex: 1;
           flex: 1; }
 
+#next-concerts > article.concert div.concert-image {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 1em; }
+
 #next-concerts > article.concert div.concert-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -705,13 +712,18 @@ footer > .container p, footer > .container #concert-listings article.concert .co
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings #next-concerts > article.concert div.concert-info .concert-info-a .concert-copy, #concert-listings #next-concerts > article.concert .concert-info-a div.concert-info .concert-copy, #concert .concert-copy-container .concert-copy #next-concerts > article.concert div.concert-info p.concert-copy, #next-concerts > article.concert div.concert-info #concert .concert-soloists .concert-soloist .concert-copy.concert-soloist-bio, #concert .concert-soloists .concert-soloist #next-concerts > article.concert div.concert-info .concert-copy.concert-soloist-bio, #next-concerts > article.concert div.concert-info #blog-post .concert-copy.blog-post-body, #blog-post #next-concerts > article.concert div.concert-info .concert-copy.blog-post-body, #next-concerts > article.concert div.concert-info #blog-post-list > .blog-post .blog-info .concert-copy.blog-copy, #blog-post-list > .blog-post .blog-info #next-concerts > article.concert div.concert-info .concert-copy.blog-copy {
-  padding: 0 22px; }
+  text-align: left;
+  margin: 0; }
 
 @media screen and (min-width: 851px) {
   #next-concerts > article.concert {
@@ -728,7 +740,13 @@ footer > .container p, footer > .container #concert-listings article.concert .co
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; } }
+            flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings #next-concerts > article.concert div.concert-info .concert-info-a .concert-copy, #concert-listings #next-concerts > article.concert .concert-info-a div.concert-info .concert-copy, #concert .concert-copy-container .concert-copy #next-concerts > article.concert div.concert-info p.concert-copy, #next-concerts > article.concert div.concert-info #concert .concert-soloists .concert-soloist .concert-copy.concert-soloist-bio, #concert .concert-soloists .concert-soloist #next-concerts > article.concert div.concert-info .concert-copy.concert-soloist-bio, #next-concerts > article.concert div.concert-info #blog-post .concert-copy.blog-post-body, #blog-post #next-concerts > article.concert div.concert-info .concert-copy.blog-post-body, #next-concerts > article.concert div.concert-info #blog-post-list > .blog-post .blog-info .concert-copy.blog-copy, #blog-post-list > .blog-post .blog-info #next-concerts > article.concert div.concert-info .concert-copy.blog-copy {
+    padding: 0 22px; } }
 
 @media screen and (min-width: 851px) {
   #next-concerts > article.concert {
