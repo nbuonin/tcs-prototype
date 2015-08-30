@@ -194,7 +194,12 @@
       //padding-right: 3em;
       background: black;
       color: #fff;
-      padding: 3px 2em;
+      //padding: 3px 2em; //moved this below so the whole area would be clickable
+
+      > a {
+        padding: 3px 2em;
+        display: block;
+      }
 
       &:last-of-type {
       //  padding-right: 0;
@@ -204,7 +209,7 @@
         padding-left: 0;
         position: absolute;
         display: none;
-        background-color: #FFFFFF;
+        background-color: #000000;
       }
     }
 

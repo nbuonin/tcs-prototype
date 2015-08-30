@@ -434,13 +434,15 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   .navigation > .container > nav > ul > li {
     display: inline-block;
     background: black;
-    color: #fff;
-    padding: 3px 2em; }
+    color: #fff; }
+  .navigation > .container > nav > ul > li > a {
+    padding: 3px 2em;
+    display: block; }
   .navigation > .container > nav > ul > li > ul {
     padding-left: 0;
     position: absolute;
     display: none;
-    background-color: #FFFFFF; }
+    background-color: #000000; }
   .navigation > .container > nav > ul > li:hover > ul {
     display: block; } }
 
