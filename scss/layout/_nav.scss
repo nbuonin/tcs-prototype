@@ -196,7 +196,7 @@
       color: #fff;
       //padding: 3px 2em; //moved this below so the whole area would be clickable
 
-      > a {
+      a {
         padding: 3px 2em;
         display: block;
       }
@@ -207,6 +207,7 @@
 
       > ul {
         padding-left: 0;
+        border-top: 3px solid white;
         position: absolute;
         display: none;
         background-color: #000000;

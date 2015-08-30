@@ -435,11 +435,12 @@ footer > .container nav.footer-nav ul > li > a.nolink {
     display: inline-block;
     background: black;
     color: #fff; }
-  .navigation > .container > nav > ul > li > a {
+  .navigation > .container > nav > ul > li a {
     padding: 3px 2em;
     display: block; }
   .navigation > .container > nav > ul > li > ul {
     padding-left: 0;
+    border-top: 3px solid white;
     position: absolute;
     display: none;
     background-color: #000000; }
