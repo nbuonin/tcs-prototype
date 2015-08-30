@@ -211,6 +211,7 @@
       margin-bottom: $small3;
       margin: 0 $small1;
       padding: 0 22px;
+      flex: none;
     }
     div.concert-info {
       flex: 1;
@@ -218,10 +219,10 @@
 
       p.concert-copy {
         @extend %hp-section-copy;
+        text-align: center;
         padding: 0 22px;
       }
     } // end of div.concert-info
-
   } // end of 'wide-plus'
 }
 

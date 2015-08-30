@@ -735,7 +735,11 @@ footer > .container p, footer > .container #concert-listings article.concert .co
   #next-concerts > article.concert div.concert-image {
     margin-bottom: 5.8309px;
     margin: 0 11.42857px;
-    padding: 0 22px; }
+    padding: 0 22px;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none; }
   #next-concerts > article.concert div.concert-info {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -746,6 +750,7 @@ footer > .container p, footer > .container #concert-listings article.concert .co
         -ms-flex-align: center;
             align-items: center; }
   #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings #next-concerts > article.concert div.concert-info .concert-info-a .concert-copy, #concert-listings #next-concerts > article.concert .concert-info-a div.concert-info .concert-copy, #concert .concert-copy-container .concert-copy #next-concerts > article.concert div.concert-info p.concert-copy, #next-concerts > article.concert div.concert-info #concert .concert-soloists .concert-soloist .concert-copy.concert-soloist-bio, #concert .concert-soloists .concert-soloist #next-concerts > article.concert div.concert-info .concert-copy.concert-soloist-bio, #next-concerts > article.concert div.concert-info #blog-post .concert-copy.blog-post-body, #blog-post #next-concerts > article.concert div.concert-info .concert-copy.blog-post-body, #next-concerts > article.concert div.concert-info #blog-post-list > .blog-post .blog-info .concert-copy.blog-copy, #blog-post-list > .blog-post .blog-info #next-concerts > article.concert div.concert-info .concert-copy.blog-copy {
+    text-align: center;
     padding: 0 22px; } }
 
 @media screen and (min-width: 851px) {
