@@ -144,6 +144,9 @@ button, .button {
   color: #ffffff;
   border: none; }
 
+button:hover, .button:hover {
+  cursor: pointer; }
+
 #concert-listings article.concert .concert-info-a h2.concert-name, h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, html {
   font-variant-numeric: oldstyle-nums;
   -webkit-font-variant-ligatures: common-ligatures contextual;
