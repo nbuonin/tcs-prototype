@@ -15,3 +15,17 @@
     break-inside: avoid;
   }
 }
+
+section#roster {
+  .item-list {
+    margin-bottom: $big2;
+    h3 {
+      @extend %caps-sans;
+      margin-bottom: $small3;
+    }
+  }
+  ul li .field-content {
+    @extend %sans;
+    @extend %small;
+  }
+}
