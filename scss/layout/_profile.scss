@@ -25,14 +25,29 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-
+  .profile-info-container {
+    .name {
+      @extend %serif-display;
+      margin: 0 0 $small1 0;
+    }
+    .instrument {
+      @extend %sans-light-caps;
+      margin-bottom: $small1;
+    }
+    .position {
+      @extend %caps-sans;
+      @extend %small1;
+      margin-bottom: $small1;
+    }
+    
+  }
   @include respond-to(medium-plus) {
     //flex: 2 2 66%;
     @include col(2,3);
     align-items: flex-start;
 
     > * {
-      margin-left: 1rem;
+      margin: $big3;
     }
 
     > .profile-info-container {
@@ -52,11 +67,12 @@
   }
 }
 
-// #profile .contact {
+ #profile .contact {
+   margin-top: $big2;
 //   @include respond-to(medium) {
 //     //flex: 2 2 66%;
 //   }
-// }
+ }
 
 #profile .profile-bio {
 
