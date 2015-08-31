@@ -26,9 +26,12 @@
 ///////////////////////////////
 #season-banner {
   @extend %border-bottom;
+  width:100%;
   .banner-image-container {
     overflow: hidden;
     margin-left:  0 $container-margin;
+    width: 100%;
+    height: 300px;
   }
 }
 //////////////////////////////////
