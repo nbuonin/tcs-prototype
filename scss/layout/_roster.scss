@@ -1,0 +1,17 @@
+.view-musicians .view-content {
+
+  @include respond-to(medium) {
+    columns: 2;
+    column-gap: 8em;
+  }
+
+  @include respond-to(wide-plus) {
+    columns: 3;
+    column-gap: 8em;
+  }
+
+  .item-list {
+    margin-bottom: 1em;
+    break-inside: avoid;
+  }
+}
