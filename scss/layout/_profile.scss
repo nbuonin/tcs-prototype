@@ -30,14 +30,21 @@
       @extend %serif-display;
       margin: 0 0 $small1 0;
     }
-    .instrument {
-      @extend %sans-light-caps;
-      margin-bottom: $small1;
-    }
     .position {
+      @extend %sans-light;
+      margin-bottom: $big1;
+      font-style: italic;
+      color: $tag-color;
+    }
+    .instrument {
       @extend %caps-sans;
-      @extend %small1;
       margin-bottom: $small1;
+      &:before {
+        content: "— ";
+      }
+      &:after {
+        content: " —";
+      }
     }
     
   }

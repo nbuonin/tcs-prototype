@@ -61,3 +61,12 @@ button, .button {
     cursor: pointer;
   }
 }
+
+@include respond-to(medium-plus) {
+  main > div.container {
+    padding: $big2 $small;
+  }
+  main.has-top-image > div.container {
+    padding: 0 $small $big2 $small;
+  }
+}
