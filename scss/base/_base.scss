@@ -64,9 +64,9 @@ button, .button {
 
 @include respond-to(medium-plus) {
   main > div.container {
-    padding: $big2 $small;
+    padding: $big2 0;
   }
   main.has-top-image > div.container {
-    padding: 0 $small $big2 $small;
+    padding: 0 0 $big2 0;
   }
 }

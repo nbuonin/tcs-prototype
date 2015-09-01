@@ -136,9 +136,9 @@ button:hover, .button:hover {
 
 @media screen and (min-width: 601px) {
   main > div.container {
-    padding: 31.36px 14.4px; }
+    padding: 31.36px 0; }
   main.has-top-image > div.container {
-    padding: 0 14.4px 31.36px 14.4px; } }
+    padding: 0 0 31.36px 0; } }
 
 #concert-listings article.concert .concert-info-a h2.concert-name, h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, html {
   font-variant-numeric: oldstyle-nums;
