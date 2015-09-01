@@ -423,11 +423,12 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   .navigation > .container > nav > ul > li {
     display: inline-block;
     color: #9fa2a7;
-    padding: 1em 2em 3px; }
+    padding: 1em; }
   .navigation > .container > nav > ul > li a {
+    padding: 3px 1em;
     display: block; }
   .navigation > .container > nav > ul > li > ul {
-    padding: 1em;
+    padding-left: 0;
     border-top: 3px solid white;
     position: absolute;
     display: none;

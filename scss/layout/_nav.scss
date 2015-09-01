@@ -194,10 +194,10 @@
       display: inline-block;
       //background: rgb(90,90,90);
       color: $tag-color;
-      padding: 1em 2em 3px; //moved this back b/c emily didny like my boxes sadface
+     padding: 1em; //moved this back b/c emily didny like my boxes sadface
 
       a {
-       //padding: 3px 2em;
+       padding: 3px 1em;
         display: block;
       }
 
@@ -206,7 +206,7 @@
       }
 
       > ul {
-        padding: 1em;
+        padding-left: 0;
         border-top: 3px solid white;
         position: absolute;
         display: none;
