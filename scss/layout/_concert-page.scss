@@ -1,12 +1,12 @@
 #concert h2 {
-  @extend %light-sans;
-  @extend %big1;
+  @extend %caps-sans;
+  @extend %base;
   margin-bottom: 1em;
 }
 
 #concert {
   .concert-tag {
-     @extend %section-tag;
+    @extend %section-tag;
   }
   .concert-image {
     margin-bottom: 1em;
@@ -65,9 +65,8 @@
 	@extend %border-bottom;
 
   h2 {
-    @extend %light-sans-caps;
-    @extend %big1;
-    //font-size: $big1;
+    @extend %caps-sans;
+    @extend %base;
   }
   .concert-program-piece-composer::after {
 	 content: ":  ";
@@ -89,9 +88,9 @@
 				width: 30%;
 				padding-right: $big2;
 			 }
-			 	.concert-program-piece-composer::after { 
-				  content: "";
-				}
+			 .concert-program-piece-composer::after { 
+            content: "";
+           }
 			 .concert-program-piece-title { 
 				display: inline-block;
 				text-align: left;
@@ -117,8 +116,8 @@
   }
 
   h2 {
-    @extend %light-sans-caps;
-    @extend %big1;
+    @extend %caps-sans;
+    @extend %base;
     width: 100%;
   }
 }
@@ -165,7 +164,7 @@
   }
 
   .concert-soloist-image {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
