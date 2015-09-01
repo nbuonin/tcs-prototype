@@ -405,6 +405,12 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   color: inherit;
   text-decoration: none; }
 
+.navigation > .container > nav a:hover {
+  color: black; }
+
+.navigation > .container > nav a .nolink:hover {
+  color: #9fa2a7; }
+
 .navigation > .container > nav > ul > li > ul {
   padding-left: 2em; }
 
@@ -423,10 +429,12 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   .navigation > .container > nav > ul > li {
     display: inline-block;
     color: #9fa2a7;
-    padding: 1em; }
+    padding: 1em 1em 3px 1em; }
   .navigation > .container > nav > ul > li a {
     padding: 3px 1em;
     display: block; }
+  .navigation > .container > nav > ul > li a:hover {
+    color: black; }
   .navigation > .container > nav > ul > li > ul {
     padding-left: 0;
     border-top: 3px solid white;

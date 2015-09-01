@@ -167,6 +167,14 @@
   a {
     color: inherit;
     text-decoration: none;
+    &:hover {
+      color: black;
+    }
+    .nolink { 
+      &:hover {
+     color: $tag-color; 
+      }
+    }
   }
   //padding-bottom: 1em;
   margin-bottom: 0;
@@ -194,11 +202,14 @@
       display: inline-block;
       //background: rgb(90,90,90);
       color: $tag-color;
-     padding: 1em; //moved this back b/c emily didny like my boxes sadface
+     padding: 1em 1em 3px 1em; //moved this back b/c emily didny like my boxes sadface
 
       a {
        padding: 3px 1em;
-        display: block;
+       display: block;
+        &:hover {
+          color: black;
+        }
       }
 
       &:last-of-type {
