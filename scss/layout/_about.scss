@@ -1,0 +1,25 @@
+#about {
+  p {
+    @extend %copy;
+  }
+  
+  h2 {
+    @extend %serif-display;
+    margin-top: $big3;
+  }
+  
+  .personnel ul > li > {
+    width: 50%;
+    a {
+      text-align: right;
+      margin-right: 2em;
+      width: 50%;
+    }
+    .title {
+      text-align: left;
+      &:before {
+        content: " — "
+      }
+    }
+  }
+}
