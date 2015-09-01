@@ -97,6 +97,11 @@ p {
     @extend %sans-light;
     @extend %caps;
 }
+%small-heading {
+  @extend %base;
+  @extend %sans-heavy;
+  @extend %caps;
+}
 
 
 %caps-serif-display {

@@ -1,7 +1,6 @@
 #concert {
   h2 {
-    @extend %caps-sans;
-    @extend %base;
+    @extend %small-heading;
     margin-bottom: 1em;
   }
   .concert-tag {
