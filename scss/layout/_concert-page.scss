@@ -1,10 +1,9 @@
-#concert h2 {
-  @extend %caps-sans;
-  @extend %base;
-  margin-bottom: 1em;
-}
-
 #concert {
+  h2 {
+    @extend %caps-sans;
+    @extend %base;
+    margin-bottom: 1em;
+  }
   .concert-tag {
     @extend %section-tag;
   }
@@ -64,10 +63,6 @@
 #concert .concert-program {
 	@extend %border-bottom;
 
-  h2 {
-    @extend %caps-sans;
-    @extend %base;
-  }
   .concert-program-piece-composer::after {
 	 content: ":  ";
   }
@@ -116,8 +111,6 @@
   }
 
   h2 {
-    @extend %caps-sans;
-    @extend %base;
     width: 100%;
   }
 }
