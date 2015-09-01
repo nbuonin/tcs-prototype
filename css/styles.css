@@ -405,14 +405,14 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   color: inherit;
   text-decoration: none; }
 
-.navigation > .container > nav a:hover {
-  color: black; }
-
-.navigation > .container > nav a .nolink:hover {
-  color: #9fa2a7; }
-
 .navigation > .container > nav > ul > li > ul {
   padding-left: 2em; }
+
+@media screen and (min-width: 601px) {
+  .navigation > .container > nav a:hover {
+    color: black; }
+  .navigation > .container > nav a.nolink:hover {
+    color: #9fa2a7; } }
 
 @media screen and (min-width: 851px) {
   .navigation > .container > nav {
@@ -433,8 +433,6 @@ footer > .container nav.footer-nav ul > li > a.nolink {
   .navigation > .container > nav > ul > li a {
     padding: 3px 1em;
     display: block; }
-  .navigation > .container > nav > ul > li a:hover {
-    color: black; }
   .navigation > .container > nav > ul > li > ul {
     padding-left: 0;
     border-top: 3px solid white;
