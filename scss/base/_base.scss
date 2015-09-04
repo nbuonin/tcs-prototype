@@ -9,6 +9,13 @@
     margin: auto;
   }
 }
+main > .container {
+   margin: 0 $page-margin;
+  @include respond-to(super-wide){
+    max-width: $max-container-width;
+    margin: auto;
+  }
+}
 
 img {
   width: 100%;

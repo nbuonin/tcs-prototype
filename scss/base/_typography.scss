@@ -66,16 +66,15 @@ p {
   line-height: $big1;
   @include respond-to(medium-plus) {
     line-height: $xbig1;
-    color: $text-color;
     margin-bottom: 0;
   }
 }
 %copy {
     @extend p;
  	 padding-bottom: $small1;
+    color: $text-color;
     @include respond-to(medium-plus) {
       padding-bottom: $xsmall1;
-      color: $text-color;
     }
 }
 

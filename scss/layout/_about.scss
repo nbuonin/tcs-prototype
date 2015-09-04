@@ -1,3 +1,11 @@
+.press-quotes {
+   padding-bottom: $big3; 
+  }
+.about-history {
+  @include respond-to(wide-plus) {
+
+  }
+}
 blockquote {
  //font-family: $serif-display;
   @extend %serif-subhead;
@@ -5,17 +13,28 @@ blockquote {
   text-align: center;
   p {
     &:before {
-          content: "“ ";
-          font-family: $serif-display;
-      font-size: 200%;
+      content: "“";
+      font-family: $serif-display;
+      font-size: 300%;
+      transform: translateY(25px);
+      display: inline-block;
+      margin-right: $big2;
+      color: $tag-color;
     }
-    &:after {
-          content: " ”";
-          font-family: $serif-display;
-    }
-    color: $text-color;
-  }
     
+    &:after {
+      content: "”";
+      font-family: $serif-display;
+      font-size: 300%;
+      transform: translateY(25px);
+      display: inline-block;
+      margin-left: $big2; 
+      color: $tag-color;
+      white-space: nowrap;
+    }
+  }
+
+  
   footer {
     font-style: italic;
     text-align: center;
@@ -56,7 +75,6 @@ blockquote {
   justify-content: center;
 }
 .personnel-list {
- // flex: 1;
   margin-top: $big1;
   caption {
     @extend %small-heading;

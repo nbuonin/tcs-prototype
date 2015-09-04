@@ -35,6 +35,7 @@ $break-xlarge: 1040px;
 $max-container-width: 980px;
 $container-margin: 14px;
 $default-gutter: 18px;
+$page-margin: 22px; //sets margins for main>.container for medium-plus
 
 @mixin col($no-of-cols, $total-cols, $container-width: $max-container-width, $gutter: $default-gutter) {
   //note that parent element needs justify-content: space-between;
