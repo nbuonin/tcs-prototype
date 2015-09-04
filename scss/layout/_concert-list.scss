@@ -50,7 +50,6 @@ div.page-header {
   justify-content: space-between;
   a {
     @extend %small1;
-    //font-size: $small1;
     color: $link-color;
   }
 }
@@ -79,9 +78,6 @@ div.page-header {
     width: 100%;
    }
   }
-  // .concert-program-container {
-  //   display: flex;
-  // }
 
   .concert-program {
     flex: none;
@@ -134,9 +130,4 @@ div.page-header {
 }
 .concert-program-date{
   @extend %hp-section-date;
-}
-h1 {
-    @extend %light-sans-caps;
-  @extend %base;
-    //font-size: $base-size;
 }
