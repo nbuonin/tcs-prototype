@@ -28,6 +28,7 @@
   .profile-info-container {
     .name {
       @extend %serif-display;
+      @extend %big3;
       margin: 0 0 $small1 0;
     }
     .position {

@@ -165,7 +165,7 @@ p {
 
 h1 {
   @extend %light-sans-caps;
-  @extend %big1;
+  //@extend %big1;
   margin-bottom: 1em;
 }
 
@@ -192,7 +192,6 @@ button, .btn, .button {
 
 %list-header {
   @extend %sans-light;
-  background: $tag-color;
-  color: #fff;
-  padding: 3px 6px;
+  color: $tag-color;
+  padding: 3px 0px;
 }
