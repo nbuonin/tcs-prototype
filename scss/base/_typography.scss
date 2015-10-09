@@ -105,7 +105,7 @@ html {
 }
 
 p {
-  @extend %base;
+ // @extend %base;
   line-height: $big1;
   @include respond-to(medium-plus) {
     line-height: $xbig1;
@@ -113,7 +113,7 @@ p {
   }
 }
 %copy {
-    @extend p;
+    @extend %base;
  	 padding-bottom: $small1;
     color: $text-color;
     @include respond-to(medium-plus) {
@@ -144,7 +144,6 @@ p {
   @extend %sans-heavy;
   @extend %caps;
 }
-
 
 %caps-serif-display {
     @extend %big2;
