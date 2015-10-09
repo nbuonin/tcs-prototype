@@ -78,14 +78,14 @@ $serif-display: "kepler-std-condensed-display", serif;
 }
 
 %serif {
-  font-family: "utopia-std-caption", "adobe-caslon-pro", serif; 
+  font-family: "kepler-std", "adobe-caslon-pro", serif; 
   @include respond-to(medium-plus) {
-    font-family: "utopia-std", "utopia-std-caption", "adobe-caslon-pro", serif;
+    font-family: "kepler-std", "adobe-caslon-pro", serif;
   }
 }
 
 %serif-subhead {
-  font-family: "utopia-std-subhead", "adobe-caslon-pro", serif;
+  font-family: "kepler-std", "adobe-caslon-pro", serif;
 }
 
 %caps {
