@@ -68,10 +68,10 @@ $sans: "azo-sans-web", "Helvetica Neue", sans-serif;
   font-weight: 900;
 }
 
-$serif-display: "kepler-std-semicondensed-dis", serif;
+$serif-display: "kepler-std-condensed-display", serif;
 %serif-display {
   @extend %big2;
-  font-family: "kepler-std-semicondensed-dis", serif;
+  font-family: "kepler-std-condensed-display", serif;
   letter-spacing: 0;
   text-transform: none;
   @extend %open-type-on;
@@ -80,7 +80,7 @@ $serif-display: "kepler-std-semicondensed-dis", serif;
 %serif {
   font-family: "utopia-std-caption", "adobe-caslon-pro", serif; 
   @include respond-to(medium-plus) {
-    font-family: "utopia-std", "adobe-caslon-pro", serif;
+    font-family: "utopia-std", "utopia-std-caption", "adobe-caslon-pro", serif;
   }
 }
 

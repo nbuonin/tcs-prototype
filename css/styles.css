@@ -173,7 +173,7 @@ button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolin
   font-weight: 900; }
 
 #concert-listings article.concert .concert-info-a h2.concert-name, h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, #about h2 {
-  font-family: "kepler-std-semicondensed-dis", serif;
+  font-family: "kepler-std-condensed-display", serif;
   letter-spacing: 0;
   text-transform: none; }
 
@@ -182,7 +182,7 @@ html {
 
 @media screen and (min-width: 601px) {
   html {
-    font-family: "utopia-std", "adobe-caslon-pro", serif; } }
+    font-family: "utopia-std", "utopia-std-caption", "adobe-caslon-pro", serif; } }
 
 #featured-concert > article.concert div.concert-info p.concert-copy, #concert-listings #featured-concert > article.concert div.concert-info .concert-info-a .concert-copy, #concert-listings #featured-concert > article.concert .concert-info-a div.concert-info .concert-copy, #featured-concert > article.concert div.concert-info #concert .concert-soloists .concert-soloist .concert-copy.concert-soloist-bio, #concert .concert-soloists .concert-soloist #featured-concert > article.concert div.concert-info .concert-copy.concert-soloist-bio, #featured-concert > article.concert div.concert-info #blog-post .concert-copy.blog-post-body, #blog-post #featured-concert > article.concert div.concert-info .concert-copy.blog-post-body, #featured-concert > article.concert div.concert-info #blog-post-list > .blog-post .blog-info .concert-copy.blog-copy, #blog-post-list > .blog-post .blog-info #featured-concert > article.concert div.concert-info .concert-copy.blog-copy, blockquote {
   font-family: "utopia-std-subhead", "adobe-caslon-pro", serif; }
@@ -1398,7 +1398,7 @@ blockquote {
 
 blockquote p:before, blockquote #concert-listings article.concert .concert-info-a .concert-copy:before, #concert-listings article.concert .concert-info-a blockquote .concert-copy:before, blockquote #concert .concert-copy-container .concert-copy p:before, #concert .concert-copy-container .concert-copy blockquote p:before, blockquote #concert .concert-soloists .concert-soloist .concert-soloist-bio:before, #concert .concert-soloists .concert-soloist blockquote .concert-soloist-bio:before, blockquote #blog-post .blog-post-body:before, #blog-post blockquote .blog-post-body:before, blockquote #blog-post-list > .blog-post .blog-info .blog-copy:before, #blog-post-list > .blog-post .blog-info blockquote .blog-copy:before, blockquote #about p:before, #about blockquote p:before {
   content: "“";
-  font-family: "kepler-std-semicondensed-dis", serif;
+  font-family: "kepler-std-condensed-display", serif;
   font-size: 300%;
   -webkit-transform: translateY(25px);
       -ms-transform: translateY(25px);
@@ -1409,7 +1409,7 @@ blockquote p:before, blockquote #concert-listings article.concert .concert-info-
 
 blockquote p:after, blockquote #concert-listings article.concert .concert-info-a .concert-copy:after, #concert-listings article.concert .concert-info-a blockquote .concert-copy:after, blockquote #concert .concert-copy-container .concert-copy p:after, #concert .concert-copy-container .concert-copy blockquote p:after, blockquote #concert .concert-soloists .concert-soloist .concert-soloist-bio:after, #concert .concert-soloists .concert-soloist blockquote .concert-soloist-bio:after, blockquote #blog-post .blog-post-body:after, #blog-post blockquote .blog-post-body:after, blockquote #blog-post-list > .blog-post .blog-info .blog-copy:after, #blog-post-list > .blog-post .blog-info blockquote .blog-copy:after, blockquote #about p:after, #about blockquote p:after {
   content: "”";
-  font-family: "kepler-std-semicondensed-dis", serif;
+  font-family: "kepler-std-condensed-display", serif;
   font-size: 300%;
   -webkit-transform: translateY(25px);
       -ms-transform: translateY(25px);
