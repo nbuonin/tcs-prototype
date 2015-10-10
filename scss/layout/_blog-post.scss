@@ -3,7 +3,7 @@
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
-    align-items: baseline; // this is what is aligning the h2"upcoming blog posts" to the baseline of the image
+    //align-items: baseline; // this is what is aligning the h2"upcoming blog posts" to the baseline of the image
   }
 }
 
@@ -11,9 +11,9 @@
   flex: 1 100%;
 
   @include respond-to(medium-plus) {
-    flex: 2 66%;
+    flex: 7 70%;
     border-right: $lesser-border;
-    padding: 0 1em;
+    padding: 0 $big3 0 0;
   }
   .blog-post-image {
     margin-bottom: 1em;
@@ -35,7 +35,7 @@
     @extend %big3;
     text-align: center;
     line-height: 1em;
-    padding: 0 1em;
+    padding: 0 0;
     margin-bottom: 0;
   }
 
@@ -58,19 +58,29 @@
   align-items: flex-start;
 
   @include respond-to(medium-plus) {
-    flex: 1 33%;
+    flex: 3 30%;
     padding-left: 1em;
   }
 
   h2 {
     @extend %caps-sans;
+    margin-bottom: 1em;
+    @include respond-to(wide-plus) {
+      font-size: 18px;
+    }
   }
 
   > ul > li {
     margin-bottom: 1em;
+    @extend %section-tag;
 
     .blog-post-title {
-      font-weight: 500;
+      @extend %copy;
+      font-style: normal;
+      &:after {
+        content: "—";
+        color: white;
+      }
     }
   }
 }
