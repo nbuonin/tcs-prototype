@@ -3,16 +3,17 @@
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
-    //align-items: baseline; // this is what is aligning the h2"upcoming blog posts" to the baseline of the image
+    align-items: center; // this is what is aligning the h2"upcoming blog posts" to the baseline of the image
   }
 }
 
 #blog-post {
   flex: 1 100%;
-
+  @extend %border-bottom;
   @include respond-to(medium-plus) {
     flex: 7 70%;
     padding: 0 $big3 0 0;
+    border-bottom: none;
   }
   .blog-post-image {
     margin-bottom: 1em;
@@ -26,8 +27,6 @@
   
   .blog-post-dateline {
      @extend %section-tag;
-     //align-self: center;
-     //margin-right: 5em;
   }
   .blog-post-title {
     @extend %serif-display;
@@ -51,7 +50,6 @@
 }
 
 #blog-post-recent {
-  border-left: $lesser-border;
   flex: 1 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -62,10 +60,12 @@
   @include respond-to(medium-plus) {
     flex: 3 30%;
     padding-left: 1em;
+    border-left: $lesser-border;
+    padding-top: 2em;
   }
 
   h2 {
-    @extend %caps-sans;
+    @extend %small-heading;
     margin-bottom: 1em;
     @include respond-to(wide-plus) {
       font-size: 18px;

@@ -5,6 +5,9 @@
   }
   .concert-tag {
     @extend %section-tag;
+    position: absolute;
+    padding: 5px 10px;
+    color: white;
   }
   .concert-image {
     margin-bottom: 1em;
