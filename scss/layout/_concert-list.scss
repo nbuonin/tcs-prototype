@@ -42,7 +42,10 @@
 div.page-header {
   width:100%;
   h1 {
+    //@extend %big2;
+    color: $lighten-up;
     @extend %small-header;
+    @extend %sans-heavy;
     display: inline-block;
     margin-bottom: $big2;
   }
@@ -50,7 +53,7 @@ div.page-header {
   justify-content: space-between;
   a {
     @extend %small1;
-    color: $link-color;
+    color: $nav-color;
   }
 }
 

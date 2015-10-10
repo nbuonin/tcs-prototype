@@ -12,10 +12,6 @@
   flex-flow: column nowrap;
   padding-top: 22px;
   border-bottom: none;
-
-  //@include respond-to(wide-plus) {
-   //     @extend %nav-border;
-  //}
 }
 
 .email-social {
@@ -83,9 +79,6 @@
     // } &.activate
   }
 
-  // .subscribe.active {
-  //   display: block;
-  // }
 
   .social {
     color: $tag-color;
@@ -95,7 +88,7 @@
     justify-content: flex-start;
     * {
       font-size: $big1;
-      margin-right: 0.625em; // 10/16
+      margin-right: 0.625em;
     }
   }
 }
@@ -114,13 +107,13 @@
   display: none;
 
   @include respond-to(wide-plus) {
-    @extend %big1;
+    @extend %small;
     @extend %light-sans-caps;
     color: black;
     display: block;
     text-align: center;
-    margin: $base-size 0;
-    letter-spacing: 4px;
+    margin: $small1 0;
+    letter-spacing: .2em;
   }
 }
 
@@ -162,7 +155,8 @@
 .navigation > .container > nav {
   @extend %sans-reg;
   @extend %caps;
-  @extend %small1;
+  //@extend %small1;
+  font-size: 11px;
 
   a {
     color: inherit;
@@ -184,26 +178,36 @@
       color: black;
       }
     a.nolink:hover { 
-      color: $tag-color; 
+      color: $nav-color; 
     }
   }
   @include respond-to(wide-plus) {
-    @extend %nav-border;
+   //@extend %nav-border;
     display: block;
 
     > ul {
       display: flex;
       justify-content: center;
+      background: url(../images/border.png);
+      background-position: 50% 60%; 
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     > ul > li {
       display: inline-block;
-      //background: rgb(90,90,90);
-      color: $tag-color;
-     padding: 1em 1em 3px 1em; //moved this back b/c emily didny like my boxes sadface
+      color: $nav-color;
+      background: #fff;
+      padding: 1em .5em 3px .5em;
+      &:first-child {
+        padding-left: 1.5em;
+      }
+      &:last-child {
+        padding-right: 1.5em;
+      }
 
       a {
-        padding: 3px 1em;
+        padding: 5px;
         display: block;
       }
       

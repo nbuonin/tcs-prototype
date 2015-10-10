@@ -30,7 +30,7 @@ $lesser-border: 1px solid #cacaca;
   border-image-slice: 0 0 11;
   border-image-source: url(../images/border.png);
   border-image-width: 2px;
-  padding-bottom: $container-margin;
+  //padding-bottom: $container-margin;
 }
 %border-bottom {
 	padding-bottom: $big2;

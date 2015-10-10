@@ -82,7 +82,7 @@
         max-width: 100px;
       }
       p.concert-copy {
-        @extend %big1;
+        @extend %big;
         @extend %serif-subhead;
         line-height: 1.3em;
       }

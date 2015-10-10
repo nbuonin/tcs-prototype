@@ -1,8 +1,11 @@
 // Global Colors
 
-$tag-color: rgba(159, 162, 167, 1);
-$link-color: #f21d59;
+$link-color: #ff003b;
+$tag-color: rgb(159, 162, 167);
 $text-color: rgb(51, 51, 51);
+$nav-color: rgb(80, 80, 80);
+$lighten-up: grayscale($link-color);
+$green: #cacc0f;
 
 // Media Queries
 $break-small: 600px;

@@ -32,6 +32,13 @@
     font-size: $xsmall2;
   }
 }
+
+%big {
+  font-size: $big;
+  @include respond-to(medium-plus) {
+    font-size: $xbig;
+  }
+}
 %big1 {
   font-size: $big1;
   @include respond-to(medium-plus) {
@@ -153,10 +160,13 @@ p {
 }
 
 %section-tag {
-  @extend %small1;
-  @extend %light-sans-caps;
+  @extend %small;
+  //@extend %light-sans-caps;
+  @extend %serif;
+  font-style: italic;
+  letter-spacing: .02em;
   color: $tag-color;
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 
 .smcaps {
