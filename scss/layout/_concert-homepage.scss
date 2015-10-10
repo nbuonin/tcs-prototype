@@ -31,7 +31,9 @@
     overflow: hidden;
     margin-left:  0 $container-margin;
     width: 100%;
+    @include respond-to(medium-plus) {
     height: 300px;
+    }
   }
 }
 //////////////////////////////////

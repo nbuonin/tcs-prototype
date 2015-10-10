@@ -7,16 +7,14 @@
 #blog-post-list > .blog-post {
   display: flex;
   flex-flow: column nowrap;
-  padding-bottom: 1em;
-  border-bottom: $border;
-  margin-bottom: 1em;
+  @extend %border-bottom;
   &:last-of-type {
     border-bottom: none;
+    padding-bottom: 0
   }
 
   @include respond-to(medium-plus) {
     flex-flow: row nowrap;
-
   }
 
   .blog-image {
@@ -32,7 +30,7 @@
     flex: none;
 
     @include respond-to(medium-plus) {
-      flex: 4 auto;
+      flex: 3 auto;
     }
 
     .blog-post-dateline {
@@ -40,7 +38,6 @@
     }
 
     .blog-post-title {
-      @extend %big2;
       @extend %serif-display;
       line-height: 1em;
       margin-bottom: 0;
@@ -56,6 +53,5 @@
         padding-right: 15%;
       }
     }
-
   }
 }

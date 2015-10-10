@@ -47,12 +47,14 @@
 }
 %big2 {
   font-size: $big2;
+  line-height: 1.1em;
   @include respond-to(medium-plus) {
     font-size: $xbig2;
   }
 }
 %big3 {
   font-size: $big3;
+  line-height: 1em;
   @include respond-to(medium-plus) {
     font-size: $xbig3;
   }
@@ -112,7 +114,6 @@ html {
 }
 
 p {
- // @extend %base;
   line-height: $big1;
   @include respond-to(medium-plus) {
     line-height: $xbig1;
@@ -125,6 +126,9 @@ p {
     color: $text-color;
     @include respond-to(medium-plus) {
       padding-bottom: $xsmall1;
+    }
+    &:last-child {
+      padding-bottom:0;
     }
 }
 
@@ -182,7 +186,6 @@ h1 {
 h2 {
   @extend %big2;
   @extend %serif-display;
-  line-height: 1.3em;
   font-weight: $normal;
 }
 

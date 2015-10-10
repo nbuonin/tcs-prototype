@@ -66,7 +66,7 @@ main > .container {
 img {
   width: 100%; }
 
-#season-banner, #recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program {
+#season-banner, #recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program, #blog-post-list > .blog-post {
   padding-bottom: 31.36px;
   border-bottom: 1px solid #cacaca;
   margin-bottom: 31.36px; }
@@ -142,14 +142,16 @@ button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolin
     font-size: 20px; } }
 
 h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, blockquote {
-  font-size: 31.36px; }
+  font-size: 31.36px;
+  line-height: 1.1em; }
 
 @media screen and (min-width: 601px) {
   h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, blockquote {
     font-size: 40.5px; } }
 
 #featured-concert > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #profile .profile-info .profile-info-container .name {
-  font-size: 43.904px; }
+  font-size: 43.904px;
+  line-height: 1em; }
 
 @media screen and (min-width: 601px) {
   #featured-concert > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #profile .profile-info .profile-info-container .name {
@@ -210,6 +212,9 @@ p {
   #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p {
     padding-bottom: 12px; } }
 
+#featured-concert > article.concert div.concert-info p.concert-copy:last-child, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy:last-child, #next-concerts > article.concert div.concert-info p.concert-copy:last-child, #concert-listings article.concert .concert-info-a .concert-copy:last-child, #concert .concert-copy-container .concert-copy p:last-child, #concert .concert-soloists .concert-soloist .concert-soloist-bio:last-child, #blog-post .blog-post-body:last-child, #blog-post-recent > ul > li .blog-post-title:last-child, #blog-post-list > .blog-post .blog-info .blog-copy:last-child, #about-page > div > div > p:last-child {
+  padding-bottom: 0; }
+
 button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer {
   margin-bottom: 11.42857px; }
 
@@ -227,7 +232,6 @@ h1 {
   margin-bottom: 1em; }
 
 h2 {
-  line-height: 1.3em;
   font-weight: 500; }
 
 .subhead {
@@ -559,8 +563,11 @@ body > footer > .container p, body > footer > .container li, body > footer > .co
 #season-banner .banner-image-container {
   overflow: hidden;
   margin-left: 0 14px;
-  width: 100%;
-  height: 300px; }
+  width: 100%; }
+
+@media screen and (min-width: 601px) {
+  #season-banner .banner-image-container {
+    height: 300px; } }
 
 #featured-concert > article.concert {
   display: -webkit-box;
@@ -1214,13 +1221,11 @@ div.page-header a {
   display: flex;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  padding-bottom: 1em;
-  border-bottom: 1px solid grey;
-  margin-bottom: 1em; }
+          flex-flow: column nowrap; }
 
 #blog-post-list > .blog-post:last-of-type {
-  border-bottom: none; }
+  border-bottom: none;
+  padding-bottom: 0; }
 
 @media screen and (min-width: 601px) {
   #blog-post-list > .blog-post {
@@ -1250,10 +1255,10 @@ div.page-header a {
 
 @media screen and (min-width: 601px) {
   #blog-post-list > .blog-post .blog-info {
-    -webkit-box-flex: 4;
-    -webkit-flex: 4 auto;
-        -ms-flex: 4 auto;
-            flex: 4 auto; } }
+    -webkit-box-flex: 3;
+    -webkit-flex: 3 auto;
+        -ms-flex: 3 auto;
+            flex: 3 auto; } }
 
 #blog-post-list > .blog-post .blog-info .blog-post-title {
   line-height: 1em;
