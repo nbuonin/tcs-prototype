@@ -50,7 +50,7 @@
     .blog-copy {
       @extend %copy;
       @include respond-to(wide-plus) {
-        padding-right: 15%;
+      //  padding-right: 15%;
       }
     }
   }

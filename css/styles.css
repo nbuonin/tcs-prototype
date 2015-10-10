@@ -1273,10 +1273,6 @@ div.page-header a {
   line-height: 1em;
   margin-bottom: 0; }
 
-@media screen and (min-width: 851px) {
-  #blog-post-list > .blog-post .blog-info .blog-copy {
-    padding-right: 15%; } }
-
 #profile {
   display: -webkit-box;
   display: -webkit-flex;
