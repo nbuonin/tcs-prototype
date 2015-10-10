@@ -36,6 +36,10 @@ ol, ul {
 }
 blockquote, q {
   quotes: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {

@@ -1,71 +1,90 @@
-.press-quotes {
-   padding-bottom: $big3; 
+
+blockquote {
+  @extend %serif-display;
+  line-height: $big3;
+  @extend %big2;
+  color: $nav-color;
+  text-align: center;
+  width: 100%;
+  margin: 1em 0;
+  p {
+    display: inline-block;
+    line-height: $big3;
+    margin: 0 $big2;
+    @include respond-to(medium-plus) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &:before {
+      display: inline-block;
+      content: "“ ";
+      margin-right: .1em;
+      line-height: $big3 / 2;
+      transform: translateY(25px);
+      font-size: 200%;
+      color: $tag-color;
+      @include respond-to(medium-plus) {
+        font-size: 300%;
+      }
+    }
+    
+    &:after {
+      display: inline-block;
+      content: " ”";
+      margin-left: .1em;
+      font-size: 200%;
+      line-height:  $big3 / 2;
+      transform: translateY(25px);
+      color: $tag-color;
+      white-space: nowrap;
+      @include respond-to(medium-plus) {
+        display: none;
+      }
+    }
   }
+  
+  footer {
+    font-style: italic;
+    @extend %caps-sans;
+    &:before {
+      content: "—";
+    }
+  }
+  @include respond-to(medium-plus) {
+    width: 33%;
+    &:nth-of-type(even) {
+      text-align: left;
+      float: left;
+      margin-right: 1em;
+    }
+    &:nth-of-type(odd) {
+      text-align: right;
+      float: right;
+      margin-left: 1em;
+    }
+  }
+}
+
 .about-history {
   @include respond-to(wide-plus) {
 
   }
 }
-blockquote {
- //font-family: $serif-display;
-  @extend %serif-subhead;
-  font-size: 2em;
-  text-align: center;
-  p {
-    &:before {
-      content: "“";
-      font-family: $serif-display;
-      font-size: 300%;
-      transform: translateY(25px);
-      display: inline-block;
-      margin-right: $big2;
-      color: $tag-color;
-    }
-    
-    &:after {
-      content: "”";
-      font-family: $serif-display;
-      font-size: 300%;
-      transform: translateY(25px);
-      display: inline-block;
-      margin-left: $big2; 
-      color: $tag-color;
-      white-space: nowrap;
-    }
-  }
-
-  
-  footer {
-    font-style: italic;
-    text-align: center;
-    @extend %caps-sans;
-    &:before {
-      content: "—";
-      }
-  }
-}
-
-#about {
-
-  p {
+#about-page {
+  > div > div > p {
     @extend %copy;
   }
   
   h2 {
-    @extend %serif-display;
-    margin-top: $big3;
+    @extend %small-heading;
+    padding-bottom: .3em;
+    margin-top: $big;
   }
   .about-history {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .about {
-     // flex: 1;
-    }
     @extend %border-bottom-dark;
-
   }
- 
 }
 
 .personnel {

@@ -22,7 +22,11 @@ ol, ul {
   list-style: none; }
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
 
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
@@ -67,7 +71,7 @@ img {
   border-bottom: 1px solid #cacaca;
   margin-bottom: 31.36px; }
 
-#featured-concert > article.concert, #recent-blog-posts > article.blog-post, #about .about-history {
+#featured-concert > article.concert, #recent-blog-posts > article.blog-post, #about-page .about-history {
   padding-bottom: 22.4px;
   border-bottom: 1px solid grey;
   margin-bottom: 22.4px; }
@@ -97,7 +101,7 @@ button:hover, .button:hover {
   main.has-top-image > div.container {
     padding: 0 0 31.36px 0; } }
 
-h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, #about h2, html {
+h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, blockquote, html {
   font-variant-numeric: oldstyle-nums;
   -webkit-font-variant-ligatures: common-ligatures contextual;
      -moz-font-variant-ligatures: common-ligatures contextual;
@@ -109,11 +113,11 @@ h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-con
      -moz-font-feature-settings: "onum", "kern", "liga", "clig", "calt";
           font-feature-settings: "onum", "kern", "liga", "clig", "calt"; }
 
-html, #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about p, #concert h2, .personnel-list caption, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
+html, #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p, #concert h2, #about-page h2, .personnel-list caption, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
   font-size: 16px; }
 
 @media screen and (min-width: 601px) {
-  html, #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about p, #concert h2, .personnel-list caption, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
+  html, #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p, #concert h2, #about-page h2, .personnel-list caption, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
     font-size: 18px; } }
 
 #featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, #blog-post .blog-post-title-info .blog-post-dateline, #blog-post-recent > ul > li, #blog-post-list > .blog-post .blog-info .blog-post-dateline, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date, section#roster ul li .field-content {
@@ -137,11 +141,11 @@ button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolin
   #featured-concert > article.concert div.concert-info p.concert-copy {
     font-size: 20px; } }
 
-h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, #about h2 {
+h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, blockquote {
   font-size: 31.36px; }
 
 @media screen and (min-width: 601px) {
-  h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, #about h2 {
+  h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, blockquote {
     font-size: 40.5px; } }
 
 #featured-concert > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #profile .profile-info .profile-info-container .name {
@@ -151,7 +155,7 @@ h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-con
   #featured-concert > article.concert div.concert-info h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #profile .profile-info .profile-info-container .name {
     font-size: 60.75px; } }
 
-h1, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, .email-social .email-subscribe, body > footer > .container nav.footer-nav ul > li > a.nolink, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date, #profile .profile-info .profile-info-container .position, .navigation > .container > nav, button, .button, h3, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, #concert h2, .personnel-list caption, div.page-header h1, .subhead, body > footer > .container, section#roster ul li .field-content {
+h1, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, .email-social .email-subscribe, body > footer > .container nav.footer-nav ul > li > a.nolink, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date, #profile .profile-info .profile-info-container .position, .navigation > .container > nav, button, .button, h3, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, #concert h2, #about-page h2, .personnel-list caption, div.page-header h1, .subhead, body > footer > .container, section#roster ul li .field-content {
   font-family: "azo-sans-web", "Helvetica Neue", sans-serif; }
 
 h1, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, .email-social .email-subscribe, body > footer > .container nav.footer-nav ul > li > a.nolink, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-piece, #concert .concert-soloists .concert-soloist .concert-program-listing p.concert-program-date, #profile .profile-info .profile-info-container .position {
@@ -160,10 +164,10 @@ h1, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concer
 .navigation > .container > nav {
   font-weight: 500; }
 
-button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, #concert h2, .personnel-list caption, div.page-header h1 {
+button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, #concert h2, #about-page h2, .personnel-list caption, div.page-header h1 {
   font-weight: 900; }
 
-h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, #about h2 {
+h2, #recent-blog-posts > article.blog-post div.blog-info h2.blog-name, #next-concerts > article.concert div.concert-info h2.concert-name, #concert-listings article.concert .concert-info-a h2.concert-name, #concert .concert-title-info .concert-name, #blog-post .blog-post-title-info .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-post-title, #profile .profile-info .profile-info-container .name, blockquote {
   font-family: "kepler-std-condensed-display", serif;
   letter-spacing: 0;
   text-transform: none; }
@@ -175,10 +179,10 @@ html, #featured-concert > article.concert div.concert-info p.concert-tag, #recen
   html, #featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, #blog-post .blog-post-title-info .blog-post-dateline, #blog-post-recent > ul > li, #blog-post-list > .blog-post .blog-info .blog-post-dateline {
     font-family: "kepler-std", "adobe-caslon-pro", serif; } }
 
-#featured-concert > article.concert div.concert-info p.concert-copy, blockquote {
+#featured-concert > article.concert div.concert-info p.concert-copy {
   font-family: "kepler-std", "adobe-caslon-pro", serif; }
 
-button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, h1, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, .email-social .email-subscribe, #concert h2, .personnel-list caption, .navigation > .container > nav {
+button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, h1, .navigation .title > h1, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist, .email-social .email-subscribe, #concert h2, #about-page h2, .personnel-list caption, .navigation > .container > nav {
   text-transform: uppercase;
   letter-spacing: .1em; }
 
@@ -198,12 +202,12 @@ p {
     line-height: 27px;
     margin-bottom: 0; } }
 
-#featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about p {
+#featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p {
   padding-bottom: 11.42857px;
   color: #333333; }
 
 @media screen and (min-width: 601px) {
-  #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about p {
+  #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p {
     padding-bottom: 12px; } }
 
 button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-recent h2, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer {
@@ -1395,59 +1399,83 @@ section#roster .item-list {
 section#roster .item-list h3 {
   margin-bottom: 5.8309px; }
 
-.press-quotes {
-  padding-bottom: 43.904px; }
-
 blockquote {
-  font-size: 2em;
-  text-align: center; }
+  line-height: 43.904px;
+  color: #505050;
+  text-align: center;
+  width: 100%;
+  margin: 1em 0; }
+
+blockquote p {
+  display: inline-block;
+  line-height: 43.904px;
+  margin: 0 31.36px; }
+
+@media screen and (min-width: 601px) {
+  blockquote p {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0; } }
 
 blockquote p:before {
-  content: "“";
-  font-family: "kepler-std-condensed-display", serif;
-  font-size: 300%;
+  display: inline-block;
+  content: "“ ";
+  margin-right: .1em;
+  line-height: 21.952px;
   -webkit-transform: translateY(25px);
       -ms-transform: translateY(25px);
           transform: translateY(25px);
-  display: inline-block;
-  margin-right: 31.36px;
+  font-size: 200%;
   color: #9fa2a7; }
 
+@media screen and (min-width: 601px) {
+  blockquote p:before {
+    font-size: 300%; } }
+
 blockquote p:after {
-  content: "”";
-  font-family: "kepler-std-condensed-display", serif;
-  font-size: 300%;
+  display: inline-block;
+  content: " ”";
+  margin-left: .1em;
+  font-size: 200%;
+  line-height: 21.952px;
   -webkit-transform: translateY(25px);
       -ms-transform: translateY(25px);
           transform: translateY(25px);
-  display: inline-block;
-  margin-left: 31.36px;
   color: #9fa2a7;
   white-space: nowrap; }
 
+@media screen and (min-width: 601px) {
+  blockquote p:after {
+    display: none; } }
+
 blockquote footer {
-  font-style: italic;
-  text-align: center; }
+  font-style: italic; }
 
 blockquote footer:before {
   content: "—"; }
 
-#about h2 {
-  margin-top: 43.904px; }
+@media screen and (min-width: 601px) {
+  blockquote {
+    width: 33%; }
+  blockquote:nth-of-type(even) {
+    text-align: left;
+    float: left;
+    margin-right: 1em; }
+  blockquote:nth-of-type(odd) {
+    text-align: right;
+    float: right;
+    margin-left: 1em; } }
 
-#about .about-history {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+#about-page h2 {
+  padding-bottom: .3em;
+  margin-top: 17.77778px; }
 
 .personnel {
   display: -webkit-box;
