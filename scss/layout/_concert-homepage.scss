@@ -24,10 +24,10 @@
   width:100%;
   .banner-image-container {
     overflow: hidden;
-    margin-left:  0 $container-margin;
+    margin-left:  0;
     width: 100%;
     @include respond-to(medium-plus) {
-    height: 300px;
+      height: 300px;
     }
   }
 }

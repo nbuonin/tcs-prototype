@@ -12,7 +12,6 @@
 
   @include respond-to(medium-plus) {
     flex: 7 70%;
-    border-right: $lesser-border;
     padding: 0 $big3 0 0;
   }
   .blog-post-image {
@@ -52,10 +51,13 @@
 }
 
 #blog-post-recent {
+  border-left: $lesser-border;
   flex: 1 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+  padding-bottom: $container-margin;
+  height: 100%;
 
   @include respond-to(medium-plus) {
     flex: 3 30%;

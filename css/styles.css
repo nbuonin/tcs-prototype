@@ -562,7 +562,7 @@ body > footer > .container p, body > footer > .container li, body > footer > .co
 
 #season-banner .banner-image-container {
   overflow: hidden;
-  margin-left: 0 14px;
+  margin-left: 0;
   width: 100%; }
 
 @media screen and (min-width: 601px) {
@@ -1139,7 +1139,6 @@ div.page-header a {
     -webkit-flex: 7 70%;
         -ms-flex: 7 70%;
             flex: 7 70%;
-    border-right: 1px solid #cacaca;
     padding: 0 43.904px 0 0; } }
 
 #blog-post .blog-post-image {
@@ -1163,6 +1162,7 @@ div.page-header a {
   margin-bottom: 0; }
 
 #blog-post-recent {
+  border-left: 1px solid #cacaca;
   -webkit-box-flex: 1;
   -webkit-flex: 1 100%;
       -ms-flex: 1 100%;
@@ -1177,7 +1177,9 @@ div.page-header a {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  padding-bottom: 14px;
+  height: 100%; }
 
 @media screen and (min-width: 601px) {
   #blog-post-recent {
