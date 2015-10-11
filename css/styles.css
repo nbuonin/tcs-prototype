@@ -405,12 +405,16 @@ body > footer > .container nav.footer-nav ul > li > a.nolink {
   margin-bottom: 0; }
 
 .navigation > .container > nav {
+  z-index: 10000;
   font-size: 11px;
   margin-bottom: 0;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   display: none; }
+
+.navigation > .container > nav > ul {
+  background: #fff; }
 
 .navigation > .container > nav a {
   color: inherit;
