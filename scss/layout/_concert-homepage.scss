@@ -20,7 +20,7 @@
 // season banner on homepage //
 ///////////////////////////////
 #season-banner {
-  @extend %border-bottom;
+  @extend %border-bottom-dark;
   width:100%;
   .banner-image-container {
     overflow: hidden;

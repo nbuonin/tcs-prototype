@@ -18,10 +18,13 @@
 
 section#roster {
   .item-list {
-    margin-bottom: $big2;
+    @extend %border-bottom;
     h3 {
       @extend %caps-sans;
       margin-bottom: $small3;
+    }
+    &:last-child {
+      border-bottom: none;
     }
   }
   ul li .field-content {

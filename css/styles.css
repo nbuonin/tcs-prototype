@@ -66,12 +66,12 @@ main > .container {
 img {
   width: 100%; }
 
-#season-banner, #recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program, #blog-post, #blog-post-list > .blog-post {
+#recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program, #blog-post, #blog-post-list > .blog-post, section#roster .item-list {
   padding-bottom: 31.36px;
   border-bottom: 1px solid #e2e2e4;
   margin-bottom: 31.36px; }
 
-#featured-concert > article.concert, #recent-blog-posts > article.blog-post, #about-page .about-history {
+#season-banner, #featured-concert > article.concert, #recent-blog-posts > article.blog-post, #about-page .about-history {
   padding-bottom: 22.4px;
   border-bottom: 1px solid #9fa2a7;
   margin-bottom: 22.4px; }
@@ -1434,11 +1434,11 @@ div.page-header a {
      page-break-inside: avoid;
           break-inside: avoid; }
 
-section#roster .item-list {
-  margin-bottom: 31.36px; }
-
 section#roster .item-list h3 {
   margin-bottom: 5.8309px; }
+
+section#roster .item-list:last-child {
+  border-bottom: none; }
 
 blockquote {
   line-height: 43.904px;
