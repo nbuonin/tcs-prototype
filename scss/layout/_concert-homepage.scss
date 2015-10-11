@@ -192,6 +192,7 @@
     }
     h2.concert-name {
       @extend %hp-section-name;
+      text-align: left;
     }
     p.concert-date {
       @extend %hp-section-date;
@@ -216,11 +217,16 @@
     div.concert-info {
       flex: 1;
       align-items: center;
+      margin: 0 22px;
+      text-align: center;
+    h2.concert-name {
+      text-align: center;
+    }
 
       p.concert-copy {
         @extend %hp-section-copy;
         text-align: center;
-        padding: 0 22px;
+        //padding: 0 22px;
       }
     } // end of div.concert-info
   } // end of 'wide-plus'

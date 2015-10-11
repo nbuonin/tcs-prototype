@@ -6,6 +6,7 @@ $text-color: rgb(51, 51, 51);
 $nav-color: rgb(80, 80, 80);
 $lighten-up: grayscale($link-color);
 $light-color: lighten($tag-color, 25%);
+$body-link-color: complement($tag-color);
 
 // Media Queries
 $break-small: 600px;

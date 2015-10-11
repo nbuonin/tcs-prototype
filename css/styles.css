@@ -208,6 +208,9 @@ p {
   padding-bottom: 11.42857px;
   color: #333333; }
 
+#featured-concert > article.concert div.concert-info p.concert-copy a, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy a, #next-concerts > article.concert div.concert-info p.concert-copy a, #concert-listings article.concert .concert-info-a .concert-copy a, #concert .concert-copy-container .concert-copy p a, #concert .concert-soloists .concert-soloist .concert-soloist-bio a, #blog-post .blog-post-body a, #blog-post-recent > ul > li .blog-post-title a, #blog-post-list > .blog-post .blog-info .blog-copy a, #about-page > div > div > p a {
+  color: #a7a49f; }
+
 @media screen and (min-width: 601px) {
   #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p {
     padding-bottom: 12px; } }
@@ -747,6 +750,9 @@ body > footer > .container p, body > footer > .container li, body > footer > .co
       -ms-flex-align: start;
           align-items: flex-start; }
 
+#next-concerts > article.concert div.concert-info h2.concert-name {
+  text-align: left; }
+
 #next-concerts > article.concert div.concert-info p.concert-copy {
   text-align: left;
   margin: 0; }
@@ -774,10 +780,13 @@ body > footer > .container p, body > footer > .container li, body > footer > .co
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 0 22px;
+    text-align: center; }
+  #next-concerts > article.concert div.concert-info h2.concert-name {
+    text-align: center; }
   #next-concerts > article.concert div.concert-info p.concert-copy {
-    text-align: center;
-    padding: 0 22px; } }
+    text-align: center; } }
 
 @media screen and (min-width: 851px) {
   #next-concerts > article.concert {

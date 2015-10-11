@@ -124,6 +124,9 @@ p {
     @extend %base;
  	 padding-bottom: $small1;
     color: $text-color;
+    a {
+      color: $body-link-color;
+    }
     @include respond-to(medium-plus) {
       padding-bottom: $xsmall1;
     }

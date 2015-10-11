@@ -58,7 +58,7 @@
     font-style: italic;
   }
 	.concert-copy p {
-			@extend %copy;
+     @extend %copy;
 	}
 }
 
