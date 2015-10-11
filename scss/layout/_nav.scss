@@ -178,7 +178,7 @@
   }
   @include respond-to(medium-plus) {
     a:hover {
-      color: black;
+      color: $link-color;
       }
     a.nolink:hover {
       color: $nav-color;

@@ -126,6 +126,10 @@ p {
     color: $text-color;
     a {
       color: $body-link-color;
+      &:hover {
+        color: $link-color;
+        text-decoration:none;
+      }
     }
     @include respond-to(medium-plus) {
       padding-bottom: $xsmall1;
