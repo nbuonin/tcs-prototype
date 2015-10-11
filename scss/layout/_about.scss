@@ -67,11 +67,6 @@ blockquote {
   }
 }
 
-.about-history {
-  @include respond-to(wide-plus) {
-
-  }
-}
 #about-page {
   > div > div > p {
     @extend %copy;
@@ -83,7 +78,7 @@ blockquote {
     margin-top: $big3;
   }
   .about-history {
-    @extend %border-bottom-dark;
+    @extend %border-bottom;
   }
 }
 

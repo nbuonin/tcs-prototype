@@ -66,12 +66,12 @@ main > .container {
 img {
   width: 100%; }
 
-#recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program, #blog-post, #blog-post-list > .blog-post, section#roster .item-list {
+#recent-blog-posts > article.blog-post, #next-concerts > article.concert, #concert .concert-copy-container, #concert .concert-program, #blog-post, #blog-post-list > .blog-post, section#roster .item-list, #about-page .about-history {
   padding-bottom: 31.36px;
   border-bottom: 1px solid #e2e2e4;
   margin-bottom: 31.36px; }
 
-#season-banner, #featured-concert > article.concert, #recent-blog-posts > article.blog-post, #about-page .about-history {
+#season-banner, #featured-concert > article.concert, #recent-blog-posts > article.blog-post {
   padding-bottom: 22.4px;
   border-bottom: 1px solid #9fa2a7;
   margin-bottom: 22.4px; }
