@@ -208,3 +208,10 @@ button, .btn, .button {
   color: $tag-color;
   padding: 3px 0px;
 }
+
+%small-sans-sizing {
+  font-size: 14px;
+  @incldue respond-to(medium-plus) {
+    font-size: 14px;
+  }
+}

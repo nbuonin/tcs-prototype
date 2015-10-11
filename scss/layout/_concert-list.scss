@@ -32,18 +32,19 @@
     @extend %caps-sans;
   }
   .concert-copy {
-	  	@extend %copy;
-	   display: none;
-	  @include respond-to(medium-plus) {
-	  	display:block;
-	  }
+    @extend %copy;
+    display: none;
+    @include respond-to(medium-plus) {
+      display: block;
+      margin-bottom: 1em;
+    }
   }
 }
 div.page-header {
   width:100%;
   h1 {
     //@extend %big2;
-    color: $lighten-up;
+    color: $tag-color;
     @extend %small-header;
     @extend %sans-heavy;
     display: inline-block;
@@ -77,8 +78,8 @@ div.page-header {
 	 margin-bottom: $default-gutter;
     flex: 1;
     @include respond-to(medium-plus) {
-    flex: none;
-    width: 100%;
+      flex: none;
+      width: 100%;
    }
   }
 

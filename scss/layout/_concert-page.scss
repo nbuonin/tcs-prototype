@@ -80,6 +80,7 @@
 		  width: 100%;
 		  .concert-program-piece {
 			 .concert-program-piece-composer {
+            @extend %smcaps;
 				display: inline-block;
 				text-align: right;
 				width: 30%;
@@ -145,13 +146,18 @@
         @extend %light-sans-caps;
         margin-bottom: .5em;
         @extend %base;
+      > .instrument {
+        letter-spacing: 0;
+      }
     }
     p.concert-program-piece, p.concert-program-date {
         display: inline;
         @extend %sans-light;
-        @extend %small;
+       // @extend %small;
+      @extend %small-sans-sizing;
         text-transform: none;
         letter-spacing: 0;
+       // font-size: $small;
     }
     p.concert-program-date::after {
         content: "  |  ";

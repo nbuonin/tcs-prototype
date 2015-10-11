@@ -26,6 +26,6 @@ section#roster {
   }
   ul li .field-content {
     @extend %sans;
-    @extend %small;
+    @extend %small-sans-sizing;
   }
 }

@@ -27,8 +27,7 @@ body > footer > .container {
 		ul > li > a.nolink {
         @extend %list-header;
         @extend %caps-sans;
-		}
-        
+		} 
 	}
 
 	div.contact {
@@ -56,7 +55,7 @@ body > footer > .container {
 		border: none;
 	}
     p, li, a {
-            font-size: $small;
+            @extend %small-sans-sizing;
             letter-spacing: 0;
         }
 }
