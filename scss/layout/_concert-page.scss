@@ -42,10 +42,9 @@
     justify-content: space-between;
   }
   .concert-date-location {
-   // white-space: nowrap; 
-	 min-width: 15em;
+    @extend %small;
+	 min-width: 14em;
     .concert-date {
-      font-weight: bold;
     }
     .concert-location{
       font-style: italic;
@@ -55,6 +54,7 @@
     }
   }
   .concert-conductors {
+    @extend %small;
     font-style: italic;
   }
 	.concert-copy p {

@@ -120,11 +120,11 @@ html, #featured-concert > article.concert div.concert-info p.concert-copy, #rece
   html, #featured-concert > article.concert div.concert-info p.concert-copy, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy, #next-concerts > article.concert div.concert-info p.concert-copy, #concert-listings article.concert .concert-info-a .concert-copy, #concert .concert-copy-container .concert-copy p, #concert .concert-soloists .concert-soloist .concert-soloist-bio, #blog-post .blog-post-body, #blog-post-recent > ul > li .blog-post-title, #blog-post-list > .blog-post .blog-info .blog-copy, #about-page > div > div > p, #concert h2, #blog-post-recent h2, #about-page h2, .personnel-list caption, #concert .concert-soloists .concert-soloist .concert-program-listing .concert-program-piece-soloist {
     font-size: 18px; } }
 
-#featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, #blog-post .blog-post-title-info .blog-post-dateline, #blog-post-recent > ul > li, #blog-post-list > .blog-post .blog-info .blog-post-dateline, .navigation .title > h1 {
+#featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, #blog-post .blog-post-title-info .blog-post-dateline, #blog-post-recent > ul > li, #blog-post-list > .blog-post .blog-info .blog-post-dateline, .navigation .title > h1, #concert .concert-copy-container .concert-date-location, #concert .concert-copy-container .concert-conductors {
   font-size: 14.4px; }
 
 @media screen and (min-width: 601px) {
-  #featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, #blog-post .blog-post-title-info .blog-post-dateline, #blog-post-recent > ul > li, #blog-post-list > .blog-post .blog-info .blog-post-dateline, .navigation .title > h1 {
+  #featured-concert > article.concert div.concert-info p.concert-tag, #recent-blog-posts > article.blog-post div.blog-info p.blog-tag, #next-concerts > article.concert div.concert-info p.concert-tag, #concert-listings article.concert .concert-info-a .concert-tag, #concert .concert-tag, #blog-post .blog-post-title-info .blog-post-dateline, #blog-post-recent > ul > li, #blog-post-list > .blog-post .blog-info .blog-post-dateline, .navigation .title > h1, #concert .concert-copy-container .concert-date-location, #concert .concert-copy-container .concert-conductors {
     font-size: 16.2px; } }
 
 button, .button, h3, body > footer > .container nav.footer-nav ul > li > a.nolink, #featured-concert > article.concert div.concert-info p.concert-date, #recent-blog-posts > article.blog-post div.blog-info p.blog-date, #next-concerts > article.concert div.concert-info p.concert-date, #concert-listings article.concert .concert-info-a .concert-location, #concert-listings article.concert .concert-info-b .concert-program .concert-program-date, #blog-post .blog-post-title-info .blog-post-author, #blog-post-list > .blog-post .blog-info .blog-post-author, #profile .profile-info .profile-info-container .instrument, section#roster .item-list h3, blockquote footer, .subhead, .email-social .email-subscribe h3, div.page-header a {
@@ -1016,10 +1016,7 @@ div.page-header a {
             justify-content: space-between; } }
 
 #concert .concert-copy-container .concert-date-location {
-  min-width: 15em; }
-
-#concert .concert-copy-container .concert-date-location .concert-date {
-  font-weight: bold; }
+  min-width: 14em; }
 
 #concert .concert-copy-container .concert-date-location .concert-location {
   font-style: italic; }
