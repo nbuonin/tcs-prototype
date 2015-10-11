@@ -42,7 +42,7 @@
     justify-content: space-between;
   }
   .concert-date-location {
-   // white-space: nowrap; 
+   // white-space: nowrap;
 	 min-width: 15em;
     .concert-date {
       font-weight: bold;
@@ -71,7 +71,7 @@
   .concert-program-piece-soloist {
 	 padding-left: 1em;
   }
-  
+
   .concert-program-listing {
       margin-bottom: .5em;
   }
@@ -85,10 +85,10 @@
 				width: 30%;
 				padding-right: $big2;
 			 }
-			 .concert-program-piece-composer::after { 
+			 .concert-program-piece-composer::after {
             content: "";
            }
-			 .concert-program-piece-title { 
+			 .concert-program-piece-title {
 				display: inline-block;
 				text-align: left;
 				width: 50%;
@@ -125,8 +125,20 @@
   .concert-soloist-bio {
 			@extend %copy;
 	}
-  
-  @include respond-to(medium-plus) {
+
+  @include respond-to(medium) {
+    flex-flow: row wrap;
+    @include col(1,2,$container-width: $max-container-width,$gutter:36px);
+    // &:nth-of-type(3n+2):last-of-type {// hackety hack hack
+    //   margin-left: (36px / $max-container-width) * 100%;
+    //   // $default-gutter needs to match $gutter you pass in above,
+    //   // as well as $max-container-width
+    //   // like col(1,3,$container-width: $max-container-width,$gutter:$default-gutter)
+    //   margin-right: auto;
+    // }
+  }
+
+  @include respond-to(wide-plus) {
     flex-flow: row wrap;
     @include col(1,3,$container-width: $max-container-width,$gutter:36px);
     &:nth-of-type(3n+2):last-of-type {// hackety hack hack
