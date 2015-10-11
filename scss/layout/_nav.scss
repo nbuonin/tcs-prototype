@@ -180,8 +180,8 @@
     a:hover {
       color: black;
       }
-    a.nolink:hover { 
-      color: $nav-color; 
+    a.nolink:hover {
+      color: $nav-color;
     }
   }
   @include respond-to(wide-plus) {
@@ -192,7 +192,7 @@
       display: flex;
       justify-content: center;
       background: url(../images/border.png);
-      background-position: 50% 60%; 
+      background-position: 50% 60%;
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -213,7 +213,7 @@
         padding: 5px;
         display: block;
       }
-      
+
       > ul {
         padding-left: 0;
         border-top: 3px solid white;
@@ -231,5 +231,7 @@
 } // end of nav
 
 .navigation > .container > nav.active {
-  display: block;
+  //display: block;
+  //Switched to display: table to fix mobile nav on iOS
+  display: table;
 }
