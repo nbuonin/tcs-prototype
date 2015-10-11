@@ -209,7 +209,7 @@ p {
   color: #333333; }
 
 #featured-concert > article.concert div.concert-info p.concert-copy a, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy a, #next-concerts > article.concert div.concert-info p.concert-copy a, #concert-listings article.concert .concert-info-a .concert-copy a, #concert .concert-copy-container .concert-copy p a, #concert .concert-soloists .concert-soloist .concert-soloist-bio a, #blog-post .blog-post-body a, #blog-post-recent > ul > li .blog-post-title a, #blog-post-list > .blog-post .blog-info .blog-copy a, #about-page > div > div > p a {
-  color: #b1a795; }
+  color: #8a820f; }
 
 #featured-concert > article.concert div.concert-info p.concert-copy a:hover, #recent-blog-posts > article.blog-post div.blog-info p.blog-copy a:hover, #next-concerts > article.concert div.concert-info p.concert-copy a:hover, #concert-listings article.concert .concert-info-a .concert-copy a:hover, #concert .concert-copy-container .concert-copy p a:hover, #concert .concert-soloists .concert-soloist .concert-soloist-bio a:hover, #blog-post .blog-post-body a:hover, #blog-post-recent > ul > li .blog-post-title a:hover, #blog-post-list > .blog-post .blog-info .blog-copy a:hover, #about-page > div > div > p a:hover {
   color: #ff003b;
